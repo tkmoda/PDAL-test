@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/manipulation/thinning/thinning.rst:4
+msgid "Thinning"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:10
+msgid ""
+"This exercise uses PDAL to subsample or thin point cloud data. This might"
+" be done to accelerate processing (less data), normalize point density, "
+"or ease visualization."
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:15
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:17
+msgid ""
+"As we showed in the :ref:`density` exercise, the points in the "
+"`uncompahgre.laz` file are not evenly distributed across the entire "
+"collection. While we will not get into reasons why that particular "
+"property is good or bad, we note there are three different sampling "
+"strategies we could choose. We can attempt to preserve shape, we can try "
+"to randomly sample, and we can attempt to normalize posting density. PDAL"
+" provides capability for all three:"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:24
+msgid "Poisson using the :ref:`filters.sample`"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:26
+msgid ""
+"Random using a combination of :ref:`filters.decimation` and "
+":ref:`filters.randomize`"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:28
+msgid "Voxel using :ref:`filters.voxelcentroidnearestneighbor`"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:30
+msgid ""
+"In this exercise, we are going to thin with the Poisson method, but the "
+"concept should operate similarly for the "
+":ref:`filters.voxelcentroidnearestneighbor` approach."
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:36
+msgid "Thinning strategies available in PDAL"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:39
+msgid "Command"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:41
+msgid ""
+"Invoke the following command, substituting accordingly, in your `Conda "
+"Shell`:"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:50
+msgid ""
+"By specifying our radius, we set the minimum distance between points to "
+"20 meters."
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:53
+msgid "Visualization"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:55
+msgid ""
+"QGIS has the ability to switch on/off multiple data sets, and we are "
+"going to use that ability to view both the ``uncompahgre.laz`` and the "
+"output ``uncompahgre-thin.copc.laz`` file:"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:62
+msgid "Selecting multiple data sets in QGIS"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:67
+msgid "Uncompahgre thinned at a radius of 20m"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:70
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/manipulation/thinning/thinning.rst:72
+msgid ""
+"Poisson sampling is non-destructive. Points that are filtered with "
+":ref:`filters.sample` will retain all attribute information."
+msgstr ""
+

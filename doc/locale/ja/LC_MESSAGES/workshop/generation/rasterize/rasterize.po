@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/generation/rasterize/rasterize.rst:4
+msgid "Rasterizing Attributes"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:10
+msgid ""
+"This exercise uses PDAL to generate a raster surface using a fully "
+"classified point cloud with PDAL's :ref:`writers.gdal`."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:15
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:18
+msgid ""
+"The exercise fetches its data from a `Entwine`_ service that organizes "
+"the point cloud collection for the entire country of Denmark. You can "
+"view the data online at http://potree.entwine.io/data/denmark.html."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:25
+msgid "Command"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:27
+msgid ""
+"PDAL capability to generate rasterized output is provided by the "
+":ref:`writers.gdal` stage. There is no :ref:`application <apps>` to drive"
+" this stage, and we must use a pipeline."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:33
+msgid "Pipeline breakdown"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:40
+msgid ""
+"This pipeline is available in your workshop materials in the "
+"``./exercises/analysis/rasterize/classification.json`` file. Make sure to"
+" edit the filenames to match your paths."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:46
+msgid "1. Reader"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:51
+msgid ""
+"The data is read from a EPT resource that contains the Denmark data. "
+"We're going to download a small patch of data by the Copenhagen airport "
+"area that is the limited to a spatial resolution of 5m."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:57
+msgid "2. :ref:`writers.gdal`"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:59
+msgid ""
+"The :ref:`writers.gdal` writer bins the point cloud data with "
+"classification values."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:66
+msgid "Execution"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:68
+msgid ""
+"Issue the :ref:`pipeline <pipeline>` operation to execute the "
+"interpolation:"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:83
+msgid "Visualization"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:88
+msgid ""
+"Basic interpolation of data with :ref:`writers.gdal` will output raw "
+"classification values into the resulting raster file. We will need to add"
+" a color ramp to the data for a satisfactory preview."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:92
+msgid ""
+"Unfortunately, this does not give us a very satisfactory image to view. "
+"The reason is there is no color ramp associated with the file, and we're "
+"looking at pixel values with values from 0-31 according to the ASPRS LAS "
+"specification."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:96
+msgid ""
+"We want colors that correspond to the classification values a bit more "
+"directly. We can use a color ramp to assign explicit values. :ref:`qgis` "
+"allows us to create a text file color ramp that gdaldem can consume to "
+"apply colors to the data. The filename is "
+"\"./exercises/analysis/rasterize/ramp.txt\"."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:101
+msgid "Should look like this:"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:106
+msgid ""
+"With this ramp, you can load the color values into QGIS as a color ramp "
+"if you change the layer to Palatted/Unique Values, and then load the "
+"color ramp file:"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:114
+msgid "With the ramp, we can also use `gdaldem`_ to apply it to a new image:"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:126
+msgid "Intensity"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:128
+msgid ""
+"With PDAL's ability to override pipeline via commands, we can generate a "
+"relative intensity image:"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:173
+msgid ""
+"The same pipeline can be used to generate a preview image of the "
+"Intensity channel of the data by overriding pipeline arguments at the "
+"command line:"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:181
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:183
+msgid ""
+":ref:`writers.gdal`  can output any dimension PDAL can provide, but it is"
+" is up to the user to interpolate the values. For categorical data, "
+"neighborhood smoothing might produce undesirable results, for example."
+msgstr ""
+
+#: ../../workshop/generation/rasterize/rasterize.rst:187
+msgid ""
+":ref:`pipeline` contains more information about overrides and organizing "
+"complex pipelines."
+msgstr ""
+

@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.raster.rst:4
+msgid "writers.raster"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:6
+msgid ""
+"The **Raster Writer** writes an existing raster to a file. Output is "
+"produced using `GDAL`_ and can use any `driver that supports creation of "
+"rasters`_.  A ``data_type`` can be specified for the raster (double, "
+"float, int32, etc.).  If no data type is specified, the data type with "
+"the largest range supported by the driver is used."
+msgstr ""
+
+#: ../../stages/writers.raster.rst:15
+msgid ""
+"Cells that have no value are given a value specified by the ``nodata`` "
+"option."
+msgstr ""
+
+#: ../../stages/writers.raster.rst:23
+msgid "Basic Example"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:25
+msgid ""
+"This  pipeline reads the file autzen_trim.las, triangulates the data, "
+"creates a raster based on the `Z` dimension as determined by "
+"interpolation of the location and values of 'Z' of the vertices of a "
+"containing triangle, if any exists.  The resulting raster is written to "
+"\"outputfile.tif\"."
+msgstr ""
+
+#: ../../stages/writers.raster.rst:49
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:52
+msgid "filename"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:52
+msgid "Name of output file. [Required]"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:56
+msgid "gdaldriver"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:55
+msgid ""
+"GDAL code of the `GDAL driver`_ to use to write the output. [Default: "
+"\"GTiff\"]"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:67
+msgid "gdalopts"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:61
+msgid ""
+"A list of key/value options to pass directly to the GDAL driver.  The "
+"format is name=value,name=value,...  The option may be specified any "
+"number of times."
+msgstr ""
+
+#: ../../stages/writers.raster.rst:66
+msgid ""
+"The INTERLEAVE GDAL driver option is not supported.  writers.gdal always "
+"uses BAND interleaving."
+msgstr ""
+
+#: ../../stages/writers.raster.rst:73
+msgid "rasters"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:70
+msgid ""
+"A comma-separated list of raster names to be written as bands of the "
+"raster. All rasters must have the same limits (origin/width/height). "
+"Rasters following the first that don't have the same limits will be "
+"dropped. If no raster names are provided, only the first raster found "
+"will be placed into a single band for output."
+msgstr ""
+
+#: ../../stages/writers.raster.rst:77
+msgid "data_type"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:76
+msgid ""
+"The :ref:`data type <types>` to use for the output raster.  Many GDAL "
+"drivers only support a limited set of output data types.  [Default: "
+"depends on the driver]"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:84
+msgid "nodata"
+msgstr ""
+
+#: ../../stages/writers.raster.rst:80
+msgid ""
+"The value to use for a raster cell if the raster contains no data in a "
+"cell. Note that the nodata written to the output may be different from "
+"that of the raster being written. [Default: depends on the ``data_type``."
+"  -9999 for double, float, int and short, 9999 for unsigned int and "
+"unsigned short, 255 for unsigned char and -128 for char]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.estimaterank.rst:4
+msgid "filters.estimaterank"
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:6
+msgid ""
+"The **rank estimation filter** uses singular value decomposition (SVD) to"
+" estimate the rank of a set of points. Point sets with rank 1 correspond "
+"to linear features, while sets with rank 2 correspond to planar features."
+" Rank 3 corresponds to a full 3D feature. In practice this can be used "
+"alone, or possibly in conjunction with other filters to extract features "
+"(e.g., buildings, vegetation)."
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:13
+msgid ""
+"Two parameters are required to estimate rank (though the default values "
+"will be suitable in many cases). First, the knn_ parameter defines the "
+"number of points to consider when computing the SVD and estimated rank. "
+"Second, the thresh_ parameter is used to determine when a singular value "
+"shall be considered non-zero (when the absolute value of the singular "
+"value is greater than the threshold)."
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:20
+msgid ""
+"The rank estimation is performed on a pointwise basis, meaning for each "
+"point in the input point cloud, we find its knn_ neighbors, compute the "
+"SVD, and estimate rank. The filter creates a new dimension called "
+"``Rank`` that can be used downstream of this filter stage in the "
+"pipeline. The type of writer used will determine whether or not the "
+"``Rank`` dimension itself can be saved to disk."
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:30
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:32
+msgid ""
+"This sample pipeline estimates the rank of each point using this filter "
+"and then filters out those points where the rank is three using "
+":ref:`filters.range`."
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:53
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:56
+msgid "_`knn`"
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:56
+msgid "The number of k-nearest neighbors. [Default: 8]"
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:59
+msgid "_`thresh`"
+msgstr ""
+
+#: ../../stages/filters.estimaterank.rst:59
+msgid "The threshold used to identify nonzero singular values. [Default: 0.01]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

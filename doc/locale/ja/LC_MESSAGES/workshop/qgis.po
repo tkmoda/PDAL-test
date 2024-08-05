@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/qgis.rst:4
+msgid "QGIS"
+msgstr ""
+
+#: ../../workshop/qgis.rst:11
+msgid "What is |QGIS|?"
+msgstr ""
+
+#: ../../workshop/qgis.rst:13
+msgid ""
+"|QGIS| is an open source GIS. It is extensible with |Python|, it "
+"integrates the `GRASS`_ analytic environment, and it works on both "
+"Windows and OS X."
+msgstr ""
+
+#: ../../workshop/qgis.rst:19
+msgid "How will we use QGIS?"
+msgstr ""
+
+#: ../../workshop/qgis.rst:21
+msgid ""
+"We're using |QGIS| to visualize raster and vector processing product "
+"during our workshop. We will also use |QGIS| to visualize point clouds by"
+" generating :ref:`COPC <writers.copc>` files. If you have another GIS "
+"available to you, you are welcome to use it, but because |QGIS| is open "
+"source, we are installing it and using it to be sure you'll have "
+"something to look at data with."
+msgstr ""
+
+#: ../../workshop/qgis.rst:28
+msgid "Installing QGIS"
+msgstr ""
+
+#: ../../workshop/qgis.rst:30
+msgid ""
+"Copy the contents of your |Hobu| USB key to a ``PDAL`` directory in your "
+"home directory (something like ``C:\\Users\\hobu\\PDAL``). We will refer "
+"to this location for the rest of the workshop materials."
+msgstr ""
+
+#: ../../workshop/qgis.rst:34
+msgid ""
+"After your materials are copied, navigate to the "
+"``c:\\Users\\hobu\\PDAL\\software`` directory."
+msgstr ""
+
+#: ../../workshop/qgis.rst:41
+msgid ""
+"It is assumed your |Hobu| USB drive has all of its contents copied to the"
+" ``C:\\Users\\hobu\\PDAL`` folder. Please adjust your locations when "
+"reading these tutorial documents accordingly."
+msgstr ""
+
+#: ../../workshop/qgis.rst:45
+msgid ""
+"Choose the install image, Windows or Mac, and install |QGIS| prepare your"
+" machine to run the examples."
+msgstr ""
+
+#: ../../workshop/qgis.rst:53
+msgid ""
+"Once installed, verify you can run |QGIS| by opening the application. At "
+"the top, choose ``Layer --> Add Layer --> Add Raster Layer...``. Navigate"
+" to the ``C:\\Users\\hobu\\PDAL\\exercises\\analysis\\colorization`` "
+"directory."
+msgstr ""
+
+#: ../../workshop/qgis.rst:60
+msgid ""
+"Select the ``casi-2015-04-29-weekly-mosaic.tif`` image and open it for "
+"display."
+msgstr ""
+
+#: ../../workshop/qgis.rst:69
+msgid "Conclusion"
+msgstr ""
+
+#: ../../workshop/qgis.rst:71
+msgid ""
+"|QGIS| allows everyone to have access to a fully-featured GIS. We are "
+"going to use it to visualize raster, vector, and point cloud data used "
+"throughout the workshop."
+msgstr ""
+

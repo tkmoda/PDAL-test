@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/errorhandling.rst:5
+msgid "Errors and Error Handling"
+msgstr ""
+
+#: ../../development/errorhandling.rst:8
+msgid "Exceptions"
+msgstr ""
+
+#: ../../development/errorhandling.rst:10
+msgid ""
+"PDAL typically throws a ``std::runtime_error`` for error conditions that "
+"is catchable as ``pdal::pdal_error``."
+msgstr ""
+
+#: ../../development/errorhandling.rst:14
+msgid "PDAL Position on (Non)conformance"
+msgstr ""
+
+#: ../../development/errorhandling.rst:16
+msgid ""
+"PDAL proudly and unabashedly supports formal standards/specifications for"
+" file formats.  We recognize, however, that in some cases files will not "
+"follow a given standard precisely, due to an unclear spec or simply out "
+"of carelessness."
+msgstr ""
+
+#: ../../development/errorhandling.rst:21
+msgid "When reading files that are not formatted correctly:"
+msgstr ""
+
+#: ../../development/errorhandling.rst:23
+msgid ""
+"PDAL may try to compensate for the error.  This is typically done when as"
+" a practical matter the market needs support for well-known or pervasive,"
+" but nonetheless \"broken\", upstream implementations."
+msgstr ""
+
+#: ../../development/errorhandling.rst:27
+msgid ""
+"PDAL may explicitly reject such files.  This is typically done where we "
+"do not wish to continue to promote or support mistakes that should be "
+"fixed upstream."
+msgstr ""
+
+#: ../../development/errorhandling.rst:31
+msgid ""
+"PDAL will strive to write correctly formatted files.  In some cases, "
+"however, PDAL may choose to offer as an option the ability to break the "
+"standard if, as a practical matter, doing so would significantly aid the "
+"market.  Such an option would never be the default behavior, however."
+msgstr ""
+
+#: ../../development/errorhandling.rst:36
+msgid ""
+"For files that are conformant but which lie, such as the extents in the "
+"header being wrong, we will generally offer both the ability to propagate"
+" the \"wrong\" information and the ability to helpfully correct it on the"
+" fly; the latter is generally our default position."
+msgstr ""
+

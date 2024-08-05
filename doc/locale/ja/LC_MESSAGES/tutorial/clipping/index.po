@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../tutorial/clipping/index.rst:4
+msgid "Clipping with Geometries"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst
+msgid "Author"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:6
+msgid "Howard Butler"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:7
+msgid "howard@hobu.co"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst
+msgid "Date"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:8
+msgid "11/09/2015"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:12
+msgid "Introduction"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:14
+msgid ""
+"This tutorial describes how to construct a pipeline that takes in "
+"geometries and clips out data with given geometry attributes.  It is "
+"common to desire to cut or clip point cloud data with 2D geometries, "
+"often from auxiliary data sources such as `OGR`_-readable `Shapefiles`_."
+"  This tutorial describes how to construct a pipeline that takes in "
+"geometries and clips out point cloud data inside geometries with matching"
+" attributes."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:24
+msgid "Contents"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:30
+msgid "Example Data"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:32
+msgid ""
+"This tutorial utilizes the Autzen dataset. In addition to typical PDAL "
+"software (fetch it from :ref:`download`), you will need to download the "
+"following two files:"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:36
+msgid "https://github.com/PDAL/data/autzen/autzen.laz"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:37
+msgid "https://github.com/PDAL/PDAL/raw/master/test/data/autzen/attributes.json"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:40
+msgid "Stage Operations"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:42
+msgid ""
+"This operation depends on two stages PDAL provides. The first is the "
+":ref:`filters.overlay` stage, which allows you to assign point values "
+"based on polygons read from `OGR`_. The second is :ref:`filters.range`, "
+"which allows you to keep or reject points from the set that match given "
+"criteria."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:50
+msgid ""
+":ref:`filters.python` allow you to construct sophisticated logic for "
+"keeping or rejecting points in a more expressive environment."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:56
+msgid "Data Preparation"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:61
+msgid "Autzen Stadium, a 100 million+ point cloud file."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:63
+msgid ""
+"The data are mixed in two different coordinate systems. The :ref:`LAZ "
+"<readers.las>` file is in `Oregon State Plane Ft.`_ and the `GeoJSON`_ "
+"defining the polygons is in `EPSG:4326`_. We have two options -- project "
+"the point cloud into the coordinate system of the attribute polygons, or "
+"project the attribute polygons into the coordinate system of the points. "
+"The latter is preferable in this case because it will be less math and "
+"therefore less computation. To make it convenient, we can utilize "
+"`OGR`_'s `VRT`_ capability to reproject the data for us on-the-fly:"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:86
+msgid ""
+"The GeoJSON file does not have an externally-defined coordinate system, "
+"so we are explicitly setting one with the LayerSRS parameter. If your "
+"data does have coordinate system information, you don't need to do that."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:90
+msgid ""
+"Save this VRT definition to a file, called ``attributes.vrt`` in the same"
+" location where you stored the ``autzen.laz`` and ``attributes.json`` "
+"files."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:95
+msgid ""
+"The attribute GeoJSON file has a couple of features with different "
+"attributes. For our scenario, we want to clip out the yellow-green "
+"polygon, marked number \"5\", in the upper right hand corner."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:104
+msgid ""
+"We want to clip out the polygon in the upper right hand corner. We can "
+"view the `GeoJSON`_ geometry using something like `QGIS`_"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:110
+msgid "Pipeline"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:112
+msgid ""
+"A PDAL :ref:`pipeline <pipeline>` is how you define a set of actions to "
+"apply to data as they are read, filtered, and written."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:133
+msgid ""
+":ref:`readers.las`: Define a reader that can read `ASPRS LAS`_ or "
+"`LASzip`_ data."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:135
+msgid ""
+":ref:`filters.overlay`: Using the VRT we defined in `Data Preparation`_, "
+"read attribute polygons out of the data source and assign the values from"
+" the ``CLS`` column to the ``Classification`` field."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:138
+msgid ""
+":ref:`filters.range`: Given that we have set the ``Classification`` "
+"values for the points that have coincident polygons to 2, 5, and 6, only "
+"keep ``Classification`` values in the range of ``5:5``. This functionally"
+" means we're only keeping those points with a classification value of 5."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:142
+msgid ":ref:`writers.las`: write our content out using an `ASPRS LAS`_ writer."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:146
+msgid ""
+"You don't have to use only ``Classification`` to set the attributes with "
+":ref:`filters.overlay`. Any valid dimension name could work, but most "
+"LiDAR softwares will display categorical coloring for the "
+"``Classification`` field, and we can leverage that behavior in this "
+"scenario."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:153
+msgid "Processing"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:155
+msgid ""
+"Save the pipeline to a file called ``shape-clip.json`` in the same "
+"directory as your ``attributes.json`` and ``autzen.laz`` files."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:158
+msgid "Run ``pdal pipeline`` on the json file."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:164
+msgid ""
+"Visualize ``output.las`` in an environment capable of viewing it. "
+"http://plas.io or `CloudCompare`_ should do the trick."
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:171
+msgid "Conclusion"
+msgstr ""
+
+#: ../../tutorial/clipping/index.rst:173
+msgid ""
+"PDAL allows the composition of point cloud operations. This tutorial "
+"demonstrated how to use the :ref:`filters.overlay` and "
+":ref:`filters.range` stages to clip points with shapefiles."
+msgstr ""
+

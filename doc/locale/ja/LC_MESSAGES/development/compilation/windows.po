@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/compilation/windows.rst:5
+msgid "Building Under Windows"
+msgstr ""
+
+#: ../../development/compilation/windows.rst
+msgid "Author"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:7
+msgid "Howard Butler"
+msgstr ""
+
+#: ../../development/compilation/windows.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:8
+msgid "howard at hobu.co"
+msgstr ""
+
+#: ../../development/compilation/windows.rst
+msgid "Date"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:9
+msgid "11/20/2020"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:13
+msgid ""
+":ref:`conda` contains a pre-built up-to-date 64 bit Windows binary. It is"
+" fully-featured, and if you do not need anything custom, it is likely the"
+" fastest way to get going."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:19
+msgid "Introduction"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:21
+msgid ""
+"Pre-built binary packages for Windows are available via :ref:`conda` "
+"(64-bit version), and all of the prerequisites required for compilation "
+"of a fully featured build are also available via that packaging system. "
+"This document assumes you will be using Conda Forge as your base, and "
+"anything more advanced is beyond the scope of the document."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:29
+msgid ""
+"The GitHub Action build system uses the PDAL project's configuration on "
+"the Conda Forge system. It contains a rich resource of known working "
+"examples. See "
+"https://github.com/PDAL/PDAL/blob/master/.github/workflows/win.yml and "
+"https://github.com/PDAL/PDAL/tree/master/scripts/ci/win for inspiration."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:35
+msgid "Required Compiler"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:37
+msgid ""
+"PDAL is known to compile on `Visual Studio 2015`_, and 2013 *might* work "
+"with some source tree adjustments. PDAL makes heavy use of C++11, and a "
+"compiler with good support for those features is required."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:47
+msgid "Prerequisite Libraries"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:49
+msgid ""
+"PDAL uses the `GitHub Actions`_ continuous integration platform for "
+"building and testing itself on Windows. The configuration that PDAL uses "
+"is valuable raw materials for configuring your own environment because "
+"the PDAL team must keep it up to date with both the :ref:`conda` "
+"environment and the Microsoft compiler situation."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:55
+msgid ""
+"You can see the current configuration at "
+"https://github.com/PDAL/PDAL/blob/master/.github/workflows/win.yml The "
+"most interesting bits are the ``Setup`` step, the ``CMake`` step, and the"
+" ``Compile`` scripts. The configuration already has Miniconda installed, "
+"and the ``setup.sh`` script installs all of PDAL's prerequisites via the "
+"command line."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:72
+msgid ""
+"The package list here might change over time. The canonnical location to "
+"learn the  prerequisite list for PDAL is the ``scripts/ci/win`` directory"
+" in PDAL's source tree."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:80
+msgid "Fetching the Source"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:82
+msgid ""
+"Get the source code for PDAL. Presumably you have `GitHub for Windows`_ "
+"or something like it. Run a \"git shell\" and clone the repository into "
+"the directory of your choice."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:92
+msgid "Switch to the ``-maintenance`` branch."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:101
+msgid ""
+"PDAL's active development branch is ``master``, and you are welcome to "
+"build it, but is not as stable as the major-versioned release branches "
+"are likely to be."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:106
+msgid "Configuration"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:108
+msgid ""
+"PDAL uses `CMake`_ for its build configuration. You will need to install "
+"CMake and have it available on your path to configure PDAL."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:111
+msgid "Invoke your ``cmake`` command to configure the PDAL."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:117
+msgid ""
+"A fully-featured build will require more specification of libraries, "
+"enabled features, and their locations. For more information on this, "
+"users can refer to the ``examples.sh`` step in the Action."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:123
+msgid "Placing your command in a ``.bat`` file will make for easy reuse."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:126
+msgid "Building"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:128
+msgid ""
+"If you chose ``NMake Makefiles`` as your CMake generator, you can invoke "
+"the build by calling **nmake**:"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:136
+msgid ""
+"If you chose \"Visual Studio 14 Win64\" as your CMake generator, open "
+"``PDAL.sln`` and chose your configuration to build."
+msgstr ""
+
+#: ../../development/compilation/windows.rst:140
+msgid "Running"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:142
+msgid "After you've built the tree, you can run ``pdal.exe`` by issuing it"
+msgstr ""
+
+#: ../../development/compilation/windows.rst:150
+msgid ""
+"You may need to have your Conda environment active to enable access to "
+"PDAL's dependencies."
+msgstr ""
+

@@ -1,0 +1,440 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../pipeline.rst:5
+msgid "Pipeline"
+msgstr ""
+
+#: ../../pipeline.rst:7
+msgid ""
+"Pipelines define the processing of data within PDAL.  They describe how "
+"point cloud data are read, processed and written. PDAL internally "
+"constructs a pipeline to perform data translation operations using "
+":ref:`translate_command`, for example. While specific :ref:`applications "
+"<apps>` are useful in many contexts, a pipeline provides useful "
+"advantages for many workflows:"
+msgstr ""
+
+#: ../../pipeline.rst:14
+msgid "You have a record of the operation(s) applied to the data"
+msgstr ""
+
+#: ../../pipeline.rst:15
+msgid ""
+"You can construct a skeleton of an operation and substitute specific "
+"options (filenames, for example)"
+msgstr ""
+
+#: ../../pipeline.rst:17
+msgid ""
+"You can construct complex operations using the `JSON`_ manipulation "
+"facilities of whatever language you want."
+msgstr ""
+
+#: ../../pipeline.rst:22
+msgid ""
+":ref:`pipeline_command` is used to invoke pipeline operations via the "
+"command line."
+msgstr ""
+
+#: ../../pipeline.rst:29
+msgid "Introduction"
+msgstr ""
+
+#: ../../pipeline.rst:31
+msgid ""
+"A PDAL processing pipeline is represented in JSON.  The structure may "
+"either:"
+msgstr ""
+
+#: ../../pipeline.rst:33
+msgid ""
+"a JSON object, with a key called ``pipeline`` whose value is an array of "
+"inferred or explicit PDAL :ref:`stage_object` representations."
+msgstr ""
+
+#: ../../pipeline.rst:35
+msgid ""
+"a JSON array, being the array described above without being encapsulated "
+"by a JSON object."
+msgstr ""
+
+#: ../../pipeline.rst:39
+msgid "Simple Example"
+msgstr ""
+
+#: ../../pipeline.rst:41
+msgid ""
+"A simple PDAL pipeline, inferring the appropriate drivers for the reader "
+"and writer from filenames, and able to be specified as a set of "
+"sequential steps:"
+msgstr ""
+
+#: ../../pipeline.rst:57
+msgid ""
+"A simple pipeline to convert :ref:`LAS <readers.las>` to :ref:`BPF "
+"<readers.bpf>` while only keeping points inside the box :math:`[0 \\leq x"
+" \\leq 100, 0 \\leq y \\leq 100]`."
+msgstr ""
+
+#: ../../pipeline.rst:61
+msgid "Reprojection Example"
+msgstr ""
+
+#: ../../pipeline.rst:63
+msgid ""
+"A more complex PDAL pipeline reprojects the stage tagged ``A1``, merges "
+"the result with ``B``, and writes the merged output to a GeoTIFF file "
+"with the :ref:`writers.gdal` writer:"
+msgstr ""
+
+#: ../../pipeline.rst:100
+msgid ""
+"A more complex pipeline that merges two inputs together but uses "
+":ref:`filters.reprojection` to transform the coordinate system of file "
+"``B.las`` from `UTM`_ to `Geographic`_."
+msgstr ""
+
+#: ../../pipeline.rst:108
+msgid "Point Views and Multiple Outputs"
+msgstr ""
+
+#: ../../pipeline.rst:110
+msgid ""
+"Some filters produce sets of points as output.  :ref:`filters.splitter`, "
+"for example, creates a point set for each tile (rectangular area) in "
+"which input points exist. Each of these output sets is called a point "
+"view.  Point views are carried through a PDAL pipeline individually.  "
+"Some writers can produce separate output for each input point view.  "
+"These writers use a placeholder character (#) in the output filename "
+"which is replaced by an incrementing integer for each input point view."
+msgstr ""
+
+#: ../../pipeline.rst:119
+msgid ""
+"The following pipeline provides an example of writing multiple output "
+"files from a single pipeline.  The crop filter creates two output point "
+"views (one for each specified geometry) and the writer creates output "
+"files 'output1.las' and 'output2.las' containing the two sets of points:"
+msgstr ""
+
+#: ../../pipeline.rst:138
+msgid "Processing Modes"
+msgstr ""
+
+#: ../../pipeline.rst:140
+msgid ""
+"PDAL process data in one of two ways: standard mode or stream mode.  With"
+" standard mode, all input is read into memory before it is processed.  "
+"Many algorithms require standard mode processing because they need access"
+" to all points. Operations that do sorting or require neighbors of "
+"points, for example, require access to all points."
+msgstr ""
+
+#: ../../pipeline.rst:146
+msgid ""
+"For operations that don't require access to all points, PDAL provides "
+"stream mode.  Stream mode processes points through a pipeline in chunks, "
+"which reduces memory requirements."
+msgstr ""
+
+#: ../../pipeline.rst:150
+msgid ""
+"When using :ref:`pdal translate<translate_command>` or :ref:`pdal "
+"pipeline<pipeline_command>` PDAL uses stream mode if possible.  If stream"
+" mode can't be used the applications fall back to standard mode "
+"processing.  Streamable stages are tagged in the stage documentation with"
+" a blue bar.  Users can explicitly choose to use standard mode by using "
+"the ``--nostream`` option.  Users of the PDAL API can explicitly control "
+"the selection of the PDAL processing mode."
+msgstr ""
+
+#: ../../pipeline.rst:159
+msgid "Pipelines"
+msgstr ""
+
+#: ../../pipeline.rst:162
+msgid "Pipeline Array"
+msgstr ""
+
+#: ../../pipeline.rst:164
+msgid "PDAL JSON pipelines are an array of stages."
+msgstr ""
+
+#: ../../pipeline.rst:168
+msgid ""
+"In versions of PDAL prior to 1.9, the array of stages needed to be the "
+"value of a key named \"pipeline\" which was encapsulated in an object. "
+"The earlier format is still accepted for backward compatibility."
+msgstr ""
+
+#: ../../pipeline.rst:172
+msgid "Old format:"
+msgstr ""
+
+#: ../../pipeline.rst:184
+msgid "Equivalent new format:"
+msgstr ""
+
+#: ../../pipeline.rst:194
+msgid ""
+"The pipeline array may have any number of string or :ref:`stage_object` "
+"elements."
+msgstr ""
+
+#: ../../pipeline.rst:197
+msgid ""
+"String elements shall be interpreted as filenames. PDAL will attempt to "
+"infer the proper driver from the file extension and position in the "
+"array. A writer stage will only be created if the string is the final "
+"element in the array."
+msgstr ""
+
+#: ../../pipeline.rst:204
+msgid "Stage Objects"
+msgstr ""
+
+#: ../../pipeline.rst:206
+msgid ""
+"For more on PDAL stages and their options, check the PDAL documentation "
+"on :ref:`readers`, :ref:`writers`, and :ref:`filters`."
+msgstr ""
+
+#: ../../pipeline.rst:209
+msgid ""
+"A stage object may have a member with the name ``tag`` whose value is a "
+"string. The purpose of the tag is to cross-reference this stage within "
+"other stages. Each ``tag`` must be unique."
+msgstr ""
+
+#: ../../pipeline.rst:213
+msgid ""
+"A stage object may have a member with the name ``inputs`` whose value is "
+"an array of strings. Each element in the array is the tag of another "
+"stage to be set as input to the current stage."
+msgstr ""
+
+#: ../../pipeline.rst:217
+msgid ""
+"Stages are processed sequentially in the order listed. An empty default "
+"input list is created when interpretation of the pipeline begins."
+msgstr ""
+
+#: ../../pipeline.rst:220
+msgid ""
+"Reader stages will disregard the ``inputs`` member.  When the current "
+"stage is a reader it is added to the default input list."
+msgstr ""
+
+#: ../../pipeline.rst:223
+msgid ""
+"If ``inputs`` is specified for a writer or filter, those inputs are used "
+"for the current stage. The default input list is replaced with the "
+"current stage."
+msgstr ""
+
+#: ../../pipeline.rst:226
+msgid ""
+"If ``inputs`` is not specified for a writer or filter, the default input "
+"list is used for the current stage. The default input list is replaced "
+"with the current stage."
+msgstr ""
+
+#: ../../pipeline.rst:229
+msgid ""
+"A ``tag`` mentioned in another stage's ``inputs``  must have been "
+"previously defined in the ``pipeline`` array."
+msgstr ""
+
+#: ../../pipeline.rst:232
+msgid ""
+"A reader or writer stage object may have a member with the name ``type`` "
+"whose value is a string. The ``type`` must specify a valid PDAL reader or"
+" writer name."
+msgstr ""
+
+#: ../../pipeline.rst:236
+msgid ""
+"A filter stage object must have a member with the name ``type`` whose "
+"value is a string. The ``type`` must specify a valid PDAL filter name."
+msgstr ""
+
+#: ../../pipeline.rst:239
+msgid ""
+"A stage object may have additional members with names corresponding to "
+"stage-specific option names and their respective values. Values provided "
+"as JSON objects or arrays will be stringified and parsed within the "
+"stage. Some options allow multiple inputs.  In those cases, provide the "
+"option values as a JSON array."
+msgstr ""
+
+#: ../../pipeline.rst:245
+msgid ""
+"A ``user_data`` option can be added to any stage object and it will be "
+"carried through to any serialized pipeline output."
+msgstr ""
+
+#: ../../pipeline.rst:248
+msgid ""
+"All stages support the ``option_file`` option that allows options to be "
+"places in a separate file. See :ref:`option_files` for details."
+msgstr ""
+
+#: ../../pipeline.rst:252
+msgid "Filename Globbing"
+msgstr ""
+
+#: ../../pipeline.rst:254
+msgid ""
+"A filename may contain the wildcard character ``*`` to match any string "
+"of characters. This can be useful if working with multiple input files in"
+" a directory (e.g., merging all files)."
+msgstr ""
+
+#: ../../pipeline.rst:258
+msgid ""
+"Filename globbing ONLY works in pipeline file specifications.  It doesn't"
+" work when a filename is provided as an option through a command-line "
+"application like ``pdal pipeline`` or ``pdal translate``."
+msgstr ""
+
+#: ../../pipeline.rst:265
+msgid "Option Files"
+msgstr ""
+
+#: ../../pipeline.rst:267
+msgid ""
+"All stages accept the ``option file`` option that allows extra options "
+"for a stage to be placed in a separate file.  The value of the option is "
+"the filename in which the additional options are located."
+msgstr ""
+
+#: ../../pipeline.rst:271
+msgid ""
+"Option files can be written using either JSON syntax or command line "
+"syntax. When using the JSON syntax, the format is a block of options just"
+" as if the options were placed in a pipeline:"
+msgstr ""
+
+#: ../../pipeline.rst:282
+msgid ""
+"When using the command line syntax, the options are specified as they "
+"would be on the command line without the need to qualify the option names"
+" with the stage name:"
+msgstr ""
+
+#: ../../pipeline.rst:291
+msgid "Extended Examples"
+msgstr ""
+
+#: ../../pipeline.rst:294
+msgid "BPF to LAS"
+msgstr ""
+
+#: ../../pipeline.rst:296
+msgid ""
+"The following pipeline converts the input file from :ref:`BPF "
+"<readers.bpf>` to :ref:`LAS <writers.las>`, inferring both the reader and"
+" writer type, and setting a number of options on the writer stage."
+msgstr ""
+
+#: ../../pipeline.rst:316
+msgid "Python HAG"
+msgstr ""
+
+#: ../../pipeline.rst:318
+msgid ""
+"In our next example, the reader and writer types are once again inferred."
+" After reading the input file, the ferry filter is used to copy the Z "
+"dimension into a new height above ground (HAG) dimension. Next, the "
+":ref:`filters.python` is used with a Python script to compute height "
+"above ground values by comparing the Z values to a surface model. These "
+"height above ground values are then written back into the Z dimension for"
+" further analysis. See the Python code at `hag.py`_."
+msgstr ""
+
+#: ../../pipeline.rst:328
+msgid ""
+":ref:`filters.hag_nn` describes using a specific filter to do this job in"
+" more detail."
+msgstr ""
+
+#: ../../pipeline.rst:351
+msgid "DTM"
+msgstr ""
+
+#: ../../pipeline.rst:353
+msgid ""
+"A common task is to create a digital terrain model (DTM) from the input "
+"point cloud. This pipeline infers the reader type, applies an approximate"
+" ground segmentation filter using :ref:`filters.smrf`, filters out all "
+"points but the ground returns (classification value of 2) using the "
+":ref:`filters.range`, and then creates the DTM using the "
+":ref:`writers.gdal`."
+msgstr ""
+
+#: ../../pipeline.rst:385
+msgid "Decimate & Colorize"
+msgstr ""
+
+#: ../../pipeline.rst:387
+msgid ""
+"This example still infers the reader and writer types while applying "
+"options on both. The pipeline decimates the input LAS file by keeping "
+"every other point, and then colorizes the points using the provided "
+"raster image. The output is written as ASCII text."
+msgstr ""
+
+#: ../../pipeline.rst:417
+msgid "Reproject"
+msgstr ""
+
+#: ../../pipeline.rst:419
+msgid ""
+"Our first example with multiple readers, this pipeline infers the reader "
+"types, and assigns spatial reference information to each. "
+":ref:`filters.reprojection` filter reprojects data to the specified "
+"output spatial reference system."
+msgstr ""
+
+#: ../../pipeline.rst:442
+msgid "Globbed Inputs"
+msgstr ""
+
+#: ../../pipeline.rst:444
+msgid ""
+"Finally, we capture another merge pipeline demonstrating the ability to "
+"glob multiple input LAS files from a given directory."
+msgstr ""
+
+#: ../../pipeline.rst:457
+msgid ""
+"The PDAL source tree contains a number of example pipelines that are used"
+" for testing. You might find these inspiring. Go to "
+"https://github.com/PDAL/PDAL/tree/master/test/data/pipeline to find more."
+msgstr ""
+
+#: ../../pipeline.rst:464
+msgid ""
+"Issuing the command ``pdal info --options`` will list all available "
+"stages and their options. See :ref:`info_command` for more."
+msgstr ""
+

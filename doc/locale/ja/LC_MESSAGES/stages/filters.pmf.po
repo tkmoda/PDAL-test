@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.pmf.rst:4
+msgid "filters.pmf"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:6
+msgid ""
+"The **Progressive Morphological Filter (PMF)** is a method of segmenting "
+"ground and non-ground returns. This filter is an implementation of the "
+"method described in [Zhang2003]_."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:14
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:27
+msgid "Notes"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:29
+msgid ""
+"slope_ controls the height threshold at each iteration. A slope of 1.0 "
+"represents a 1:1 or 45º."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:32
+msgid ""
+"initial_distance_ is _intended_ to be set to account for z noise, so for "
+"a flat surface if you have an uncertainty of around 15 cm, you set "
+"initial_distance_ large enough to not exclude these points from the "
+"ground."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:36
+msgid ""
+"For a given iteration, the height threshold is determined by multiplying "
+"slope by cell_size_ by the difference in window size between the current "
+"and last iteration, plus the initial_distance_. This height threshold is "
+"constant across all cells and is maxed out at the max_distance_ value. If"
+" the difference in elevation between a point and its “opened” value (from"
+" the morphological operator) exceeds the height threshold, it is treated "
+"as non-ground.  So, bigger slope leads to bigger height thresholds, and "
+"these grow with each iteration (not to exceed the max).  With flat "
+"terrain, keep this low, the thresholds are small, and stuff is more "
+"aggressively dumped into non-ground class.  In rugged terrain, open "
+"things up a little, but then you can start missing buildings, veg, etc."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:48
+msgid ""
+"Very large max_window_size_ values will result in a lot of potentially "
+"extra iteration. This parameter can have a strongly negative impact on "
+"computation performance."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:52
+msgid ""
+"exponential_ is used to control the rate of growth of morphological "
+"window sizes toward max_window_size_. Linear growth preserves gradually "
+"changing topographic features well, but demands considerable compute "
+"time. The default behavior is to grow the window sizes exponentially, "
+"thus reducing the number of iterations."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:58
+msgid ""
+"This filter will mark all returns deemed to be ground returns with a "
+"classification value of 2 (per the LAS specification). To extract only "
+"these returns, users can add a :ref:`range filter<filters.range>` to the "
+"pipeline."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:71
+msgid ""
+"[Zhang2003]_ describes the consequences and relationships of the "
+"parameters in more detail and is the canonical resource on the topic."
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:75
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:78
+msgid "_`cell_size`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:78
+msgid "Cell Size. [Default: 1]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:81
+msgid "_`exponential`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:81
+msgid "Use exponential growth for window sizes? [Default: true]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:84
+msgid "_`ignore`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:84
+msgid "Range of values to ignore. [Optional]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:87
+msgid "_`initial_distance`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:87
+msgid "Initial distance. [Default: 0.15]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:92
+msgid "returns"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:90
+msgid ""
+"Comma-separated list of return types into which data should be segmented."
+" Valid groups are \"last\", \"first\", \"intermediate\" and \"only\". "
+"[Default: \"last, only\"]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:95
+msgid "_`max_distance`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:95
+msgid "Maximum distance. [Default: 2.5]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:98
+msgid "_`max_window_size`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:98
+msgid "Maximum window size. [Default: 33]"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:101
+msgid "_`slope`"
+msgstr ""
+
+#: ../../stages/filters.pmf.rst:101
+msgid "Slope. [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

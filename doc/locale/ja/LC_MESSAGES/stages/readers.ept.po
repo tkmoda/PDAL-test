@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.ept.rst:4
+msgid "readers.ept"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:6
+msgid ""
+"`Entwine Point Tile`_ (EPT) is a hierarchical octree-based point cloud "
+"format suitable for real-time rendering and lossless archival.  "
+"`Entwine`_ is a producer of this format.  The EPT Reader supports reading"
+" data from the EPT format, including spatially accelerated queries and "
+"file reconstruction queries."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:12
+msgid ""
+"Sample EPT datasets of hundreds of billions of points in size may be "
+"viewed with `Potree`_."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:20
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:22
+msgid ""
+"This example downloads a small area around the the Statue of Liberty from"
+" the New York City data set (4.7 billion points) which can be viewed in "
+"its entirety in `Potree`_."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:35
+msgid ""
+"Additional attributes created by the :ref:`EPT addon writer "
+"<writers.ept_addon>` can be referenced with the ``addon`` option.  Here "
+"is an example that overrides the ``Classification`` dimension with an "
+"addon dimension derived from the original dataset:"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:52
+msgid ""
+"For more details about addon dimensions and how to produce them, see "
+":ref:`writers.ept_addon`."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:55
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:60
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:58
+msgid ""
+"Path to the EPT resource from which to read, ending with ``ept.json``. "
+"For example, ``/Users/connor/entwine/autzen/ept.json`` or "
+"``http://na.entwine.io/autzen/ept.json``. [Required]"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:64
+msgid "spatialreference"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:63
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. [Default: "
+"none]"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:70
+msgid "bounds"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:67
+msgid ""
+"The extents of the resource to select in 2 or 3 dimensions, expressed as "
+"a string, e.g.: ``([xmin, xmax], [ymin, ymax], [zmin, zmax])``.  If "
+"omitted, the entire dataset will be selected. The bounds can be followed "
+"by a slash ('/') and a spatial reference specification to apply to the "
+"bounds."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:80
+msgid "resolution"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:73
+msgid ""
+"A point resolution limit to select, expressed as a grid cell edge length."
+"  Units correspond to resource coordinate system units.  For example, for"
+" a coordinate system expressed in meters, a ``resolution`` value of "
+"``0.1`` will select points up to a ground resolution of 100 points per "
+"square meter."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:78
+msgid ""
+"The resulting resolution may not be exactly this value: the minimum "
+"possible resolution that is at *least* as precise as the requested "
+"resolution will be selected.  Therefore the result may be a bit more "
+"precise than requested."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:92
+msgid "addons"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:83
+msgid ""
+"A mapping of assignments of the form ``DimensionName: AddonPath``, which "
+"assigns dimensions from the specified paths to the named dimensions. "
+"These addon dimensions are created by the :ref:`EPT addon writer "
+"<writers.ept_addon>`.  If the dimension names already exist in the EPT "
+"`Schema`_ for the given resource, then their values will be overwritten "
+"with those from the appropriate addon."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:90
+msgid ""
+"Addons may used to override well-known :ref:`dimension <dimensions>`.  "
+"For example, an addon assignment of ``\"Classification\": "
+"\"~/addons/autzen/MyGroundDimension/\"`` will override an existing EPT "
+"``Classification`` dimension with the custom dimension."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:109
+msgid "origin"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:95
+msgid ""
+"EPT datasets are lossless aggregations of potentially multiple source "
+"files.  The *origin* option can be used to select all points from a "
+"single source file.  This option may be specified as a string or an "
+"integral ID."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:100
+msgid ""
+"The string form of this option selects a source file by its original file"
+" path.  This may be a substring instead of the entire path, but the "
+"string must uniquely select only one source file (via substring search)."
+"  For example, for an EPT dataset created from source files *one.las*, "
+"*two.las*, and *two.bpf*, \"one\" is a sufficient selector, but \"two\" "
+"is not."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:107
+msgid ""
+"The integral form of this option selects a source file by its "
+"``OriginId`` dimension, which can be determined from  the file's position"
+" in EPT metadata file ``entwine-files.json``."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:113
+msgid ""
+"When using ``pdal info --summary``, using the ``origin`` option will "
+"cause the resulting bounds to be clipped to those of the selected origin,"
+" and the resulting number of points to be an upper bound for this "
+"selection."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:123
+msgid "polygon"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:118
+msgid ""
+"The clipping polygon, expressed in a well-known text string, e.g.: "
+"``POLYGON((0 0, 5000 10000, 10000 0, 0 0))``.  This option can be "
+"specified more than once by placing values in an array, in which case all"
+" of them will be unioned together, acting as a single multipolygon. The "
+"polygon definition can be followed by a slash ('/') and a spatial "
+"reference specification to apply to the polygon."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:127
+msgid ""
+"When using ``pdal info --summary``, using the ``polygon`` option will "
+"cause the resulting bounds to be clipped to the maximal extents of all "
+"provided polygons, and the resulting number of points to be an upper "
+"bound for this polygon selection."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:133
+msgid ""
+"When both the ``bounds`` and ``polygon`` options are specified, only the "
+"points that fall within *both* the bounds and the polygon(s) will be "
+"returned."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:153
+msgid "ogr"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:138
+msgid ""
+"A JSON object representing an OGR query to fetch polygons to use for "
+"filtering. The polygons fetched from the query are treated exactly like "
+"those specified in the ``polygon`` option. The JSON object is specified "
+"as follows:"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:156
+msgid "requests"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:156
+msgid ""
+"Maximum number of simultaneous requests for EPT data. [Minimum: 4] "
+"[Default: 15]"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:165
+msgid "header"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:164
+msgid ""
+"HTTP headers to forward for remote EPT endpoints, specified as a JSON "
+"object of key/value string pairs."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:169
+msgid "query"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:168
+msgid ""
+"HTTP query parameters to forward for remote EPT endpoints, specified as a"
+" JSON object of key/value string pairs."
+msgstr ""
+
+#: ../../stages/readers.ept.rst:171
+msgid "ignore_unreadable"
+msgstr ""
+
+#: ../../stages/readers.ept.rst:172
+msgid "If set to true, ignore errors for missing or unreadable point data nodes."
+msgstr ""
+

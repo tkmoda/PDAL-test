@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/metadata.rst:5
+msgid "Metadata"
+msgstr ""
+
+#: ../../development/metadata.rst:7
+msgid ""
+"In addition to point data, PDAL stores metadata during the processing of "
+"a pipeline.  Metadata is stored internally as strings, though the API "
+"accepts a variety of types that are automatically converted as necessary."
+" Each item of metadata consists of a name, a description (optional), a "
+"value and a type.  In addition, each item of metadata can have a list of "
+"child metadata values."
+msgstr ""
+
+#: ../../development/metadata.rst:14
+msgid ""
+"Metadata is made available to users of PDAL through a JSON tree.  "
+"Commands such as :ref:`pdal pipeline <pipeline_command>` and :ref:`pdal "
+"translate <translate_command>` provide options to allow the JSON-"
+"formatted metadata created by PDAL to be written to a file."
+msgstr ""
+
+#: ../../development/metadata.rst:20
+msgid "Metadata Nodes"
+msgstr ""
+
+#: ../../development/metadata.rst:22
+msgid ""
+"Each item of metadata is stored in an object known as a ``MetadataNode``."
+" Metadata nodes are reference types that can be copied cheaply.  Metadata"
+" nodes are annotated with the original data type to allow better "
+"interpretation of the data. For example, when binary data is stored in a "
+"base 64-encoded format, knowing that the data doesn't ultimately "
+"represent a string can allow algorithms to convert it back to its binary "
+"representation when desired. Similarly, knowing that data is numeric "
+"allows it to be written as a JSON numeric type rather than as a string."
+msgstr ""
+
+#: ../../development/metadata.rst:32
+msgid ""
+"The name of a metadata node is immutable.  If you wish to add a copy of "
+"metadata (and subchildren) to some node using a different name, you need "
+"to call the provided function \"clone()\"."
+msgstr ""
+
+#: ../../development/metadata.rst:36
+msgid ""
+"A metadata node is added as a child to another node using add().  Usually"
+" the type of the data assigned to the metadata node is determined through"
+" overloading, but there are instances where this is impossible and the "
+"programmer must call a specific function to set the type of the metadata "
+"node. Binary data that has been converted to a string by base 64 encoding"
+" can be tagged as a such by calling addEncoded().  Programmers can "
+"specify the type of a node explicitly by calling addWithType().  "
+"Currently supported types are: \"boolean\", \"string\", \"float\", "
+"\"double\", \"bounds\", \"nonNegativeInteger\", \"integer\", \"uuid\" and"
+" \"base64Binary\"."
+msgstr ""
+
+#: ../../development/metadata.rst:46
+msgid ""
+"Metadata nodes can be presented as lists when transformed to JSON.  If "
+"multiple nodes with the same name are added to a parent node, those "
+"subnodes will automatically be tagged as list nodes and will be enclosed "
+"in square brackets.  Single nodes can be forced to be treated as JSON "
+"lists by calling addList() instead of add() on a parent node."
+msgstr ""
+
+#: ../../development/metadata.rst:54
+msgid "Metadata and Stages"
+msgstr ""
+
+#: ../../development/metadata.rst:56
+msgid ""
+"Stages in PDAL each have a base metadata node.  You can retrieve a "
+"stage's metadata node by calling getMetadata().  When a PDAL pipeline is "
+"run, its metadata is organized as a list of stage nodes to which subnodes"
+" have been added.  From within the implementation of a stage, metadata is"
+" typically added similarly to the following:"
+msgstr ""
+
+#: ../../development/metadata.rst:74
+msgid ""
+"If the above code was part of a stage \"writers.test\", a transformation "
+"to JSON would produce the following output:"
+msgstr ""
+

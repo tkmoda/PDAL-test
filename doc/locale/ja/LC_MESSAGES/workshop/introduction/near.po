@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/introduction/near.rst:4
+msgid "Searching near a point"
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:11
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:13
+msgid ""
+"This exercise uses PDAL to find points near a given search location. Our "
+"scenario is a simple one -- we want to find the two points nearest the "
+"midpoint of the bounding cube of our ``interesting.las`` data file."
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:17
+msgid ""
+"First we need to find the midpoint of the bounding cube. To do that, we "
+"need to print the ``--all`` info for the file and look for the ``bbox`` "
+"output:"
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:32
+msgid "Find the average the ``X``, ``Y``, and ``Z`` values:"
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:41
+msgid ""
+"With our \"center point\", issue the ``--query`` option to ``pdal info`` "
+"and return the three nearest points to it:"
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:81
+msgid ""
+"The ``/3`` portion of our query string tells the ``query`` command to "
+"give us the 3 nearest points. Adjust this value to return data in "
+"closest-distance ordering."
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:86
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:88
+msgid ""
+"PDAL uses `JSON`_ as the exchange format when printing information from "
+":ref:`info_command`.  JSON is a structured, human-readable format that is"
+" much simpler than its `XML`_ cousin."
+msgstr ""
+
+#: ../../workshop/introduction/near.rst:92
+msgid ""
+"The ``--query`` option of :ref:`info_command` constructs a `KD-tree`_ of "
+"the entire set of points in memory. If you have really large data sets, "
+"this isn't going to work so well, and you will need to come up with a "
+"different solution."
+msgstr ""
+

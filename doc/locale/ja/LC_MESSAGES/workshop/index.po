@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/index.rst:4
+msgid "Point Cloud Processing and Analysis with PDAL"
+msgstr ""
+
+#: ../../workshop/index.rst
+msgid "Author"
+msgstr ""
+
+#: ../../workshop/index.rst:6
+msgid "Howard Butler"
+msgstr ""
+
+#: ../../workshop/index.rst:7
+msgid "Pete Gadomski"
+msgstr ""
+
+#: ../../workshop/index.rst:8
+msgid "Dr. Craig Glennie"
+msgstr ""
+
+#: ../../workshop/index.rst:9
+msgid "Michael Smith"
+msgstr ""
+
+#: ../../workshop/index.rst:10
+msgid "Dr. Adam Steer"
+msgstr ""
+
+#: ../../workshop/index.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../workshop/index.rst:11
+msgid "howard@hobu.co"
+msgstr ""
+
+#: ../../workshop/index.rst
+msgid "Date"
+msgstr ""
+
+#: ../../workshop/index.rst:12
+msgid "06/01/2023"
+msgstr ""
+

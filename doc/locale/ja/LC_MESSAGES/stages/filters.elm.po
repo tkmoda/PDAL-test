@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.elm.rst:4
+msgid "filters.elm"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:6
+msgid ""
+"The Extended Local Minimum (ELM) filter marks low points as noise. This "
+"filter is an implementation of the method described in [Chen2012]_."
+msgstr ""
+
+#: ../../stages/filters.elm.rst:9
+msgid ""
+"ELM begins by rasterizing the input point cloud data at the given cell_ "
+"size. Within each cell, the lowest point is considered noise if the next "
+"lowest point is a given threshold above the current point. If it is "
+"marked as noise, the difference between the next two points is also "
+"considered, marking points as noise if needed, and continuing until "
+"another neighbor is found to be within the threshold. At this point, "
+"iteration for the current cell stops, and the next cell is considered."
+msgstr ""
+
+#: ../../stages/filters.elm.rst:20
+msgid "Example #1"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:22
+msgid ""
+"The following PDAL pipeline applies the ELM filter, using a cell_ size of"
+" 20 and applying the :ref:`classification <class>` code of 18 to those "
+"points determined to be noise."
+msgstr ""
+
+#: ../../stages/filters.elm.rst:42
+msgid "Example #2"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:44
+msgid ""
+"This variation of the pipeline begins by assigning a value of 0 to all "
+"classifications, thus resetting any existing classifications. It then "
+"proceeds to compute ELM with a threshold_ value of 2.0, and finishes by "
+"extracting all returns that are not marked as noise."
+msgstr ""
+
+#: ../../stages/filters.elm.rst:69
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:72
+msgid "_`cell`"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:72
+msgid "Cell size. [Default: 10.0]"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:75
+msgid "_`class`"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:75
+msgid "Classification value to apply to noise points. [Default: 7]"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:78
+msgid "_`threshold`"
+msgstr ""
+
+#: ../../stages/filters.elm.rst:78
+msgid "Threshold value to identify low noise points. [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../project/testing.rst:5
+msgid "Testing"
+msgstr ""
+
+#: ../../project/testing.rst:9
+msgid "Unit Tests"
+msgstr ""
+
+#: ../../project/testing.rst:11
+msgid ""
+"A unit test framework is provided, with the goal that all (nontrivial) "
+"classes will have unit tests.  At the very least, each new class should "
+"have a corresponding unit test file stubbed in, even if there aren't any "
+"tests yet."
+msgstr ""
+
+#: ../../project/testing.rst:15
+msgid ""
+"Our unit tests also include testing of the command line :ref:`apps` and "
+"known plugins."
+msgstr ""
+
+#: ../../project/testing.rst:18
+msgid ""
+"We use the `Google C++ Test Framework`_, but a local copy of it is "
+"embedded in the PDAL source tree, and you don't have to have it available"
+" as a dependency."
+msgstr ""
+
+#: ../../project/testing.rst:24
+msgid ""
+"Unit tests for features that are configuration-dependent, e.g. laszip "
+"compression, should be put under the same ``#ifdef`` guards as the "
+"classes being tested."
+msgstr ""
+
+#: ../../project/testing.rst:28
+msgid ""
+"The Support class, in the ``./test/unit`` directory, provides some "
+"functions for comparing files, etc, that are useful in writing test "
+"cases."
+msgstr ""
+
+#: ../../project/testing.rst:31
+msgid "Unit tests should not be long-running."
+msgstr ""
+
+#: ../../project/testing.rst:34
+msgid "Running the Tests"
+msgstr ""
+
+#: ../../project/testing.rst:36
+msgid ""
+"To run all unit tests, issue the following command from your build "
+"directory::"
+msgstr ""
+
+#: ../../project/testing.rst:40
+msgid "``make test`` or ``ninja test`` should still work as well."
+msgstr ""
+
+#: ../../project/testing.rst:42
+msgid ""
+"Depending on the which optional components you've chose to build, your "
+"output should resemble the following::"
+msgstr ""
+
+#: ../../project/testing.rst:177
+msgid ""
+"For a more verbose output, use the ``-V`` flag. Or, to run an individual "
+"test suite, use ``-R <suite name>``. For example::"
+msgstr ""
+
+#: ../../project/testing.rst:182
+msgid "Should produce output similar to::"
+msgstr ""
+
+#: ../../project/testing.rst:256
+msgid "Again, the output should resemble the following::"
+msgstr ""
+
+#: ../../project/testing.rst:307
+msgid ""
+"This invocation allows us to alter Google Test's default behavior. For "
+"more on the available flags type::"
+msgstr ""
+
+#: ../../project/testing.rst:312
+msgid ""
+"Key among these flags are the ability to list tests "
+"(``--gtest_list_tests``) and to run only select tests "
+"(``--gtest_filter``)."
+msgstr ""
+
+#: ../../project/testing.rst:317
+msgid ""
+"If the PostgreSQL PointCloud plugin was enabled on the CMake command line"
+" (with ``-DBUILD_PLUGIN_PGPOINTCLOUD=ON``) then ``ctest`` will attempt to"
+" run the ``pgpointcloud`` tests. And you will get PostgreSQL connection "
+"errors if the `libpq environment variables`_ are not correctly set in "
+"your shell. This is for example how you can run the ``pgpointcloud`` "
+"tests::"
+msgstr ""
+
+#: ../../project/testing.rst:328
+msgid "Test Data"
+msgstr ""
+
+#: ../../project/testing.rst:330
+msgid ""
+"Use the directory ``./test/data`` to store files used for unit tests.  A "
+"vfunction is provided in the Support class for referencing that directory"
+" in a configuration-independent manner."
+msgstr ""
+
+#: ../../project/testing.rst:334
+msgid ""
+"Temporary output files from unit tests should go into the ``./test/temp``"
+" directory.  A Support function is provided for referencing this "
+"directory as well."
+msgstr ""
+
+#: ../../project/testing.rst:338
+msgid ""
+"Unit tests should always clean up and remove any files that they create "
+"(except perhaps in case of a failed test, in which case leaving the "
+"output around might be helpful for debugging)."
+msgstr ""
+

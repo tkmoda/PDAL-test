@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/hausdorff.rst:5
+msgid "hausdorff"
+msgstr ""
+
+#: ../../apps/hausdorff.rst:9
+msgid ""
+"As of PDAL v2.6.0, the ``hausdorff`` command is marked as DEPRECATED. It "
+"will be removed from the default install in PDAL v2.7 and removed "
+"completely in PDAL v2.8."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:13
+msgid ""
+"The following Python code can be used with the PDAL Python bindings to "
+"compute the Hausdorff distance."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:54
+msgid "SciPy can be used to simplify this function even further, as shown below."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:84
+msgid ""
+"The ``hausdorff`` command is used to compute the Hausdorff distance "
+"between two point clouds. In this context, the Hausdorff distance is the "
+"greatest of all Euclidean distances from a point in one point cloud to "
+"the closest point in the other point cloud."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:89
+msgid ""
+"More formally, for two non-empty subsets :math:`X` and :math:`Y`, the "
+"Hausdorff distance :math:`d_H(X,Y)` is"
+msgstr ""
+
+#: ../../apps/hausdorff.rst:92
+msgid ""
+"d_H(X,Y) = \\operatorname*{max} \\big\\{ \\operatorname*{sup}_{x \\in X} "
+"\\operatorname*{inf}_{y \\in Y} d(x,y), \\operatorname*{sup}_{y \\in Y} "
+"\\operatorname*{inf}_{x \\in X} d(x,y)\\big\\}"
+msgstr ""
+
+#: ../../apps/hausdorff.rst:96
+msgid ""
+"where :math:`\\operatorname*{sup}` and :math:`\\operatorname*{inf}` are "
+"the supremum and infimum respectively."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:108
+msgid ""
+"The algorithm makes no distinction between source and candidate files "
+"(i.e., they can be transposed with no affect on the computed distance)."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:111
+msgid ""
+"The command returns 0 along with a JSON-formatted message summarizing the"
+" PDAL version, source and candidate filenames, and the Hausdorff "
+"distance. Identical point clouds will return a Hausdorff distance of 0."
+msgstr ""
+
+#: ../../apps/hausdorff.rst:130
+msgid ""
+"The ``hausdorff`` is computed for XYZ coordinates only and as such says "
+"nothing about differences in other dimensions or metadata."
+msgstr ""
+

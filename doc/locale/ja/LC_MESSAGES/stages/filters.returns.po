@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.returns.rst:4
+msgid "filters.returns"
+msgstr ""
+
+#: ../../stages/filters.returns.rst:6
+msgid ""
+"The **Returns Filter** takes a single PointView as its input and creates "
+"a ``PointView`` for each of the user-specified groups_ defined below."
+msgstr ""
+
+#: ../../stages/filters.returns.rst:9
+msgid ""
+"\"first\" is defined as those points whose ``ReturnNumber`` is 1 when the"
+" ``NumberOfReturns`` is greater than 1."
+msgstr ""
+
+#: ../../stages/filters.returns.rst:11
+msgid ""
+"\"intermediate\" is defined as those points whose ``ReturnNumber`` is "
+"greater than 1 and less than ``NumberOfReturns`` when ``NumberOfReturns``"
+" is greater than 2."
+msgstr ""
+
+#: ../../stages/filters.returns.rst:13
+msgid ""
+"\"last\" is defined as those points whose ``ReturnNumber`` is equal to "
+"``NumberOfReturns`` when ``NumberOfReturns`` is greater than 1."
+msgstr ""
+
+#: ../../stages/filters.returns.rst:15
+msgid "\"only\" is defined as those points whose ``NumberOfReturns`` is 1."
+msgstr ""
+
+#: ../../stages/filters.returns.rst:20
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.returns.rst:22
+msgid ""
+"This example creates two separate output files for the \"last\" and "
+"\"only\" returns."
+msgstr ""
+
+#: ../../stages/filters.returns.rst:37
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.returns.rst:41
+msgid "_`groups`"
+msgstr ""
+
+#: ../../stages/filters.returns.rst:40
+msgid ""
+"Comma-separated list of return number groupings. Valid options are "
+"\"first\", \"last\", \"intermediate\" or \"only\". [Default: \"last\"]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

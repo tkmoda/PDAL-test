@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.overlay.rst:4
+msgid "filters.overlay"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:6
+msgid ""
+"The **overlay filter** allows you to set the values of a selected "
+"dimension based on an OGR-readable polygon or multi-polygon."
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:14
+msgid "OGR SQL support"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:16
+msgid ""
+"You can limit your queries based on OGR's SQL support. If the filter has "
+"both a datasource_ and a query_ option, those will be used instead of the"
+" entire OGR data source. At this time it is not possible to further "
+"filter the OGR query based on a geometry but that may be added in the "
+"future."
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:24
+msgid ""
+"The OGR SQL support follows the rules specified in `ExecuteSQL`_ "
+"documentation, and it will pass SQL down to the underlying datasource if "
+"it can do so."
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:31
+msgid "Example 1"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:33
+msgid ""
+"In this scenario, we are altering the attributes of the dimension "
+"``Classification``.  Points from autzen-dd.las that lie within a feature "
+"will have their classification to match the ``CLS`` field associated with"
+" that feature."
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:58
+msgid "Example 2"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:60
+msgid ""
+"This example sets the Intensity attribute to ``CLS`` values read from the"
+" `OGR SQL`_ query."
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:80
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:85
+msgid "bounds"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:83
+msgid ""
+"A bounds to pre-filter the OGR datasource that is passed to "
+"`OGR_L_SetSpatialFilter "
+"<https://gdal.org/doxygen/ogr__api_8h.html#a678d1735bc82533614ac005691d1138c>`__"
+" in the form `([xmin, xmax], [ymin, ymax])`."
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:88
+msgid "dimension"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:88
+msgid "Name of the dimension whose value should be altered.  [Required]"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:91
+msgid "_`datasource`"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:91
+msgid "OGR-readable datasource for Polygon or MultiPolygon data.  [Required]"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:95
+msgid "column"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:94
+msgid ""
+"The OGR datasource column from which to read the attribute. [Default: "
+"first column]"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:99
+msgid "_`query`"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:98
+msgid ""
+"OGR SQL query to execute on the datasource to fetch geometry and "
+"attributes. The entire layer is fetched if no query is provided.  "
+"[Default: none]"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:102
+msgid "layer"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:102
+msgid "The data source's layer to use. [Default: first layer]"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:105
+msgid "threads"
+msgstr ""
+
+#: ../../stages/filters.overlay.rst:105
+msgid ""
+"The number of threads to use. Only valid in :ref:`standard mode "
+"<processing_modes>`. [Default: 1]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

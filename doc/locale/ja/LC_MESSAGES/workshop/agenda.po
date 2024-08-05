@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/agenda.rst:4
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/agenda.rst:5
+msgid ""
+"After the basic set up the workshop is divided into three 45 to 90 min "
+"sections with a final project at the end."
+msgstr ""
+
+#: ../../workshop/agenda.rst:7
+msgid ":ref:`lidar-introduction`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:9
+msgid ":ref:`Introduction to PDAL <about>`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:11
+msgid ":ref:`software`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:13
+msgid ":ref:`basic-info`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:15
+msgid ":ref:`manipulation`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:17
+msgid ":ref:`generation`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:19
+msgid ":ref:`capstone`"
+msgstr ""
+
+#: ../../workshop/agenda.rst:24
+msgid "Materials"
+msgstr ""
+
+#: ../../workshop/agenda.rst:27
+msgid "USB Drive"
+msgstr ""
+
+#: ../../workshop/agenda.rst:29
+msgid ""
+"A companion USB drive containing everything needed to do the workshop "
+"without internet connectivity:"
+msgstr ""
+
+#: ../../workshop/agenda.rst:37
+msgid ""
+"A drive image is available for download at "
+"https://pdal.s3.amazonaws.com/workshop/PDAL-Workshop-complete.zip."
+msgstr ""
+
+#: ../../workshop/agenda.rst:41
+msgid "Included in the USB driver are:"
+msgstr ""
+
+#: ../../workshop/agenda.rst:43
+msgid "Installers for QGIS_, CloudCompare_, and mambaforge_."
+msgstr ""
+
+#: ../../workshop/agenda.rst:44
+msgid ""
+"Conda environments for macOS (x86_64 and arm64) and Windows platforms "
+"with needed dependencies"
+msgstr ""
+
+#: ../../workshop/agenda.rst:45
+msgid "Copy of PDAL documentation"
+msgstr ""
+
+#: ../../workshop/agenda.rst:46
+msgid "Data needed for examples"
+msgstr ""
+
+#: ../../workshop/agenda.rst:47
+msgid "Collection of cool-lidar_ datasets"
+msgstr ""
+

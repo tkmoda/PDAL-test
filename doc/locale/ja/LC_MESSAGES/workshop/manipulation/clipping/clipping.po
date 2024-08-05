@@ -1,0 +1,352 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/manipulation/clipping/clipping.rst:4
+msgid "Clipping data with polygons"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:10
+msgid "This exercise uses PDAL to apply to clip data with polygon geometries."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:14
+msgid "This exercise is an adaption of the :ref:`PDAL tutorial <clipping>`."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:17
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:19
+msgid ""
+"The ``autzen.laz`` file is a staple in PDAL and libLAS examples. You can "
+"`download this file here "
+"<https://github.com/PDAL/data/blob/master/autzen/autzen.laz>`_ and move "
+"it to ``./exercises/analysis/clipping`` in your drive if you don't have "
+"it. We will use this file to demonstrate clipping points with a geometry."
+" We're going to clip out the stadium into a new COPC file:"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:30
+msgid "Data preparation"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:32
+msgid ""
+"The data are mixed in two different coordinate systems. The :ref:`LAZ "
+"<readers.las>` file is in `Oregon State Plane Ft.`_ and the `GeoJSON`_ "
+"defining the polygons, ``attributes.json``, is in `EPSG:4326`_. We have "
+"two options -- project the point cloud into the coordinate system of the "
+"attribute polygons, or project the attribute polygons into the coordinate"
+" system of the points. The latter is preferable in this case because it "
+"will be less math and therefore less computation. To make it convenient, "
+"we can utilize `OGR`_'s `VRT`_ capability to reproject the data for us "
+"on-the-fly:"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:56
+msgid ""
+"This VRT file is available in your workshop materials in the "
+"``./exercises/analysis/clipping/attributes.vrt`` file. You will need to "
+"open this file, go to line 4 and replace ``./`` with the correct path for"
+" your machine."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:61
+msgid ""
+"A GDAL or OGR VRT is a kind of \"virtual\" data source definition type "
+"that combines a definition of data and a processing operation into a "
+"single, readable data stream."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:68
+msgid "Overlaying Attributes"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:70
+msgid "To add our ``attributes.vrt`` file, perform the following:"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:72
+msgid "In QGIS, select Layer -> Add Layer -> Add Vector Layer"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:73
+msgid "Add ``attributes.vrt`` as the Vector Layer"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:74
+msgid "Right click the new layer and select properties"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:75
+msgid "Under \"Symbology\" on the left, select \"categorized\" from the drop-down"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:76
+msgid "Change ``value`` from ``$id`` to ``cls``"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:77
+msgid "Below, select \"Classify\" and confirm"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:78
+msgid "In the \"Layer Rendering\" drop-down, set \"Opacity\" to 50%"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:79
+msgid "On the left, select \"Labels\". Set the drop-down to \"Single Labels\""
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:80
+msgid ""
+"Change ``value`` from ``id`` to ``cls`` and select \"OK\" on the bottom "
+"right"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:86
+msgid ""
+"Notice the numbers on the buildings and trees. These are the "
+"classifations given in the LIDAR Point Classes or `LAS Specification`_. "
+"You can sort and single out these in JSON filters. ex. ``\"expression\": "
+"\"Classification >= 3 && Classification <= 4\"`` which only shows classes"
+" 3 to 4 which are medium and high vegetation."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:93
+msgid "ASPRS Standard LiDAR Point Classes (Point Data Record Format 0-5)"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:97
+msgid "Classification Value (bits 0:4)"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:98
+msgid "Meaning"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:99
+msgid "0"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:100
+msgid "Created, never classified"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:101
+msgid "1"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:102
+msgid "Unclassified"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:103
+msgid "2"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:104
+msgid "Ground"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:105
+msgid "3"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:106
+msgid "Low Vegetation"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:107
+msgid "4"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:108
+msgid "Medium Vegetation"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:109
+msgid "5"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:110
+msgid "High Vegetation"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:111
+msgid "6"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:112
+msgid "Building"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:113
+msgid "7"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:114
+msgid "Low Point (noise)"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:115
+msgid "8"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:116
+msgid "Model Key-point (mass point)"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:117
+msgid "9"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:118
+msgid "Water"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:119
+msgid "10"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:120
+#: ../../workshop/manipulation/clipping/clipping.rst:122
+#: ../../workshop/manipulation/clipping/clipping.rst:126
+msgid "*Reserved for ASPRS Definition*"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:121
+msgid "11"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:123
+msgid "12"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:124
+msgid "Overlap Points"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:125
+msgid "13-31"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:130
+msgid ""
+"The GeoJSON file does not have an externally-defined coordinate system, "
+"so we are explicitly setting one with the LayerSRS parameter. If your "
+"data does have coordinate system information, you don't need to do that. "
+"See the `OGR VRT documentation`_ for more details."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:138
+msgid "Pipeline breakdown"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:145
+msgid ""
+"This pipeline is available in your workshop materials in the "
+"``./exercises/analysis/clipping/clipping.json`` file. Remember to replace"
+" each of the three occurrences of ``./`` in this file with the correct "
+"location for your machine."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:151
+msgid "1. Reader"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:153
+msgid "``autzen.laz`` is the `LASzip`_ file we will clip."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:156
+msgid "2. :ref:`filters.overlay`"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:158
+msgid ""
+"The :ref:`filters.overlay` filter allows you to assign values for "
+"coincident polygons. Using the VRT we defined in `Data preparation`_, "
+":ref:`filters.overlay` will assign the values from the ``CLS`` column to "
+"the ``Classification`` field."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:165
+msgid "3. :ref:`filters.expression`"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:167
+msgid ""
+"The attributes in the ``attributes.json`` file include polygons with "
+"values ``2``, ``5``, and ``6``. We will use :ref:`filters.expression` to "
+"keep points with ``Classification`` values in the range of ``6:6``."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:172
+msgid "4. Writer"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:174
+msgid "We will write our content back out using a :ref:`writers.las`."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:177
+msgid "Execution"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:179
+msgid ""
+"Invoke the following command, substituting accordingly, in your `Conda "
+"Shell`:"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:185
+msgid ""
+"The `--nostream` option disables stream mode. The point-in-polygon check "
+"(see notes) performs poorly in stream mode currently."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:189
+msgid "Visualization"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:191
+msgid ""
+"Use one of the point cloud visualization tools you installed to take a "
+"look at your ``./exercises/analysis/clipping/stadium.copc.laz`` output. "
+"In the example below, we opened the file to view it using QGIS:"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:201
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:203
+msgid ""
+":ref:`filters.overlay` does point-in-polygon checks against every point "
+"that is read."
+msgstr ""
+
+#: ../../workshop/manipulation/clipping/clipping.rst:206
+msgid "Points that are *on* the boundary are included."
+msgstr ""
+

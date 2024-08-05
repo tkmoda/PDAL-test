@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.qfit.rst:5
+msgid "readers.qfit"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:7
+msgid ""
+"The **QFIT reader** read from files in the `QFIT format`_ originated for "
+"the Airborne Topographic Mapper (ATM) project at NASA Goddard Space "
+"Flight Center."
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:14
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:32
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:35
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:35
+msgid "File to read from [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:40
+msgid "flip_coordinates"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:40
+msgid "Flip coordinates from 0-360 to -180-180 [Default: **true**]"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:43
+msgid "scale_z"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:43
+msgid "Z scale. Use 0.001 to go from mm to m. [Default: **1**]"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:47
+msgid "little_endian"
+msgstr ""
+
+#: ../../stages/readers.qfit.rst:46
+msgid ""
+"Are data in little endian format? This should be automatically detected "
+"by the driver. [Optional]"
+msgstr ""
+

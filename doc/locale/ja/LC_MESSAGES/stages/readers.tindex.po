@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.tindex.rst:4
+msgid "readers.tindex"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:7
+msgid ""
+"A `GDAL tile index`_ is an `OGR`_-readable data source of boundary "
+"information. PDAL provides a similar concept for PDAL-readable point "
+"cloud data. You can use the :ref:`tindex_command` application to generate"
+" tile index files in any format that `OGR`_ supports writing. Once you "
+"have the tile index, you can then use the tindex reader to automatically "
+"merge and query the data described by the tiles."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:23
+msgid "Basic Example"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:25
+msgid "Given a tile index that was generated with the following scenario:"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:35
+msgid ""
+"Use the following :ref:`pipeline <pipeline>` example to read and "
+"automatically merge the data."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:57
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:60
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:60
+msgid "OGROpen'able raster file to read [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:67
+msgid "_`lyr_name`"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:65
+msgid ""
+"The OGR layer name for the data source to use to fetch the tile index "
+"information."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:73
+msgid "reader_args"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:70
+msgid ""
+"A list of JSON objects with keys of reader options and the values to pass"
+" through. These will be in the exact same form as a Pipeline Stage object"
+" minus the filename."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:73
+msgid "Exmaple:"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:86
+msgid "srs_column"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:83
+msgid ""
+"The column in the layer that provides the SRS information for the file. "
+"Use this if you wish to override or set coordinate system information for"
+" files."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:91
+msgid "tindex_name"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:89
+msgid ""
+"The column name that defines the file location for the tile index file. "
+"[Default: **location**]"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:94
+msgid "sql"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:94
+msgid "`OGR SQL`_ to use to define the tile index layer."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:98
+msgid "_`bounds`"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:97
+msgid ""
+"A 2D box to pre-filter the tile index. If it is set, it will override any"
+" `wkt`_ option."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:102
+msgid "_`wkt`"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:101
+msgid "A geometry to pre-filter the tile index using OGR."
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:106
+msgid "t_srs"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:105
+msgid ""
+"Reproject the layer SRS, otherwise default to the tile index layer's SRS."
+" [Default: \"EPSG:4326\"]"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:111
+msgid "filter_srs"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:109
+msgid ""
+"Transforms any `wkt`_ or `bounds`_ option to this coordinate system "
+"before filtering or reading data. [Default: \"EPSG:4326\"]"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:116
+msgid "where"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:114
+msgid ""
+"`OGR SQL`_ filter clause to use on the layer. It only works in "
+"combination with tile index layers that are defined with `lyr_name`_"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:120
+msgid "dialect"
+msgstr ""
+
+#: ../../stages/readers.tindex.rst:119
+msgid "`OGR SQL`_ dialect to use when querying tile index layer [Default: OGRSQL]"
+msgstr ""
+

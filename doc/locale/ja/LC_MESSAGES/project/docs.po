@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../project/docs.rst:5
+msgid "Docs"
+msgstr ""
+
+#: ../../project/docs.rst:9
+msgid "Requirements"
+msgstr ""
+
+#: ../../project/docs.rst:11
+msgid ""
+"To build the PDAL documentation yourself, you need to install the "
+"following items:"
+msgstr ""
+
+#: ../../project/docs.rst:14
+msgid "Sphinx_"
+msgstr ""
+
+#: ../../project/docs.rst:15
+msgid "Breathe_"
+msgstr ""
+
+#: ../../project/docs.rst:16
+msgid "`Doxygen`_"
+msgstr ""
+
+#: ../../project/docs.rst:17
+msgid "`Latex`_"
+msgstr ""
+
+#: ../../project/docs.rst:18
+msgid "`dvipng`_"
+msgstr ""
+
+#: ../../project/docs.rst:25
+msgid "Sphinx_ and Breathe_"
+msgstr ""
+
+#: ../../project/docs.rst:27
+msgid ""
+"Python dependencies should be installed from PyPI_ with ``pip`` or "
+"``easy_install``."
+msgstr ""
+
+#: ../../project/docs.rst:36
+msgid ""
+"If you are installing these packages to a system-wide directory, you may "
+"need the **sudo** in front of the **pip**, though it might be better that"
+" instead you use `virtual environments`_ instead of installing the "
+"packages system-wide."
+msgstr ""
+
+#: ../../project/docs.rst:41
+msgid "Doxygen"
+msgstr ""
+
+#: ../../project/docs.rst:43
+msgid ""
+"The PDAL documentation also depends on `Doxygen`_, which can be installed"
+" from source or from binaries from the `doxygen website "
+"<http://www.stack.nl/~dimitri/doxygen/download.html>`_.  If you are on "
+"Max OS X and use `homebrew`_, you can install doxygen with a simple "
+"``brew install doxygen``."
+msgstr ""
+
+#: ../../project/docs.rst:50
+msgid "Latex"
+msgstr ""
+
+#: ../../project/docs.rst:52
+msgid ""
+"`Latex`_ and `pdflatex`_ are used to generate the companion PDF of the "
+"website."
+msgstr ""
+
+#: ../../project/docs.rst:55
+msgid "dvipng"
+msgstr ""
+
+#: ../../project/docs.rst:57
+msgid ""
+"For math output, we depend on `dvipng`_ to turn `Latex`_ output into math"
+" PNGs."
+msgstr ""
+
+#: ../../project/docs.rst:60
+msgid "Generation"
+msgstr ""
+
+#: ../../project/docs.rst:62
+msgid ""
+"Once you have installed all the doc dependencies, you can then build the "
+"documentation itself.  The :file:`doc/` directory in the PDAL source tree"
+" contains a Makefile which can be used to build all documentation.  For a"
+" list of the output formats supported by Sphinx, simply type ``make``.  "
+"For example, to build html documentation:"
+msgstr ""
+
+#: ../../project/docs.rst:73
+msgid ""
+"The html docs will be placed in :file:`doc/build/html/`.  The ``make "
+"doxygen`` is necessary to re-generate the API documentation from the "
+"source code using `Breathe`_ and `Sphinx`_."
+msgstr ""
+
+#: ../../project/docs.rst:80
+msgid ""
+"For a full build of the :ref:`cppapi` documentation, you need to ``make "
+"doxygen`` to have it build its XML output which is consumed by `Breathe`_"
+" before ``make html`` can be issued."
+msgstr ""
+
+#: ../../project/docs.rst:86
+msgid "Website"
+msgstr ""
+
+#: ../../project/docs.rst:88
+msgid ""
+"The http://pdal.io website is regenerated from the ``*-maintenance`` "
+"branch using Github Actions. It will be committed by the ``PDAL-docs`` "
+"`GitHub`_ user and pushed to the https://github.com/PDAL/pdal.github.io "
+"repository. The website is then served via `GitHub Pages`_."
+msgstr ""
+

@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../api/cpp/stage.rst:7
+msgid ":cpp:class:`pdal::Stage`"
+msgstr ""
+
+#: ../../api/cpp/stage.rst:9
+msgid ""
+":cpp:class:`pdal::Stage` is the base class of :cpp:class:`pdal::Filter`, "
+":cpp:class:`pdal::Reader`, and :cpp:class:`pdal::MultiFilter` classes "
+"that implement the reading API in a PDAL pipeline."
+msgstr ""
+
+#: ../../api/cpp/stage.rst
+msgid "Public Types"
+msgstr ""
+
+#: ../../api/cpp/stage.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../api/cpp/stage.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../api/cpp/stage.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../api/cpp/stage.rst
+msgid "Public Static Functions"
+msgstr ""
+

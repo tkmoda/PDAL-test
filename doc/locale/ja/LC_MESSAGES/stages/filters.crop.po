@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.crop.rst:4
+msgid "filters.crop"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:6
+msgid ""
+"The **crop filter** removes points that fall outside or inside a cropping"
+" bounding box (2D or 3D), polygon, or point+distance.  If more than one "
+"bounding region is specified, the filter will pass all input points "
+"through each bounding region, creating an output point set for each input"
+" crop region."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:16
+msgid ""
+"The provided bounding regions are assumed to have the same spatial "
+"reference as the points unless the option a_srs_ provides an explicit "
+"spatial reference for bounding regions. If the point input consists of "
+"multiple point views with differing spatial references, one is chosen at "
+"random and assumed to be the spatial reference of the input bounding "
+"region.  In this case a warning will be logged."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:26
+msgid "Example 1"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:27
+msgid "This example crops an input point cloud using a square polygon."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:44
+msgid "Example 2"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:45
+msgid ""
+"This example crops all points more than 500 units in any direction from a"
+" point."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:63
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:78
+msgid "bounds"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:66
+msgid ""
+"The extent of the clipping rectangle in the format ``\"([xmin, xmax], "
+"[ymin, ymax])\"``.  This option can be specified more than once by "
+"placing values in an array."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:73
+msgid ""
+"3D bounds can be given in the form ``([xmin, xmax], [ymin, ymax], [zmin, "
+"zmax])``."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:77
+msgid ""
+"If a 3D bounds is given to the filter, a 3D crop will be attempted, even "
+"if the Z values are invalid or inconsistent with the data."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:83
+msgid "polygon"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:81
+msgid ""
+"The clipping polygon, expressed in a well-known text string, eg: "
+"``\"POLYGON((0 0, 5000 10000, 10000 0, 0 0))\"``.  This option can be "
+"specified more than once by placing values in an array."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:87
+msgid "outside"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:86
+msgid ""
+"Invert the cropping logic and only take points outside the cropping "
+"bounds or polygon. [Default: false]"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:90
+msgid "_`point`"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:90
+msgid ""
+"An array of WKT or GeoJSON 2D or 3D points (eg: ``\"POINT(0 0 0)\"``). "
+"Requires distance_."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:93
+msgid "_`distance`"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:93
+msgid ""
+"Distance (radius) in units of common X, Y, and Z :ref:`dimensions` in "
+"combination with point_. Passing a 2D point will crop using a circle. "
+"Passing a 3D point will crop using a sphere."
+msgstr ""
+
+#: ../../stages/filters.crop.rst:98
+msgid "_`a_srs`"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:96
+msgid ""
+"Indicates the spatial reference of the bounding regions.  If not "
+"provided, it is assumed that the spatial reference of the bounding region"
+" matches that of the points."
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:103
+msgid "Notes"
+msgstr ""
+
+#: ../../stages/filters.crop.rst:105
+msgid ""
+"See :ref:`workshop-clipping`: and :ref:`clipping` for example usage "
+"scenarios for :ref:`filters.crop`."
+msgstr ""
+

@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/manipulation/colorization/colorization.rst:4
+msgid "Colorizing points with imagery"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:10
+msgid ""
+"This exercise uses PDAL to apply color information from a raster onto "
+"point data. Point cloud data, especially |LiDAR|, do not often have "
+"coincident color information. It is possible to project color information"
+" onto the points from an imagery source. This makes it convenient to see "
+"data in a larger context."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:17
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:19
+msgid ""
+"PDAL provides a :ref:`filter <filters>` to apply color information from "
+"raster files onto point cloud data. Think of this operation as a top-down"
+" projection of RGB color values on the points."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:23
+msgid ""
+"Because this operation is somewhat complex, we are going to use a "
+"pipeline to define it:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:32
+msgid ""
+"This JSON file is available in your workshop materials in the "
+"``./exercises/analysis/colorization/colorize.json`` file. Remember to "
+"open this file and replace each occurrence of ``./`` with the correct "
+"path for your machine."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:38
+msgid "Pipeline breakdown"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:41
+msgid "1. Reader"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:43
+msgid ""
+"After our pipeline errata, the first item we define in the pipeline is "
+"the point cloud file we're going to read:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:51
+msgid "2. :ref:`filters.colorization`"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:53
+msgid ""
+"The :ref:`filters.colorization` PDAL filter does most of the work for "
+"this operation. We're going to use the default data scaling options. This"
+" filter will create PDAL dimensions ``Red``, ``Green``, and ``Blue``:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:66
+msgid "3. :ref:`filters.expression`"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:68
+msgid ""
+"A small challenge is the raster will colorize many points with NODATA "
+"values. We are going to use the :ref:`filters.expression` to filter keep "
+"any points that have ``Red >= 1``:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:80
+msgid "4. :ref:`writers.las`"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:82
+msgid ""
+"We could just define the ``uncompahgre-colored.laz`` filename, but we "
+"want to add a few options to have finer control over what is written. "
+"These include:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:95
+msgid "``compression``: |LASzip| data is ~6x smaller than ASPRS LAS."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:96
+msgid ""
+"``minor_version``: We want to make sure to output LAS 1.2, which will "
+"provide the widest compatibility with other softwares that can consume "
+"LAS."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:99
+msgid "``dataformat_id``: Format 3 supports both time and color information."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:102
+msgid "5. :ref:`writers.copc`"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:104
+msgid ""
+"We will then turn the ``uncompahgre-colored.laz`` into a COPC file for "
+"vizualization with QGIS using the stage below:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:115
+msgid ""
+"``forward``: List of header fields to be preserved from LAS input file. "
+"In this case, we want ``all`` fields to be preserved."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:120
+msgid ""
+":ref:`writers.las` and :ref:`writers.copc` provide a number of possible "
+"options to control how your LAS files are written."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:124
+msgid "Execution"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:126
+msgid ""
+"Invoke the following command, substituting accordingly, in your "
+"|Terminal|:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:135
+msgid "Visualization"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:137
+msgid ""
+"Use one of the point cloud visualization tools you installed to take a "
+"look at your ``uncompahgre-colored.laz`` output. In the example below, we"
+" simply opened the file using QGIS:"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:145
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:148
+msgid ""
+"Applying color information that is not time-coincident with the point "
+"cloud data will mean you will see discontinuities."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:151
+msgid ""
+"GDAL is used to read the image source. Any GDAL-readable data format can "
+"be used."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:154
+msgid ""
+"There are performance considerations to be aware of depending on the "
+"raster format and type being used. See :ref:`filters.colorization` for "
+"more information."
+msgstr ""
+
+#: ../../workshop/manipulation/colorization/colorization.rst:158
+msgid ""
+"These data are of `Uncompahgre Basin`_ courtesy of the `NASA Airborne "
+"Snow Observatory`_."
+msgstr ""
+

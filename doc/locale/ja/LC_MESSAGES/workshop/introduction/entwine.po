@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/introduction/entwine.rst:4
+msgid "Entwine"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:9
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:11
+msgid ""
+"This exercise uses PDAL to fetch data from an Entwine index stored in an "
+"Amazon Web Services object store (bucket). Entwine is a point cloud "
+"indexing strategy, which rearranges points into a lossless octree "
+"structure known as EPT, for Entwine Point Tiles. The structure is "
+"described here: https://entwine.io/entwine-point-tile.html."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:16
+msgid ""
+"EPT indexes can be used for visualization as well as analysis and data "
+"manipulation at any scale."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:19
+msgid ""
+"Examples of Entwine usage can be found from very fine photogrammetric "
+"surveys to continental scale lidar management."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:24
+msgid "US Geological Survey (USGS) example data is here: https://usgs.entwine.io/"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:26
+msgid ""
+"We will use a sample data set from Dublin, Ireland "
+"https://viewer.copc.io/?r=https://na-c.entwine.io/dublin/ept.json"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:28
+msgid ""
+"The |JSON| file defines the pipeline which you were previously creating "
+"in |jq|. This simplifies the task and allows for easy repetition of "
+"tasks. This pipeline will collect the sample data set and convert it to a"
+" :ref:`COPC<writers.copc>` file."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:34
+msgid "View the ``./exercises/translation/entwine.json`` file in your editor."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:40
+msgid ""
+"If you use the `Developer Console`_ when visiting http://speck.ly or "
+"http://potree.entwine.io, you can see the browser making requests against"
+" the EPT resource at http://na-c.entwine.io/dublin/ept.json"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:45
+msgid "Issue the following command in your `Conda Shell`."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:62
+msgid "Verify that the COPC data look ok:"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:107
+msgid "Visualize the data in QGIS"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:114
+msgid ""
+"QGIS also supports uploading Entwine data directly from the cloud. Under "
+"'Layer -> Add Layer -> Add Point Cloud Layer', select the source type as "
+"\"Protocol: HTTP(S), cloud, etc.\" and insert the URL of an EPT index."
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:119
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/introduction/entwine.rst:121
+msgid ""
+":ref:`readers.ept` contains more detailed documentation about how to use "
+"PDAL's EPT reader."
+msgstr ""
+

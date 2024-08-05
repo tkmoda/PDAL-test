@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.info.rst:4
+msgid "filters.info"
+msgstr ""
+
+#: ../../stages/filters.info.rst:6
+msgid ""
+"The **Info filter** provides simple information on a point set as "
+"metadata. It is usually invoked by the info command, rather than by user "
+"code. The data provided includes bounds, a count of points, dimension "
+"names, spatial reference, and points meeting a query criteria."
+msgstr ""
+
+#: ../../stages/filters.info.rst:26
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.info.rst:32
+msgid "_`point`"
+msgstr ""
+
+#: ../../stages/filters.info.rst:29
+msgid ""
+"A comma-separated list of single point IDs or ranges of points.  For "
+"example \"2-6, 10, 25\" selects eight points from the input set.  The "
+"first point has an ID of 0.  The point_ option can't be used with the "
+"query_ option. [Default: no points are selected.]"
+msgstr ""
+
+#: ../../stages/filters.info.rst:40
+msgid "_`query`"
+msgstr ""
+
+#: ../../stages/filters.info.rst:35
+msgid ""
+"A specification to retrieve points near a location.  Syntax of the the "
+"query is X,Y[,Z][/count] where 'X', 'Y' and 'Z' are coordinate locations "
+"mapping to the X, Y and Z point dimension and 'count' is the number of "
+"points to return.  If 'count' isn't specified, the 10 points nearest to "
+"the location are returned.  The query_ option can't be used with the "
+"point_ option. [Default: no points are selected.]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

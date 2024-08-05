@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/introduction/single-point.rst:4
+msgid "Printing the first point"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:11
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:13
+msgid ""
+"This exercise uses PDAL to print information from the first point. Before"
+" starting, be sure to set your working directory in Conda to the location"
+" of the PDAL workshop data. For example, if the workshop folder was "
+"located on your desktop:"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:22
+msgid "Issue the following command in your `Conda Shell`."
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:29
+msgid "Here's a summary of what's going on with that command invocation"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:31
+msgid "``pdal``: The ``pdal`` application :)"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:33
+msgid ""
+"``info``: We want to run :ref:`info_command` on the data. All commands "
+"are run by the ``pdal`` application."
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:36
+msgid ""
+"``./exercises/info/interesting.las``: The file we are running the command"
+" on. PDAL will be able to identify this file is an |ASPRSLAS| file from "
+"the extension, ``.las``, but not every file type is easily identified. "
+"You can use a :ref:`pipeline <pipeline_command>` to override which "
+":ref:`reader <readers>` PDAL will use to open the file. For this "
+"workshop, we will often output a :ref:`COPC <writers.copc>` file type. "
+"For our purposes, COPC files (In the format ``*.copc.laz``) can be "
+"visualized in |QGIS|. To read more about COPC, refer to `this article "
+"<https://mapscaping.com/podcast/cloud-optimized-point-clouds/>`_."
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:45
+msgid ""
+"``-p 0``: ``-p`` corresponds to \"print a point\", and ``0`` means to "
+"print the first one (computer people count from 0)."
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:84
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:88
+msgid ""
+"PDAL uses |JSON| as the exchange format when printing information from "
+":ref:`info_command`. JSON is a structured, human-readable format that is "
+"much simpler than its |XML| cousin."
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:92
+msgid ""
+"You can use the :ref:`writers.text` writer to output point attributes to "
+"|CSV| format for other processing."
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:95
+msgid ""
+"Output help information on the command line by issuing the ``--help`` "
+"option"
+msgstr ""
+
+#: ../../workshop/introduction/single-point.rst:97
+msgid ""
+"A common query with ``pdal info`` is ``--all``, which will print all "
+"header, metadata, and statistics about a file."
+msgstr ""
+

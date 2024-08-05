@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.assign.rst:4
+msgid "filters.assign"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:6
+msgid ""
+"The assign filter allows you set the value of a dimension for all points "
+"to a provided value that pass a range filter."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:14
+msgid ""
+"The `assignment` and `condition` options are deprecated and may be "
+"removed in a future release."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:18
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:23
+msgid "assignment"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:21
+msgid ""
+"A :ref:`range <ranges>` followed by an assignment of a value (see "
+"example). Can be specified multiple times.  The assignments are applied "
+"sequentially to the dimension value as set when the filter began "
+"processing. [Required]"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:27
+msgid "condition"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:26
+msgid ""
+"A single :ref:`ranges <ranges>` that a point's values must pass in order "
+"for the assignment to be performed. [Default: none] [Deprecated - use "
+"'value']"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:31
+msgid "value"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:30
+msgid ""
+"A list of :ref:`assignment expressions <Assignment Expressions>` to be "
+"applied to points. The list of values is evaluated in order. [Default: "
+"none]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:38
+msgid "Assignment Expressions"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:40
+msgid ""
+"The assignment expression syntax is an expansion on the :ref:`PDAL "
+"expression` syntax that provides for assignment of values to points. The "
+"generic expression is:"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:47
+msgid "``Dimension`` is the name of a PDAL dimension."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:49
+msgid ""
+"A ``ValueExpression`` consists of constants, dimension names and "
+"mathematical operators that evaluates to a numeric value.  The supported "
+"mathematical operations are addition(`+`), subtraction(`-`), "
+"multiplication(`*`) and division(`\\\\`)."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:53
+msgid ""
+"A :ref:`ConditionalExpression <PDAL expression>` is an optional boolean "
+"value that must evaluate to `true` for the ``ValueExpression`` to be "
+"applied."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:57
+msgid ""
+"As of PDAL 2.7.0, assignment to a dimension that does not exist will "
+"cause it to be created. It will always be created with type double, "
+"however."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:63
+msgid "Example 1"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:76
+msgid ""
+"This scales the ``Red`` value by 1/256. If the input values are in the "
+"range 0 - 65535, the output value will be in the range 0 - 255."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:80
+msgid "Example 2"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:97
+msgid ""
+"This scales the values of Red, Green and Blue by 256. If the input values"
+" are in the range 0 - 255, the output value will be in the range 0 - "
+"65535. This can be handy when creating a :ref:`COPC <writers.copc>` file "
+"which (as defined in LAS 1.4) needs color values scaled in that range."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:102
+msgid "Example 3"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:118
+msgid ""
+"This sets the classification of points to either ``Ground`` or "
+"``Unassigned`` depending on the value of the ``HeightAboveGround`` "
+"dimension."
+msgstr ""
+
+#: ../../stages/filters.assign.rst:122
+msgid "Example 4"
+msgstr ""
+
+#: ../../stages/filters.assign.rst:138
+msgid ""
+"This sets the value of ``X`` for all points to 1. The second statement is"
+" essentially ignored since the first statement sets the ``X`` value of "
+"all points to 1 and therefore no points the ``ConditionalExpression`` of "
+"the second statement."
+msgstr ""
+

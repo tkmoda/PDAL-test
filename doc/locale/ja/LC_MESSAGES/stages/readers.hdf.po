@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.hdf.rst:4
+msgid "readers.hdf"
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:6
+msgid ""
+"The **HDF reader** reads data from files in the `HDF5 format. "
+"<https://www.hdfgroup.org/solutions/hdf5/>`_ You must explicitly specify "
+"a mapping of HDF datasets to PDAL dimensions using the dimensions "
+"parameter. ALL dimensions must be scalars and be of the same length. "
+"Compound types are not supported at this time."
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:19
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:20
+msgid ""
+"This example reads from the Autzen HDF example with all dimension "
+"properly mapped and then outputs a LAS file."
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:63
+msgid ""
+"All dimensions must be simple numeric HDF datasets with equal lengths. "
+"Compound types, enum types, string types, etc. are not supported."
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:69
+msgid "The HDF reader does not set an SRS."
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:73
+msgid "Common Use Cases"
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:75
+msgid ""
+"A possible use case for this driver is reading NASA's `ICESat-2 "
+"<https://icesat-2.gsfc.nasa.gov/>`__ data. This example reads the X, Y, "
+"and Z coordinates from the ICESat-2 `ATL03 "
+"<https://icesat-2.gsfc.nasa.gov/sites/default/files/page_files/ICESat2_ATL03_ATBD_r002.pdf>`__"
+" format and converts them into a LAS file."
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:80
+msgid ""
+"ICESat-2 data use `EPSG:7912 <https://epsg.io/7912>`__. ICESat-2 Data "
+"products documentation can be found `here "
+"<https://icesat-2.gsfc.nasa.gov/science/data-products>`_"
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:106
+msgid "Options"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:111
+msgid "dimensions"
+msgstr ""
+
+#: ../../stages/readers.hdf.rst:111
+msgid ""
+"A JSON map with PDAL dimension names as the keys and HDF dataset paths as"
+" the values."
+msgstr ""
+

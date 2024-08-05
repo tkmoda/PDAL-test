@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.buffer.rst:4
+msgid "readers.buffer"
+msgstr ""
+
+#: ../../stages/readers.buffer.rst:6
+msgid ""
+"The :ref:`readers.buffer` stage is a special stage that allows you to "
+"read data from your own PointView rather than fetching the data from a "
+"specific reader. In the :ref:`writing` example, it is used to take a "
+"simple listing of points and turn them into an LAS file."
+msgstr ""
+
+#: ../../stages/readers.buffer.rst:15
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.buffer.rst:17
+msgid ""
+"See :ref:`writing` for an example usage scenario for "
+":ref:`readers.buffer`."
+msgstr ""
+
+#: ../../stages/readers.buffer.rst:20
+msgid "Options"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+

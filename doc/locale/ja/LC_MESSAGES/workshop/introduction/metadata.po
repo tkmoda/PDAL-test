@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/introduction/metadata.rst:4
+msgid "Printing file metadata"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:11
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:13
+msgid ""
+"This exercise uses PDAL to print metadata information. Issue the "
+"following command in your `Conda Shell`."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:58
+msgid ""
+"PDAL :ref:`metadata <metadata>` is returned a in a tree structure "
+"corresponding to processing pipeline that produced it."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:64
+msgid ""
+"Use the |JSON| processing capabilities of your favorite processing "
+"software to selectively access and manipulate values."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:67
+msgid "`Python JSON library`_"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:68
+msgid "`jsawk`_ (like ``awk`` but for JSON data)"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:69
+msgid "`jq`_ (command line processor for JSON)"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:70
+msgid "`Ruby JSON library`_"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:79
+msgid "Structured Metadata Output"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:81
+msgid ""
+"Many command-line utilities output their data in a human-readable custom "
+"format. The downsides to this approach are significant. PDAL was designed"
+" to be used in the context of other software tools driving it. For "
+"example, it is quite common for PDAL to be used in data validation "
+"scenarios. Other programs might need to inspect information in PDAL's "
+"output and then act based on the values. A human-readable format would "
+"mean that downstream program would need to write a parser to consume "
+"PDAL's special format."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:89
+msgid ""
+"|JSON| provides a nice balance between human- and machine- readable, but "
+"even then it can be quite hard to find what you're looking for, "
+"especially if the output is long. ``pdal`` command output used in "
+"conjunction with a JSON parsing tool like ``jq`` provide a powerful "
+"inspection combination."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:94
+msgid ""
+"For example, we might only care about the ``system_id`` and "
+"``compressed`` flag for this particular file. Our simple ``pdal info "
+"--metadata`` command gives us that, but it also gives us a bunch of other"
+" stuff we don't need at the moment. Let's focus on extracting what we "
+"want using the ``jq`` command."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:102
+msgid ""
+"If you do not have `jq`_ installed into your Conda environment and are "
+"not on Windows, run the following command in your `Conda Shell`: ``conda "
+"install -c conda-forge jq``. Windows users should use `this link "
+"<https://github.com/jqlang/jq/releases/download/jq-1.7/jq-win64.exe>`_ to"
+" install `jq`_"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:120
+msgid "Output:"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:129
+msgid ""
+"PDAL's JSON output is very powerfully combined with the processing "
+"capabilities of other programming languages such as JavaScript or Python."
+" Both of these languages have excellent built-in tools for consuming "
+"JSON, along with plenty of other features to allow you to do something "
+"with the data inside the data structures. As we will see later in the "
+"workshop, this PDAL feature is one that makes construction of custom data"
+" processing workflows with PDAL very convenient."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:140
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:142
+msgid ""
+"PDAL uses |JSON| as the exchange format when printing information from "
+":ref:`info_command`.  JSON provides human and machine-readable text data."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:145
+msgid ""
+"The PDAL :ref:`metadata document <metadata>` contains background and "
+"information about specific metadata entries and what they mean."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:148
+msgid ""
+"Metadata available for a given file depends on the stage that produces "
+"the data. :ref:`Readers <readers>` produce same-named values where "
+"possible, but it is common that variables are different. :ref:`Filters "
+"<filters>` and even :ref:`writers <writers>` can also produce metadata "
+"entries."
+msgstr ""
+
+#: ../../workshop/introduction/metadata.rst:153
+msgid ""
+"Spatial reference system or coordinate system information is a kind of "
+"special metadata.  Spatial references are come directly from source data "
+"or are provided via options in PDAL."
+msgstr ""
+

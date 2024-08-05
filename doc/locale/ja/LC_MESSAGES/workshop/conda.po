@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/conda.rst:5
+msgid "Conda"
+msgstr ""
+
+#: ../../workshop/conda.rst:15
+msgid "What is Conda"
+msgstr ""
+
+#: ../../workshop/conda.rst:17
+msgid ""
+"Conda is an open source package management system and environment "
+"management system that runs on Windows, macOS and Linux. Conda quickly "
+"installs, runs, and updates packages and their dependencies. Conda easily"
+" creates, saves, loads and switches between environments on your local "
+"computer. It was created for Python programs, but it can package and "
+"distribute software for any language."
+msgstr ""
+
+#: ../../workshop/conda.rst:24
+msgid "How will we use Conda?"
+msgstr ""
+
+#: ../../workshop/conda.rst:26
+msgid ""
+"PDAL stands on the shoulders of giants. It uses GDAL, GEOS, and "
+":ref:`many other dependencies <building>`. Because of this, it is very "
+"challenging to build it yourself. We could easily burn an entire workshop"
+" learning the esoteric build mysteries of PDAL and all of its "
+"dependencies. Fortunately, Conda provides us a fully-featured known "
+"configuration to run our examples and exercises without having to suffer "
+"so much, and provides it for Windows, Linux, and macOS."
+msgstr ""
+
+#: ../../workshop/conda.rst:36
+msgid ""
+"Not everyone uses Conda. Another alternative to get a known configuration"
+" is to go through the workshop using :ref:`docker <development_docker>` "
+"as your platform. A previous edition of the workshop was provided using "
+"Docker, but it was found to be a bit too difficult to follow."
+msgstr ""
+
+#: ../../workshop/conda.rst:43
+msgid ""
+"PDAL does not have a python wheel package and thus is distributed via "
+"``conda-forge`` conda channel. If you would like to know more about the "
+"limitations that prevent PDAL from being distributed as a pip package, "
+"you can read about it at the `pypackaging-native website`_"
+msgstr ""
+
+#: ../../workshop/conda.rst:50
+msgid "Installing Conda Environment (Workshop USB)"
+msgstr ""
+
+#: ../../workshop/conda.rst:52
+msgid ""
+"Once mambaforge_ is installed, open a terminal and navigate to the "
+"location of your USB drive"
+msgstr ""
+
+#: ../../workshop/conda.rst:53
+msgid ""
+"Uncompress the environment, activate it, and use the ``conda-unpack`` "
+"command"
+msgstr ""
+
+#: ../../workshop/conda.rst:55
+msgid "macOS Users"
+msgstr ""
+
+#: ../../workshop/conda.rst:63
+msgid "Windows Users"
+msgstr ""
+
+#: ../../workshop/conda.rst:74
+msgid "Installing Conda"
+msgstr ""
+
+#: ../../workshop/conda.rst:76
+msgid ""
+"Copy the entire contents of your workshop USB key to a ``PDAL`` directory"
+" in your home directory (something like ``C:\\Users\\hobu\\PDAL``) or the"
+" equivalent for your OS. We will refer to this location for the rest of "
+"the workshop materials."
+msgstr ""
+
+#: ../../workshop/conda.rst:80
+msgid "Download and install the mambaforge_ installer for your platform"
+msgstr ""
+
+#: ../../workshop/conda.rst:82
+msgid "After installing mambaforge create your workshop by running"
+msgstr ""
+
+#: ../../workshop/conda.rst:89
+msgid "Then *activate* the new environment"
+msgstr ""
+
+#: ../../workshop/conda.rst:96
+msgid "Install PDAL, Entwine, and GDAL, and install it from **conda-forge**"
+msgstr ""
+
+#: ../../workshop/conda.rst:103
+msgid ""
+"Alternatively use the following ``environment.yml`` file to create your "
+"environment"
+msgstr ""
+
+#: ../../workshop/conda.rst:111
+msgid ""
+"The ``conda-pack`` package is used for packaging the pdal-workshop conda "
+"environment to go to the USB image, and is not needed otherwise"
+msgstr ""
+
+#: ../../workshop/conda.rst:116
+msgid "Using Conda From ArcGIS Pro"
+msgstr ""
+
+#: ../../workshop/conda.rst:118
+msgid "Launch the ``Python Command Prompt``"
+msgstr ""
+
+#: ../../workshop/conda.rst:120
+msgid "After launching, create the conda environment for the workshop"
+msgstr ""
+
+#: ../../workshop/conda.rst:127
+msgid "Activate the newly created environment"
+msgstr ""
+
+#: ../../workshop/conda.rst:134
+msgid "Install ``pdal``"
+msgstr ""
+

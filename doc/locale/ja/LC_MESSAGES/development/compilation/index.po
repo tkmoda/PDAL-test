@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/compilation/index.rst:5
+msgid "Compilation"
+msgstr ""
+
+#: ../../development/compilation/index.rst:7
+msgid ""
+"This section describes how to build and install PDAL under Windows, "
+"Linux, and Mac."
+msgstr ""
+
+#: ../../development/compilation/index.rst:11
+msgid ""
+":ref:`download` contains links to installable binaries for Windows, OSX, "
+"and RHEL Linux systems."
+msgstr ""
+
+#: ../../development/compilation/index.rst:14
+msgid "Contents:"
+msgstr ""
+

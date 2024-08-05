@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/random.rst:5
+msgid "random"
+msgstr ""
+
+#: ../../apps/random.rst:9
+msgid ""
+"As of PDAL v2.6.0, the ``random`` command is marked as DEPRECATED. It "
+"will be removed from the default install in PDAL v2.7 and removed "
+"completely in PDAL v2.8."
+msgstr ""
+
+#: ../../apps/random.rst:13
+msgid ""
+"A simply Python script that creates uniformly distributed data and writes"
+" the output using PDAL is given below."
+msgstr ""
+
+#: ../../apps/random.rst:47
+msgid ""
+"A similar Python script that creates normally distributed data and writes"
+" the output using PDAL is given below."
+msgstr ""
+
+#: ../../apps/random.rst:81
+msgid ""
+"The ``random`` command is used to create a random point cloud. It uses "
+":ref:`readers.faux` to create a point cloud containing ``count`` points "
+"drawn randomly from either a uniform or normal distribution. For the "
+"uniform distribution, the bounds can be specified (they default to a unit"
+" cube). For the normal distribution, the mean and standard deviation can "
+"both be set for each of the x, y, and z dimensions."
+msgstr ""
+

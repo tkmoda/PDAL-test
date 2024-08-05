@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/tile.rst:5
+msgid "tile"
+msgstr ""
+
+#: ../../apps/tile.rst:7
+msgid ""
+"The ``tile`` command will create multiple output files from input files "
+"by generating square tiles of points.  The command takes an input file "
+"name and an output filename template."
+msgstr ""
+
+#: ../../apps/tile.rst:11
+msgid ""
+"This command is similar to the :ref:`split <split_command>` command, but "
+"differs in several ways.  The ``tile`` command:"
+msgstr ""
+
+#: ../../apps/tile.rst:14
+msgid "Uses streaming mode to limit the amount of memory consumed by point data."
+msgstr ""
+
+#: ../../apps/tile.rst:15
+msgid "Uses a placeholder for filename output."
+msgstr ""
+
+#: ../../apps/tile.rst:16
+msgid "Provides for reprojection of data to create consistent output."
+msgstr ""
+
+#: ../../apps/tile.rst:17
+msgid ""
+"Always creates square tiles that contain all points \"covered\" by each "
+"tile."
+msgstr ""
+
+#: ../../apps/tile.rst:35
+msgid ""
+"The input filename can contain a `glob pattern`_ to allow multiple files "
+"as input."
+msgstr ""
+
+#: ../../apps/tile.rst:38
+msgid ""
+"The output filename must contain a placeholder character ``#``.  The "
+"placeholder character is replaced with an X/Y index of the tile as a part"
+" of a cartesian system.  For example, if the output filename is specified"
+" as ``out#.las``, the tile containing the origin will be named "
+"``out0_0.las``. The tile to its right will be named ``out1_0.las``.  The "
+"tile above it will be named ``out0_1.las``.  The command does not create "
+"directories -- create any desired directories before running."
+msgstr ""
+
+#: ../../apps/tile.rst:46
+msgid ""
+"If an origin is not supplied with as argument, the first point read is "
+"used as the origin."
+msgstr ""
+
+#: ../../apps/tile.rst:50
+msgid "Example 1:"
+msgstr ""
+
+#: ../../apps/tile.rst:56
+msgid ""
+"This command takes the points from the input file ``infile.laz`` and "
+"creates output files ``outfile_0_0.bpf``, ``outfile_0_1.bpf``, ... where "
+"each output file contains points in the 1000x1000 square units "
+"represented by the tile. The X/Y location of the first point is used as "
+"the origin of the tile grid."
+msgstr ""
+
+#: ../../apps/tile.rst:62
+msgid "Example 2:"
+msgstr ""
+
+#: ../../apps/tile.rst:68
+msgid ""
+"Reads all files in the directory /home/me/files as input and reprojects "
+"points to geographic coordinates if necessary.  The output is written to "
+"a set of text files in the current directory."
+msgstr ""
+
+#: ../../apps/tile.rst:76
+msgid ""
+"Tile does not work with non-streamable formats, for example, "
+":ref:`writers.copc`."
+msgstr ""
+

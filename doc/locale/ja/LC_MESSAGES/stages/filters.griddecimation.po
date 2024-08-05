@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.griddecimation.rst:4
+msgid "filters.griddecimation"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:6
+msgid ""
+"The **grid decimation filter** transform only one point in each cells of "
+"a grid calculated from the points cloud and a resolution therm. The "
+"transformation is done by the value information. The selected point could"
+" be the highest or the lowest point on the cell. It can be used, for "
+"exemple, to quickly filter vegetation points in order to keep only the "
+"canopy points."
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:11
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:12
+msgid ""
+"This example transform highest points of classification 5 in "
+"classification 9, on a grid of 0.75m square."
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:33
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:36
+msgid "output_type"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:36
+msgid ""
+"The type of points transform by the value information. The value should "
+"be ``\"max\"`` for transform the highest point, or ``\"min\"`` for the "
+"lowest. [Default: false]"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:39
+msgid "resolution"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:39
+msgid "The resolution of the cells in meter. [Default: 1.]"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:43
+msgid "value"
+msgstr ""
+
+#: ../../stages/filters.griddecimation.rst:42
+msgid ""
+"A list of :ref:`assignment expressions <Assignment Expressions>` to be "
+"applied to points. The list of values is evaluated in order. [Default: "
+"none]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

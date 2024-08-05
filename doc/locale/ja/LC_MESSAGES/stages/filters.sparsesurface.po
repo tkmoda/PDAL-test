@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.sparsesurface.rst:4
+msgid "filters.sparsesurface"
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:6
+msgid ""
+"The **Sparse Surface filter** segments input points into two classes: "
+"ground or low point. It does this by adding ground points in ascending "
+"elevation order, and masking all neighbor points within a specified "
+"radius as low points. This process creates a sparse sampling of the "
+"ground estimate akin to the Poisson disk sampling available in "
+":ref:`filters.sample` and marks all other points as low noise. It is "
+"expected that the input point cloud will either only include points "
+"labeled as ground or the ``where`` option will be employed to limit "
+"points to those marked as ground."
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:18
+msgid "Example #1"
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:20
+msgid ""
+"The sample pipeline below uses the SMRF filter to segment ground and non-"
+"ground returns, uses the expression filter to retain only ground returns,"
+" and then the sparse surface filter to segment ground and low noise."
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:42
+msgid "Example #2"
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:44
+msgid ""
+"This sample pipeline is nearly identical to the previous one, but retains"
+" all points (including non-ground) while still only operating on ground "
+"returns when computing the sparse surface. It also sets the only option "
+"unique to the sparse sample filter, which is the sampling radius--no two "
+"ground points will be closer than 3.0 meters (horizontally)."
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:66
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:69
+msgid "radius"
+msgstr ""
+
+#: ../../stages/filters.sparsesurface.rst:69
+msgid "Mask neighbor points as low noise. [Default: **1.0**]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

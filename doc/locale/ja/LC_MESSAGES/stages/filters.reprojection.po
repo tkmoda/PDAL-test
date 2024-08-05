@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.reprojection.rst:4
+msgid "filters.reprojection"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:6
+msgid ""
+"The **reprojection filter** converts the X, Y and/or Z dimensions to a "
+"new spatial reference system. The old coordinates are replaced by the new"
+" ones. If you want to preserve the old coordinates for future processing,"
+" use a :ref:`filters.ferry` to create copies of the original dimensions "
+"before reprojecting."
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:15
+msgid ""
+"When coordinates are reprojected, it may significantly change the "
+"precision necessary to represent the values in some output formats.  Make"
+" sure that you're familiar with any scaling necessary for your output "
+"format based on the projection you've used."
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:25
+msgid "Example 1"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:27
+msgid ""
+"This pipeline reprojects terrain points with Z-values between 0 and 100 "
+"by first applying a range filter and then specifying both the input and "
+"output spatial reference as EPSG-codes. The X and Y dimensions are scaled"
+" to allow enough precision in the output coordinates."
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:62
+msgid "Example 2"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:64
+msgid ""
+"In some cases it is not possible to use a EPSG-code as a spatial "
+"reference. Instead `Proj.4 <http:/proj4.org>`_ parameters can be used to "
+"define a spatial reference.  In this example the vertical component of "
+"points in a laz file is converted from geometric (ellipsoidal) heights to"
+" orthometric heights by using the ``geoidgrids`` parameter from Proj.4.  "
+"Here we change the vertical datum from the GRS80 ellipsoid to DVR90, the "
+"vertical datum in Denmark. In the writing stage of the pipeline the "
+"spatial reference of the file is set to EPSG:7416. The last step is "
+"needed since PDAL will otherwise reference the vertical datum as "
+"\"Unnamed Vertical Datum\" in the spatial reference VLR."
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:92
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:97
+msgid "in_srs"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:95
+msgid ""
+"Spatial reference system of the input data. Express as an EPSG string (eg"
+" \"EPSG:4326\" for WGS84 geographic), Proj.4 string or a well-known text "
+"string. [Required if not part of the input data set]"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:102
+msgid "out_srs"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:100
+msgid ""
+"Spatial reference system of the output data. Express as an EPSG string "
+"(eg \"EPSG:4326\" for WGS84 geographic), Proj.4 string or a well-known "
+"text string. [Required]"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:108
+msgid "in_axis_ordering"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:105
+msgid ""
+"An array of numbers that override the axis order for the in_srs (or if "
+"not specified, the inferred SRS from the previous Stage). \"2, 1\" for "
+"example would swap X and Y, which may be commonly needed for something "
+"like \"EPSG:4326\"."
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:111
+msgid "in_coord_epoch"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:111
+msgid "Coordinate epoch for the input coordinate system as a double. [Default: 0]"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:116
+msgid "out_axis_ordering"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:114
+msgid ""
+"An array of numbers that override the axis order for the out_srs. \"2, "
+"1\" for example would swap X and Y, which may be commonly needed for "
+"something like \"EPSG:4326\"."
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:119
+msgid "out_coord_epoch"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:119
+msgid ""
+"Coordinate epoch for the output coordinate system as a double. [Default: "
+"0]"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:122
+msgid "error_on_failure"
+msgstr ""
+
+#: ../../stages/filters.reprojection.rst:122
+msgid ""
+"If true and reprojection of any point fails, throw an exception that "
+"terminates PDAL . [Default: false]"
+msgstr ""
+

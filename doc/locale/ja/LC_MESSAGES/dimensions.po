@@ -1,0 +1,1178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../dimensions.rst:5
+msgid "Dimensions"
+msgstr ""
+
+#: ../../dimensions.rst:7
+msgid ""
+"All point data in PDAL is stored as a set of dimensions.  Dimensions have"
+" a name and a data type.  The data type is determined at runtime, but a "
+"default data type for each dimension is listed below, along with the name"
+" of the dimension and its description."
+msgstr ""
+
+#: ../../dimensions.rst:12
+msgid ""
+"The following table provides a list of known dimension names you can use "
+"in :ref:`filters`, :ref:`writers`, and :ref:`readers`."
+msgstr ""
+
+#: ../../dimensions.rst:16
+msgid ""
+"Types are default types. Stage developers should set the dimension type "
+"explicitly if the default dimension isn't suitable."
+msgstr ""
+
+#: ../../dimensions.rst:1
+msgid "Name"
+msgstr ""
+
+#: ../../dimensions.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../dimensions.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Alpha"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "uint16"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Amplitude"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "float"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"This is the ratio of the received power to the power received at the "
+"detection limit expressed in dB"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Anisotropy"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "double"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Anisotropy of a point; larger values indicate strong variance in multiple"
+" dimensions."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Azimuth"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Scanner azimuth"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BackgroundRadiation"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "A measure of background radiation."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BeamDirectionX"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Beam direction unit vector X coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BeamDirectionY"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Beam direction unit vector Y coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BeamDirectionZ"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Beam direction unit vector Z coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BeamOriginX"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Beam origin X coordinate of current laser shot"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BeamOriginY"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Beam origin Y coordinate of current laser shot"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "BeamOriginZ"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Beam origin Z coordinate of current laser shot"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Blue"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Blue image channel value"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ClassFlags"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "uint8"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Class Flags - deprecated in favor of Synthetic/KeyPoint/Withheld/Overlap"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Classification"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"ASPRS classification.  0 for no classification.  See LAS specification "
+"for details."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ClusterID"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "int64_t"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ID assigned to a point by a point-clustering algorithm."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Coplanar"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Indicator of whether or not a point is part of a coplanar neighborhood."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Curvature"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Curvature of surface at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "DemantkeVerticality"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Verticality of a point; larger values indicate vertical structure "
+"(Demantke's variation)."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Density"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Estimate of point density"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Deviation"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Difference between the shape of the reference pulse and the return pulse."
+" A larger value for deviation indicates larger distortion."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Dimension"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Dimension of the points. three types of dimensions are available (Linear "
+": points form a linear feature. Planar : points form a planar surface. "
+"Complex : random group of points)."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "DownPositionRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Down position RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "DownVelocityRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Down velocity RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EastPositionRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "East position RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EastVelocityRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "East velocity RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EchoNorm"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Difference in shape of a return signal compared to a typical return from "
+"a hard surface."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EchoPos"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Difference in position of a peak of a return signal compared to a typical"
+" return from a hard surface"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EchoRange"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Echo Range"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EdgeOfFlightLine"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Indicates the end of scanline before a direction change with a value of 1"
+" - 0 otherwise"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Eigenentropy"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Eigenentropy of a point; small values indicate more ordered regions, "
+"while large values indicate disorder."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Eigenvalue0"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Smallest eigenvalue obtained form covariance of XYZ coordinates in "
+"k-neighborhood."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Eigenvalue1"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Middle eigenvalue obtained form covariance of XYZ coordinates in "
+"k-neighborhood."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Eigenvalue2"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Largest eigenvalue obtained form covariance of XYZ coordinates in "
+"k-neighborhood."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "EigenvalueSum"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Sum of computed eigenvalues."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ElevationCentroid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Elevation Centroid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ElevationHigh"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Elevation High"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ElevationLow"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Elevation Low"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Flag"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "GpsTime"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "GPS time that the point was acquired"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Green"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Green image channel value"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "H3"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "uint64"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "H3 index id"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "HeadingRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Heading RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "HeightAboveGround"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Height Above Ground"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Image"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Index of the image use for texturation."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ImgNbr"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Stores the number of the image from which it gets the color."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Infrared"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Intensity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Representation of the pulse return magnitude"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "InternalTime"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Scanner's internal time when the point was acquired, in seconds"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "IsPpsLocked"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"The external PPS signal was found to be synchronized at the time of the "
+"current laser shot."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "KeyPoint"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ASPRS Key-Point flag.  See LAS specification for details."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LatitudeCentroid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Latitude Centroid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LatitudeHigh"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Latitude High"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LatitudeLow"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Latitude Low"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Linearity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Linearity of a point; larger values indicate more linear regions."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LocalOutlierFactor"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Outlier factor based on the LocalReachabilityDistance of a point's "
+"nearest neighbors."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LocalReachabilityDistance"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Reachability metric based on the NNDistance of a point's nearest "
+"neighbors."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LongitudeCentroid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Longitude Centroid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LongitudeHigh"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Longitude High"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LongitudeLow"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Longitude Low"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LvisLfid"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "LVIS_LFID"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Mark"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Miniball"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Metric capturing distance from a point to the center of the smallest "
+"enclosing ball encapsulating k-nearest neighbors, scaled by radius of the"
+" ball."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NNDistance"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Distance metric related to a point's nearest neighbors."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NormalX"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "X component of a vector normal to surface at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NormalY"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Y component of a vector normal to surface at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NormalZ"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Z component of a vector normal to surface at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NorthPositionRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "North position RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NorthVelocityRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "North velocity RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "NumberOfReturns"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Total number of returns for a given pulse."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "OffsetTime"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "uint32"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Milliseconds from first acquired point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Omit"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "uint8_t"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Used to shallowly mark a point as being omitted without removing it"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Omnivariance"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Omnivariance of a point; cube root of the product of all eigenvalues."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "OptimalKNN"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Optimal number of k nearest neighbors, such that eigenentropy is "
+"minimized."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "OptimalRadius"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Radius corresponding to optimal k nearest neighbors, such that "
+"eigenentropy is minimized."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "OriginId"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"A file source ID from which the point originated.  This ID is global to a"
+" derivative dataset which may be aggregated from multiple files."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Overlap"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ASPRS Overlap flag.  See LAS specification for details."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PassiveSignal"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "int32"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Relative passive signal"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PassiveX"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Passive X footprint"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PassiveY"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Passive Y footprint"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PassiveZ"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Passive Z footprint"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Pdop"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "GPS PDOP (dilution of precision)"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Pitch"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Pitch in degrees"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PitchRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Pitch RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Planarity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Planarity of a point; larger values indicate more planar regions."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PlaneFit"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Metric capturing current point's point to plane distance compared to "
+"those in the same k-neighborhood used to estimate the plane."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PointId"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"An explicit representation of point ordering within a file, which allows "
+"this usually-implicit information to be preserved when reordering points."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PointSourceId"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"File source ID from which the point originated.  Zero indicates that the "
+"point originated in the current file"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "PulseWidth"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Laser received pulse width (digitizer samples)"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "RadialDensity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Estimate of radial point density"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Rank"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Estimated rank of neighborhood of points."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Reciprocity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Metric capturing percentage of k-nearest neighbors that also contain the "
+"current point in their k-neighborhood."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Red"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Red image channel value"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Reflectance"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Ratio of the received power to the power that would be received from a "
+"white diffuse target at the same distance expressed in dB. The "
+"reflectance represents a range independent property of the target.  The "
+"surface normal of this target is assumed to be in parallel to the laser "
+"beam direction."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ReflectedPulse"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Relative reflected pulse signal strength"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Reliability"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Reliability (or confidence) of points"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ReturnNumber"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Pulse return number for a given output pulse. A given output laser pulse "
+"can have many returns, and they must be marked in order, starting with 1"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Roll"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Roll in degrees"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "RollRMS"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Roll RMS error"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ScanAngleRank"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Angle degree at which the laser point was output from the system, "
+"including the roll of the aircraft.  The scan angle is based on being "
+"nadir, and -90 the left side of the aircraft in the direction of flight"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ScanChannel"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Scan Channel"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ScanDirectionFlag"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Direction at which the scanner mirror was traveling at the time of the "
+"output pulse. A value of 1 is a positive scan direction, and a bit value "
+"of 0 is a negative scan direction, where positive scan direction is a "
+"scan moving from the left side of the in-track direction to the right "
+"side and negative the opposite"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Scattering"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Scattering of a point; larger values incidate complex (scattered) 3D "
+"regions."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ShotNumber"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Shot Number"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "SphericalAzimuth"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Azimuth in context of spherical coordinates."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "SphericalElevation"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Elevation in context of spherical coordinates."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "SphericalRange"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Range in context of spherical coordinates."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "StartPulse"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Relative pulse signal strength"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "SurfaceVariation"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid ""
+"Surface variation of a point; larger values indicate higher surface "
+"variation."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Synthetic"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ASPRS Synthetic flag.  See LAS specification for details."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "TextureU"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "U component of a texture location at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "TextureV"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "V component of a texture location at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "TextureW"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "W component of a texture location at this point"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "UserData"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Unspecified user data"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Verticality"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Verticality of a point; larger values indicate vertical structure."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "W"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "W coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "WanderAngle"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Wander Angle"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Withheld"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ASPRS Withheld flag.  See LAS specification for details."
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "X"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "X coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "XBodyAccel"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "X Body Acceleration"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "XBodyAngRate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "X Body Angle Rate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "XVelocity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "X Velocity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Y"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Y coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "YBodyAccel"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Y Body Acceleration"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "YBodyAngRate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Y Body Angle Rate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "YVelocity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Y Velocity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Z"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Z coordinate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ZBodyAccel"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Z Body Acceleration"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ZBodyAngRate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Z Body Angle Rate"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "ZVelocity"
+msgstr ""
+
+#: ../../dimension-table.csv:1
+msgid "Z Velocity"
+msgstr ""
+

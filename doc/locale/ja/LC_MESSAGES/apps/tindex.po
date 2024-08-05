@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/tindex.rst:5
+msgid "tindex"
+msgstr ""
+
+#: ../../apps/tindex.rst:7
+msgid ""
+"The ``tindex`` command is used to create a `GDAL`_-style tile index for "
+"PDAL-readable point cloud types (see `gdaltindex`_)."
+msgstr ""
+
+#: ../../apps/tindex.rst:10
+msgid ""
+"The ``tindex`` command has two modes.  The first mode creates a spatial "
+"index file for a set of point cloud files.  The second mode creates a "
+"point cloud file that is the result of merging the points from files "
+"referred to in a spatial index file that meet some criteria (usually a "
+"geographic region filter)."
+msgstr ""
+
+#: ../../apps/tindex.rst:16
+msgid "tindex Creation Mode"
+msgstr ""
+
+#: ../../apps/tindex.rst:36
+msgid ""
+"This command will index the files referred to by ``filespec`` and place "
+"the result in ``tindex``.  The ``tindex`` is a vector file or database "
+"that will be created by ``pdal`` as necessary to store the file index. "
+"The type of the index file can be specified by specifying the OGR code "
+"for the format using the ``--ogrdriver`` option.  If no driver is "
+"specified, the format defaults to \"ESRI Shapefile\".  Any filetype that "
+"can be handled by `OGR <http://www.gdal.org/ogr_formats.html>`_ is "
+"acceptable."
+msgstr ""
+
+#: ../../apps/tindex.rst:45
+msgid ""
+"In vector file-speak, each file specified by ``filespec`` is stored as a "
+"feature in a layer in the index file. The ``filespec`` is a `glob pattern"
+" <http://man7.org/linux/man-pages/man7/glob.7.html>`_.  and normally "
+"needs to be quoted to prevent shell expansion of wildcard characters."
+msgstr ""
+
+#: ../../apps/tindex.rst:53
+msgid "tindex Merge Mode"
+msgstr ""
+
+#: ../../apps/tindex.rst:59
+msgid ""
+"This command will read the existing index file ``tindex`` and merge the "
+"points in the indexed files that pass any filter that might be specified,"
+" writing the output to the point cloud file specified in ``filespec``. "
+"The type of the output file is determined automatically from the filename"
+" extension."
+msgstr ""
+
+#: ../../apps/tindex.rst:78
+msgid "Example 1:"
+msgstr ""
+
+#: ../../apps/tindex.rst:80
+msgid ""
+"Find all LAS files via ``find``, send that file list via STDIN to ``pdal "
+"tindex``, and write a SQLite tile index file with a layer named ``pdal``:"
+msgstr ""
+
+#: ../../apps/tindex.rst:89
+msgid "Example 2:"
+msgstr ""
+
+#: ../../apps/tindex.rst:91
+msgid ""
+"Glob a list of LAS files, output the SRS for the index entries to "
+"EPSG:4326, and write out an `SQLite`_ file."
+msgstr ""
+

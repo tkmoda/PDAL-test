@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.rst:4
+msgid "Readers"
+msgstr ""
+
+#: ../../stages/readers.rst:6
+msgid ""
+"Readers provide :ref:`dimensions` to :ref:`pipeline`. PDAL attempts to "
+"normalize common dimension types, like X, Y, Z, or Intensity, which are "
+"often found in LiDAR point clouds. Not all dimension types need to be "
+"fixed, however. Database drivers typically return unstructured lists of "
+"dimensions.  A reader might provide a simple file type, like "
+":ref:`readers.text`, a complex database like :ref:`readers.pgpointcloud`,"
+" or a network service like :ref:`readers.ept`."
+msgstr ""
+
+#: ../../stages/readers.rst:59
+msgid ":ref:`readers.bpf`"
+msgstr ""
+
+#: ../../stages/readers.rst:58
+msgid ""
+"Read BPF files encoded as version 1, 2, or 3. BPF is an NGA specification"
+" for point cloud data."
+msgstr ""
+
+#: ../../stages/readers.rst:63
+msgid ":ref:`readers.copc`"
+msgstr ""
+
+#: ../../stages/readers.rst:62
+msgid ""
+"COPC, or Cloud Optimized Point Cloud is an LAZ 1.4 file stored as a "
+"clustered octree."
+msgstr ""
+
+#: ../../stages/readers.rst:67
+msgid ":ref:`readers.buffer`"
+msgstr ""
+
+#: ../../stages/readers.rst:66
+msgid ""
+"Special stage that allows you to read data from your own PointView rather"
+" than fetching data from a specific reader."
+msgstr ""
+
+#: ../../stages/readers.rst:70
+msgid ":ref:`readers.draco`"
+msgstr ""
+
+#: ../../stages/readers.rst:70
+msgid "Read a buffer in Google Draco format"
+msgstr ""
+
+#: ../../stages/readers.rst:73
+msgid ":ref:`readers.ept`"
+msgstr ""
+
+#: ../../stages/readers.rst:73
+msgid "Used for reading `Entwine Point Tile <https://entwine.io>`__ format."
+msgstr ""
+
+#: ../../stages/readers.rst:76
+msgid ":ref:`readers.e57`"
+msgstr ""
+
+#: ../../stages/readers.rst:76
+msgid "Read point clouds in the E57 format."
+msgstr ""
+
+#: ../../stages/readers.rst:80
+msgid ":ref:`readers.faux`"
+msgstr ""
+
+#: ../../stages/readers.rst:79
+msgid ""
+"Used for testing pipelines. It does not read from a file or database, but"
+" generates synthetic data to feed into the pipeline."
+msgstr ""
+
+#: ../../stages/readers.rst:83
+msgid ":ref:`readers.fbi`"
+msgstr ""
+
+#: ../../stages/readers.rst:83
+msgid "Read TerraSolid FBI format"
+msgstr ""
+
+#: ../../stages/readers.rst:86
+msgid ":ref:`readers.gdal`"
+msgstr ""
+
+#: ../../stages/readers.rst:86
+msgid "Read GDAL readable raster data sources as point clouds."
+msgstr ""
+
+#: ../../stages/readers.rst:89
+msgid ":ref:`readers.hdf`"
+msgstr ""
+
+#: ../../stages/readers.rst:89
+msgid "Read data from files in the HDF5 format."
+msgstr ""
+
+#: ../../stages/readers.rst:93
+msgid ":ref:`readers.i3s`"
+msgstr ""
+
+#: ../../stages/readers.rst:92
+msgid ""
+"Read data stored in the Esri I3S format.  The data is read from an "
+"appropriate server."
+msgstr ""
+
+#: ../../stages/readers.rst:96
+msgid ":ref:`readers.ilvis2`"
+msgstr ""
+
+#: ../../stages/readers.rst:96
+msgid "Read from files in the ILVIS2 format."
+msgstr ""
+
+#: ../../stages/readers.rst:101
+msgid ":ref:`readers.las`"
+msgstr ""
+
+#: ../../stages/readers.rst:99
+msgid ""
+"Read ASPRS LAS versions 1.0 - 1.4. Does not support point formats "
+"containing waveform data. LASzip support is also enabled through this "
+"driver if LASzip  or LAZperf are found during compilation."
+msgstr ""
+
+#: ../../stages/readers.rst:105
+msgid ":ref:`readers.matlab`"
+msgstr ""
+
+#: ../../stages/readers.rst:104
+msgid ""
+"Read point cloud data from MATLAB .mat files where dimensions are stored "
+"as arrays in a MATLAB struct."
+msgstr ""
+
+#: ../../stages/readers.rst:108
+msgid ":ref:`readers.mbio`"
+msgstr ""
+
+#: ../../stages/readers.rst:108
+msgid ""
+"Read sonar bathymetry data from formats supported by the MB-System "
+"library."
+msgstr ""
+
+#: ../../stages/readers.rst:112
+msgid ":ref:`readers.memoryview`"
+msgstr ""
+
+#: ../../stages/readers.rst:111
+msgid ""
+"Read data from memory where dimension data is arranged in rows.  For use "
+"only with the PDAL API."
+msgstr ""
+
+#: ../../stages/readers.rst:115
+msgid ":ref:`readers.nitf`"
+msgstr ""
+
+#: ../../stages/readers.rst:115
+msgid "Read point cloud data (LAS or LAZ) wrapped in NITF 2.1 files."
+msgstr ""
+
+#: ../../stages/readers.rst:118
+msgid ":ref:`readers.numpy`"
+msgstr ""
+
+#: ../../stages/readers.rst:118
+msgid "Read point cloud data from Numpy ``.npy`` files."
+msgstr ""
+
+#: ../../stages/readers.rst:121
+msgid ":ref:`readers.obj`"
+msgstr ""
+
+#: ../../stages/readers.rst:121
+msgid "Read points and a mesh from Wavefront OBJ files."
+msgstr ""
+
+#: ../../stages/readers.rst:124
+msgid ":ref:`readers.optech`"
+msgstr ""
+
+#: ../../stages/readers.rst:124
+msgid "Read Optech Corrected Sensor Data (.csd) files."
+msgstr ""
+
+#: ../../stages/readers.rst:127
+msgid ":ref:`readers.pcd`"
+msgstr ""
+
+#: ../../stages/readers.rst:127
+msgid "Read files in the PCD format."
+msgstr ""
+
+#: ../../stages/readers.rst:131
+msgid ":ref:`readers.pgpointcloud`"
+msgstr ""
+
+#: ../../stages/readers.rst:130
+msgid ""
+"Read point cloud data from a PostgreSQL database with the PostgreSQL "
+"Pointcloud extension enabled."
+msgstr ""
+
+#: ../../stages/readers.rst:134
+msgid ":ref:`readers.ply`"
+msgstr ""
+
+#: ../../stages/readers.rst:134
+msgid "Read points and vertices from either ASCII or binary PLY files."
+msgstr ""
+
+#: ../../stages/readers.rst:137
+msgid ":ref:`readers.pts`"
+msgstr ""
+
+#: ../../stages/readers.rst:137
+msgid "Read data from Leica Cyclone PTS files."
+msgstr ""
+
+#: ../../stages/readers.rst:140
+msgid ":ref:`readers.ptx`"
+msgstr ""
+
+#: ../../stages/readers.rst:140
+msgid "Read data from Leica Cyclone PTX files."
+msgstr ""
+
+#: ../../stages/readers.rst:144
+msgid ":ref:`readers.qfit`"
+msgstr ""
+
+#: ../../stages/readers.rst:143
+msgid ""
+"Read data in the QFIT format originated for NASA's Airborne Topographic "
+"Mapper project."
+msgstr ""
+
+#: ../../stages/readers.rst:148
+msgid ":ref:`readers.rxp`"
+msgstr ""
+
+#: ../../stages/readers.rst:147
+msgid ""
+"Read data in the RXP format, the in-house streaming format used by RIEGL."
+" The reader requires a copy of RiVLib during compilation."
+msgstr ""
+
+#: ../../stages/readers.rst:152
+msgid ":ref:`readers.rdb`"
+msgstr ""
+
+#: ../../stages/readers.rst:151
+msgid ""
+"Read data in the RDB format, the in-house database format used by RIEGL. "
+"The reader requires a copy of rdblib during compilation and usage."
+msgstr ""
+
+#: ../../stages/readers.rst:155
+msgid ":ref:`readers.sbet`"
+msgstr ""
+
+#: ../../stages/readers.rst:155
+msgid "Read the SBET format."
+msgstr ""
+
+#: ../../stages/readers.rst:158
+msgid ":ref:`readers.slpk`"
+msgstr ""
+
+#: ../../stages/readers.rst:158
+msgid "Read data stored in an Esri SLPK file."
+msgstr ""
+
+#: ../../stages/readers.rst:161
+msgid ":ref:`readers.stac`"
+msgstr ""
+
+#: ../../stages/readers.rst:161
+msgid "Read STAC JSON Catalogs and Items with the Pointcloud extension."
+msgstr ""
+
+#: ../../stages/readers.rst:164
+msgid ":ref:`readers.terrasolid`"
+msgstr ""
+
+#: ../../stages/readers.rst:164
+msgid "TerraSolid Reader"
+msgstr ""
+
+#: ../../stages/readers.rst:167
+msgid ":ref:`readers.text`"
+msgstr ""
+
+#: ../../stages/readers.rst:167
+msgid "Read point clouds from ASCII text files."
+msgstr ""
+
+#: ../../stages/readers.rst:170
+msgid ":ref:`readers.tiledb`"
+msgstr ""
+
+#: ../../stages/readers.rst:170
+msgid "Read point cloud data from a TileDB instance."
+msgstr ""
+
+#: ../../stages/readers.rst:174
+msgid ":ref:`readers.tindex`"
+msgstr ""
+
+#: ../../stages/readers.rst:173
+msgid ""
+"The tindex (tile index) reader allows you to automatically merge and "
+"query data described in tile index files that have been generated using "
+"the PDAL tindex command."
+msgstr ""
+

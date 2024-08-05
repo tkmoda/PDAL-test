@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.ptx.rst:4
+msgid "readers.ptx"
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:6
+msgid ""
+"The **PTX reader** reads data from `Leica Cyclone PTX`_ files. It infers "
+"dimensions from points stored in a text file."
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:11
+msgid ""
+"PTX files can contain multiple point clouds stored in a single file.  If "
+"that is the case, the reader will read all the points from all of the "
+"internal point clouds as one."
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:19
+msgid "Example Pipeline"
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:35
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:38
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:38
+msgid "File to read. [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:46
+msgid "_`discard_missing_points`"
+msgstr ""
+
+#: ../../stages/readers.ptx.rst:43
+msgid ""
+"Each point cloud in a PTX file is \"fully populated\", in that the point "
+"cloud will contain missing points with XYZ values of \"0 0 0\". When this"
+" option is enabled, we will skip over any missing input points. [Default:"
+" true]"
+msgstr ""
+

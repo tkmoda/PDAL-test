@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/writing.rst:5
+msgid "Writing with PDAL"
+msgstr ""
+
+#: ../../development/writing.rst
+msgid "Author"
+msgstr ""
+
+#: ../../development/writing.rst:7
+msgid "Bradley Chambers"
+msgstr ""
+
+#: ../../development/writing.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../development/writing.rst:8
+msgid "brad.chambers@gmail.com"
+msgstr ""
+
+#: ../../development/writing.rst
+msgid "Date"
+msgstr ""
+
+#: ../../development/writing.rst:9
+msgid "11/02/2017"
+msgstr ""
+
+#: ../../development/writing.rst:12
+msgid ""
+"This tutorial will describe a complete example of using PDAL C++ objects "
+"to write a LAS file. The example will show fetching data from your own "
+"data source rather than interacting with a PDAL stage."
+msgstr ""
+
+#: ../../development/writing.rst:18
+msgid ""
+"If you implement your own :ref:`readers` that conforms to PDAL's "
+":cpp:class:`pdal::Stage`, you can implement a simple read-filter-write "
+"pipeline using :ref:`pipeline` and not have to code anything explicit "
+"yourself."
+msgstr ""
+
+#: ../../development/writing.rst:24
+msgid "Includes"
+msgstr ""
+
+#: ../../development/writing.rst:26
+msgid "First, our code."
+msgstr ""
+
+#: ../../development/writing.rst:31
+msgid "Take a closer look. We will need to include several PDAL headers."
+msgstr ""
+
+#: ../../development/writing.rst:37
+msgid ""
+"`BufferReader` will not be required by all users. Here is it used to "
+"populate a bare `PointBuffer`. This will often be accomplished by a "
+"`Reader` stage."
+msgstr ""
+
+#: ../../development/writing.rst:40
+msgid ""
+"Instead of directly including headers for individual stages, e.g., "
+"`LasWriter`, we rely on the `StageFactory` which has the ability to query"
+" available stages at runtime and return pointers to the created stages."
+msgstr ""
+
+#: ../../development/writing.rst:44
+msgid ""
+"We proceed by providing a mechanism for generating dummy data for the x, "
+"y, and z dimensions."
+msgstr ""
+
+#: ../../development/writing.rst:55
+msgid ""
+"Finally, the main code which creates the dummy data, puts it into a "
+"BufferReader and sends it to a writer."
+msgstr ""
+
+#: ../../development/writing.rst:63
+msgid "Compiling and running the program"
+msgstr ""
+
+#: ../../development/writing.rst:67
+msgid "Refer to :ref:`building` for information on how to build PDAL."
+msgstr ""
+
+#: ../../development/writing.rst:69
+msgid ""
+"To build this example, simply copy the files tutorial.cpp and "
+"CMakeLists.txt from the examples/writing directory of the PDAL source "
+"tree."
+msgstr ""
+
+#: ../../development/writing.rst:77
+msgid "Refer to :ref:`using` for an explanation of the basic CMakeLists."
+msgstr ""
+
+#: ../../development/writing.rst:79
+msgid ""
+"Begin by configuring your project using CMake (shown here on Unix) and "
+"building using make."
+msgstr ""
+
+#: ../../development/writing.rst:90
+msgid "After the project is built, you can run it by typing:"
+msgstr ""
+
+#: ../../development/writing.rst:97
+msgid "Streaming"
+msgstr ""
+
+#: ../../development/writing.rst:99
+msgid ""
+"Writing in streaming mode creates and writes the cloud one point at a "
+"time, and the implementation is somewhat different. An example is given "
+"in ``examples/writing-streamer``."
+msgstr ""
+

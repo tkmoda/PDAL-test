@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.outlier.rst:5
+msgid "filters.outlier"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:7
+msgid ""
+"The **outlier filter** provides two outlier filtering methods: radius and"
+" statistical. These two approaches are discussed in further detail below."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:10
+msgid ""
+"It is worth noting that both filtering methods simply apply a "
+"classification value of 7 to the noise points (per the `LAS "
+"specification`_). To remove the noise points altogether, users can add a "
+":ref:`range filter<filters.range>` to their pipeline, downstream from the"
+" outlier filter."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:28
+msgid "Statistical Method"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:30
+msgid ""
+"The default method for identifying outlier points is the statistical "
+"outlier method. This method requires two passes through the input "
+"``PointView``, first to compute a threshold value based on global "
+"statistics, and second to identify outliers using the computed threshold."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:32
+msgid ""
+"In the first pass, for each point :math:`p_i` in the input ``PointView``,"
+" compute the mean distance :math:`\\mu_i` to each of the :math:`k` "
+"nearest neighbors (where :math:`k` is configurable and specified by "
+"mean_k_). Then,"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:34
+msgid "\\overline{\\mu} = \\frac{1}{N} \\sum_{i=1}^N \\mu_i"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:38
+msgid ""
+"\\sigma = \\sqrt{\\frac{1}{N-1} \\sum_{i=1}^N (\\mu_i - "
+"\\overline{\\mu})^2}"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:42
+msgid ""
+"A global mean :math:`\\overline{\\mu}` of these mean distances is then "
+"computed along with the standard deviation :math:`\\sigma`. From this, "
+"the threshold is computed as"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:44
+msgid "t = \\mu + m\\sigma"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:48
+msgid "where :math:`m` is a user-defined multiplier specified by multiplier_."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:50
+msgid ""
+"We now iterate over the pre-computed mean distances :math:`\\mu_i` and "
+"compare to computed threshold value. If :math:`\\mu_i` is greater than "
+"the threshold, it is marked as an outlier."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:52
+msgid ""
+"outlier_i = \\begin{cases}\n"
+"    \\text{true,} \\phantom{false,} \\text{if } \\mu_i >= t \\\\\n"
+"    \\text{false,} \\phantom{true,} \\text{otherwise} \\\\\n"
+"\\end{cases}"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:-1
+msgid "Points before outlier removal"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:63
+msgid ""
+"Before outlier removal, noise points can be found both above and below "
+"the scene."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:-1
+msgid "Points after outlier removal"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:71
+msgid "After outlier removal, the noise points are removed."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:73
+msgid "See [Rusu2008]_ for more information."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:77 ../../stages/filters.outlier.rst:111
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:79
+msgid ""
+"In this example, points are marked as outliers if the average distance to"
+" each of the 12 nearest neighbors is below the computed threshold."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:96
+msgid "Radius Method"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:98
+msgid ""
+"For each point :math:`p_i` in the input ``PointView``, this method counts"
+" the number of neighboring points :math:`k_i` within radius :math:`r` "
+"(specified by radius_). If :math:`k_i<k_{min}`, where :math:`k_{min}` is "
+"the minimum number of neighbors specified by min_k_, it is marked as an "
+"outlier."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:103
+msgid ""
+"outlier_i = \\begin{cases}\n"
+"    \\text{true,} \\phantom{false,} \\text{if } k_i < k_{min} \\\\\n"
+"    \\text{false,} \\phantom{true,} \\text{otherwise} \\\\\n"
+"\\end{cases}"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:113
+msgid ""
+"The following example will mark points as outliers when there are fewer "
+"than four neighbors within a radius of 1.0."
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:130
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:133
+msgid "class"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:133
+msgid "The classification value to apply to outliers. [Default: 7]"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:137
+msgid "method"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:136
+msgid ""
+"The outlier removal method (either \"statistical\" or \"radius\"). "
+"[Default: \"statistical\"]"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:140
+msgid "_`min_k`"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:140
+msgid "Minimum number of neighbors in radius (radius method only). [Default: 2]"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:143
+msgid "_`radius`"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:143
+msgid "Radius (radius method only). [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:146
+msgid "_`mean_k`"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:146
+msgid "Mean number of neighbors (statistical method only). [Default: 8]"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:149
+msgid "_`multiplier`"
+msgstr ""
+
+#: ../../stages/filters.outlier.rst:149
+msgid "Standard deviation threshold (statistical method only). [Default: 2.0]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

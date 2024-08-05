@@ -1,0 +1,961 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.rst:4
+msgid "Filters"
+msgstr ""
+
+#: ../../stages/filters.rst:6
+msgid ""
+"Filters operate on data as inline operations. They can remove, modify, "
+"reorganize, and add points to the data stream as it goes by. Some filters"
+" can only operate on dimensions they understand (consider "
+":ref:`filters.reprojection` doing geographic reprojection on XYZ "
+"coordinates), while others do not interrogate the point data at all and "
+"simply reorganize or split data."
+msgstr ""
+
+#: ../../stages/filters.rst:14
+msgid "Create"
+msgstr ""
+
+#: ../../stages/filters.rst:16
+msgid ""
+"PDAL filters commonly create new dimensions (e.g., ``HeightAboveGround``)"
+" or alter existing ones (e.g., ``Classification``). These filters will "
+"not invalidate an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:22
+msgid "We treat those filters that alter XYZ coordinates separately."
+msgstr ""
+
+#: ../../stages/filters.rst:26
+msgid ""
+"When creating new dimensions, be mindful of the writer you are using and "
+"whether or not the custom dimension can be written to disk if that is the"
+" desired behavior."
+msgstr ""
+
+#: ../../stages/filters.rst:32
+msgid "Classification"
+msgstr ""
+
+#: ../../stages/filters.rst:36
+msgid "Ground/Unclassified"
+msgstr ""
+
+#: ../../stages/filters.rst:51
+msgid ":ref:`filters.csf`"
+msgstr ""
+
+#: ../../stages/filters.rst:51
+msgid "Label ground/non-ground returns using [Zhang2016]_."
+msgstr ""
+
+#: ../../stages/filters.rst:54
+msgid ":ref:`filters.pmf`"
+msgstr ""
+
+#: ../../stages/filters.rst:54
+msgid "Label ground/non-ground returns using [Zhang2003]_."
+msgstr ""
+
+#: ../../stages/filters.rst:57
+msgid ":ref:`filters.skewnessbalancing`"
+msgstr ""
+
+#: ../../stages/filters.rst:57
+msgid "Label ground/non-ground returns using [Bartels2010]_."
+msgstr ""
+
+#: ../../stages/filters.rst:60
+msgid ":ref:`filters.smrf`"
+msgstr ""
+
+#: ../../stages/filters.rst:60
+msgid "Label ground/non-ground returns using [Pingel2013]_."
+msgstr ""
+
+#: ../../stages/filters.rst:63
+msgid ":ref:`filters.sparsesurface`"
+msgstr ""
+
+#: ../../stages/filters.rst:63
+msgid "Sparsify ground returns and label neighbors as low noise."
+msgstr ""
+
+#: ../../stages/filters.rst:68
+msgid ":ref:`filters.trajectory`"
+msgstr ""
+
+#: ../../stages/filters.rst:66
+msgid ""
+"Label ground/non-ground returns using estimate flight trajectory given "
+"multi-return point cloud data with timing information."
+msgstr ""
+
+#: ../../stages/filters.rst:71
+msgid "Noise"
+msgstr ""
+
+#: ../../stages/filters.rst:82
+msgid ":ref:`filters.elm`"
+msgstr ""
+
+#: ../../stages/filters.rst:82
+msgid "Marks low points as noise."
+msgstr ""
+
+#: ../../stages/filters.rst:86
+msgid ":ref:`filters.outlier`"
+msgstr ""
+
+#: ../../stages/filters.rst:85
+msgid "Label noise points using either a statistical or radius outlier detection."
+msgstr ""
+
+#: ../../stages/filters.rst:89
+msgid "Consensus"
+msgstr ""
+
+#: ../../stages/filters.rst:100
+msgid ":ref:`filters.neighborclassifier`"
+msgstr ""
+
+#: ../../stages/filters.rst:99
+msgid "Update pointwise classification using k-nearest neighbor consensus voting."
+msgstr ""
+
+#: ../../stages/filters.rst:103
+msgid "Height Above Ground"
+msgstr ""
+
+#: ../../stages/filters.rst:116
+msgid ":ref:`filters.hag_delaunay`"
+msgstr ""
+
+#: ../../stages/filters.rst:115
+msgid ""
+"Compute pointwise height above ground using triangulation. Requires "
+"points to classified as ground/non-ground prior to estimating."
+msgstr ""
+
+#: ../../stages/filters.rst:119
+msgid ":ref:`filters.hag_dem`"
+msgstr ""
+
+#: ../../stages/filters.rst:119
+msgid "Compute pointwise height above GDAL-readable DEM raster."
+msgstr ""
+
+#: ../../stages/filters.rst:124
+msgid ":ref:`filters.hag_nn`"
+msgstr ""
+
+#: ../../stages/filters.rst:122
+msgid ""
+"Compute pointwise height above ground estimate. Requires points to be "
+"classified as ground/non-ground prior to estimating."
+msgstr ""
+
+#: ../../stages/filters.rst:127
+msgid "Colorization"
+msgstr ""
+
+#: ../../stages/filters.rst:138
+msgid ":ref:`filters.colorinterp`"
+msgstr ""
+
+#: ../../stages/filters.rst:138
+msgid "Assign RGB colors based on a dimension and a ramp"
+msgstr ""
+
+#: ../../stages/filters.rst:142
+msgid ":ref:`filters.colorization`"
+msgstr ""
+
+#: ../../stages/filters.rst:141
+msgid "Fetch and assign RGB color information from a GDAL-readable datasource."
+msgstr ""
+
+#: ../../stages/filters.rst:145
+msgid "Clustering"
+msgstr ""
+
+#: ../../stages/filters.rst:160
+msgid ":ref:`filters.cluster`"
+msgstr ""
+
+#: ../../stages/filters.rst:158
+msgid ""
+"Extract and label clusters using Euclidean distance metric. Returns a new"
+" dimension ``ClusterID`` that indicates the cluster that a point belongs "
+"to. Points not belonging to a cluster are given a cluster ID of 0."
+msgstr ""
+
+#: ../../stages/filters.rst:164
+msgid ":ref:`filters.dbscan`"
+msgstr ""
+
+#: ../../stages/filters.rst:163
+msgid ""
+"Perform Density-Based Spatial Clustering of Applications with Noise "
+"(DBSCAN) [Ester1996]_."
+msgstr ""
+
+#: ../../stages/filters.rst:169
+msgid ":ref:`filters.litree`"
+msgstr ""
+
+#: ../../stages/filters.rst:167
+msgid ""
+"Segment and label individual trees. Returns a new dimension ``TreeID`` "
+"that indicates the tree that a point belongs to. ``TreeID`` starts at 1, "
+"with non-tree points given a ``TreeID`` of 0. [Li2012]_."
+msgstr ""
+
+#: ../../stages/filters.rst:175
+msgid ":ref:`filters.lloydkmeans`"
+msgstr ""
+
+#: ../../stages/filters.rst:172
+msgid ""
+"Perform K-means clustering using Lloyd's algorithm. Returns a new "
+"dimension ``ClusterID`` with each point being assigned to a cluster. "
+"``ClusterID`` starts at 0. [Lloyd1982]_."
+msgstr ""
+
+#: ../../stages/filters.rst:178
+msgid "Pointwise Features"
+msgstr ""
+
+#: ../../stages/filters.rst:203
+msgid ":ref:`filters.approximatecoplanar`"
+msgstr ""
+
+#: ../../stages/filters.rst:201
+msgid ""
+"Estimate pointwise planarity, based on k-nearest neighbors. Returns a new"
+" dimension ``Coplanar`` where a value of 1 indicates that a point is part"
+" of a coplanar neighborhood (0 otherwise)."
+msgstr ""
+
+#: ../../stages/filters.rst:207
+msgid ":ref:`filters.covariancefeatures`"
+msgstr ""
+
+#: ../../stages/filters.rst:206
+msgid ""
+"Filter that calculates local features based on the covariance matrix of a"
+" point's neighborhood."
+msgstr ""
+
+#: ../../stages/filters.rst:210
+msgid ":ref:`filters.eigenvalues`"
+msgstr ""
+
+#: ../../stages/filters.rst:210
+msgid "Compute pointwise eigenvalues, based on k-nearest neighbors."
+msgstr ""
+
+#: ../../stages/filters.rst:213
+msgid ":ref:`filters.estimaterank`"
+msgstr ""
+
+#: ../../stages/filters.rst:213
+msgid "Compute pointwise rank, based on k-nearest neighbors."
+msgstr ""
+
+#: ../../stages/filters.rst:217
+msgid ":ref:`filters.lof`"
+msgstr ""
+
+#: ../../stages/filters.rst:216
+msgid ""
+"Compute pointwise Local Outlier Factor (along with K-Distance and Local "
+"Reachability Distance)."
+msgstr ""
+
+#: ../../stages/filters.rst:220
+msgid ":ref:`filters.miniball`"
+msgstr ""
+
+#: ../../stages/filters.rst:220
+msgid "Compute a criterion for point neighbors based on the miniball algorithm."
+msgstr ""
+
+#: ../../stages/filters.rst:223
+msgid ":ref:`filters.nndistance`"
+msgstr ""
+
+#: ../../stages/filters.rst:223
+msgid "Compute a distance metric based on nearest neighbors."
+msgstr ""
+
+#: ../../stages/filters.rst:226
+msgid ":ref:`filters.normal`"
+msgstr ""
+
+#: ../../stages/filters.rst:226
+msgid "Compute pointwise normal and curvature, based on k-nearest neighbors."
+msgstr ""
+
+#: ../../stages/filters.rst:231
+msgid ":ref:`filters.optimalneighborhood`"
+msgstr ""
+
+#: ../../stages/filters.rst:229
+msgid ""
+"Compute optimal k nearest neighbors and corresponding radius by "
+"minimizing pointwise eigenentropy. Creates two new dimensions "
+"``OptimalKNN`` and ``OptimalRadius``."
+msgstr ""
+
+#: ../../stages/filters.rst:234
+msgid ":ref:`filters.planefit`"
+msgstr ""
+
+#: ../../stages/filters.rst:234
+msgid ""
+"Compute a deviation of a point from a manifold approximating its "
+"neighbors."
+msgstr ""
+
+#: ../../stages/filters.rst:237
+msgid ":ref:`filters.radialdensity`"
+msgstr ""
+
+#: ../../stages/filters.rst:237
+msgid "Compute pointwise density of points within a given radius."
+msgstr ""
+
+#: ../../stages/filters.rst:241
+msgid ":ref:`filters.reciprocity`"
+msgstr ""
+
+#: ../../stages/filters.rst:240
+msgid ""
+"Compute the percentage of points that are considered uni-directional "
+"neighbors of a point."
+msgstr ""
+
+#: ../../stages/filters.rst:244
+msgid ":ref:`filters.zsmooth`"
+msgstr ""
+
+#: ../../stages/filters.rst:244
+msgid "Compute a smoothed 'Z' value based on the 'Z' value of neighboring points."
+msgstr ""
+
+#: ../../stages/filters.rst:247
+msgid ":ref:`filters.griddecimation`"
+msgstr ""
+
+#: ../../stages/filters.rst:247
+msgid ""
+"Assign values for one point (the highest or lowest) per cell of a 2d "
+"regular grid."
+msgstr ""
+
+#: ../../stages/filters.rst:250
+msgid "Assignment"
+msgstr ""
+
+#: ../../stages/filters.rst:261
+msgid ":ref:`filters.assign`"
+msgstr ""
+
+#: ../../stages/filters.rst:261
+msgid "Assign values for a dimension range to a specified value."
+msgstr ""
+
+#: ../../stages/filters.rst:266
+msgid ":ref:`filters.overlay`"
+msgstr ""
+
+#: ../../stages/filters.rst:264
+msgid ""
+"Assign values to a dimension based on the extent of an OGR-readable data "
+"source or an OGR SQL query."
+msgstr ""
+
+#: ../../stages/filters.rst:269
+msgid "Dimension Create/Copy"
+msgstr ""
+
+#: ../../stages/filters.rst:280
+msgid ":ref:`filters.ferry`"
+msgstr ""
+
+#: ../../stages/filters.rst:279
+msgid "Copy data from one dimension to another."
+msgstr ""
+
+#: ../../stages/filters.rst:283
+msgid "Order"
+msgstr ""
+
+#: ../../stages/filters.rst:285
+msgid ""
+"There are currently three PDAL filters that can be used to reorder "
+"points. These filters will invalidate an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:298
+msgid ":ref:`filters.mortonorder`"
+msgstr ""
+
+#: ../../stages/filters.rst:298
+msgid "Sort XY data using Morton ordering (aka Z-order/Z-curve)."
+msgstr ""
+
+#: ../../stages/filters.rst:301
+msgid ":ref:`filters.randomize`"
+msgstr ""
+
+#: ../../stages/filters.rst:301
+msgid "Randomize points in a view."
+msgstr ""
+
+#: ../../stages/filters.rst:305
+msgid ":ref:`filters.sort`"
+msgstr ""
+
+#: ../../stages/filters.rst:304
+msgid "Sort data based on a given dimension."
+msgstr ""
+
+#: ../../stages/filters.rst:308
+msgid "Move"
+msgstr ""
+
+#: ../../stages/filters.rst:310
+msgid ""
+"PDAL filters that move XYZ coordinates will invalidate an existing KD-"
+"tree."
+msgstr ""
+
+#: ../../stages/filters.rst:314
+msgid "Registration"
+msgstr ""
+
+#: ../../stages/filters.rst:327
+msgid ":ref:`filters.cpd`"
+msgstr ""
+
+#: ../../stages/filters.rst:326
+msgid ""
+"Compute and apply transformation between two point clouds using the "
+"Coherent Point Drift algorithm."
+msgstr ""
+
+#: ../../stages/filters.rst:331
+msgid ":ref:`filters.icp`"
+msgstr ""
+
+#: ../../stages/filters.rst:330
+msgid ""
+"Compute and apply transformation between two point clouds using the "
+"Iterative Closest Point algorithm."
+msgstr ""
+
+#: ../../stages/filters.rst:334
+msgid ":ref:`filters.teaser`"
+msgstr ""
+
+#: ../../stages/filters.rst:334
+msgid ""
+"Compute a rigid transformation between two point clouds using the teaser "
+"algorithm."
+msgstr ""
+
+#: ../../stages/filters.rst:337
+msgid "Predefined"
+msgstr ""
+
+#: ../../stages/filters.rst:353
+msgid ":ref:`filters.projpipeline`"
+msgstr ""
+
+#: ../../stages/filters.rst:352
+msgid ""
+"Apply coordinates operation on point triplets, based on PROJ pipeline "
+"string, WKT2 coordinates operations or URN definitions."
+msgstr ""
+
+#: ../../stages/filters.rst:356
+msgid ":ref:`filters.reprojection`"
+msgstr ""
+
+#: ../../stages/filters.rst:356
+msgid "Reproject data using GDAL from one coordinate system to another."
+msgstr ""
+
+#: ../../stages/filters.rst:360
+msgid ":ref:`filters.transformation`"
+msgstr ""
+
+#: ../../stages/filters.rst:359
+msgid "Transform each point using a 4x4 transformation matrix."
+msgstr ""
+
+#: ../../stages/filters.rst:363
+msgid ":ref:`filters.straighten`"
+msgstr ""
+
+#: ../../stages/filters.rst:363
+msgid ""
+"Transforms each in a new parametric coordinate system along a given "
+"poyline."
+msgstr ""
+
+#: ../../stages/filters.rst:366
+msgid ":ref:`filters.georeference`"
+msgstr ""
+
+#: ../../stages/filters.rst:366
+msgid "Georeference point cloud."
+msgstr ""
+
+#: ../../stages/filters.rst:369
+msgid ":ref:`filters.h3`"
+msgstr ""
+
+#: ../../stages/filters.rst:369
+msgid "Compute H3 index values for the Longitude/Latitude of the point cloud"
+msgstr ""
+
+#: ../../stages/filters.rst:372
+msgid "Cull"
+msgstr ""
+
+#: ../../stages/filters.rst:374
+msgid ""
+"Some PDAL filters will cull points, returning a point cloud that is "
+"smaller than the input. These filters will invalidate an existing KD-"
+"tree."
+msgstr ""
+
+#: ../../stages/filters.rst:379 ../../stages/filters.rst:515
+msgid "Spatial"
+msgstr ""
+
+#: ../../stages/filters.rst:390
+msgid ":ref:`filters.crop`"
+msgstr ""
+
+#: ../../stages/filters.rst:390
+msgid "Filter points inside or outside a bounding box or a polygon"
+msgstr ""
+
+#: ../../stages/filters.rst:393
+msgid ":ref:`filters.geomdistance`"
+msgstr ""
+
+#: ../../stages/filters.rst:393
+msgid "Compute 2D distance from a polygon to points"
+msgstr ""
+
+#: ../../stages/filters.rst:396
+msgid "Resampling"
+msgstr ""
+
+#: ../../stages/filters.rst:409
+msgid ":ref:`filters.decimation`"
+msgstr ""
+
+#: ../../stages/filters.rst:409
+msgid "Keep every Nth point."
+msgstr ""
+
+#: ../../stages/filters.rst:414
+msgid ":ref:`filters.fps`"
+msgstr ""
+
+#: ../../stages/filters.rst:412
+msgid ""
+"The Farthest Point Sampling Filter adds points from the input to the "
+"output PointView one at a time by selecting the point from the input "
+"cloud that is farthest from any point currently in the output."
+msgstr ""
+
+#: ../../stages/filters.rst:419
+msgid ":ref:`filters.relaxationdartthrowing`"
+msgstr ""
+
+#: ../../stages/filters.rst:417
+msgid ""
+"Relaxation dart throwing is a hierarchical variant of Poisson disk "
+"sampling, shrinking the minimum radius between iterations until the "
+"target number of output points is achieved."
+msgstr ""
+
+#: ../../stages/filters.rst:423
+msgid ":ref:`filters.sample`"
+msgstr ""
+
+#: ../../stages/filters.rst:422
+msgid "Perform Poisson sampling and return only a subset of the input points."
+msgstr ""
+
+#: ../../stages/filters.rst:426
+msgid "Conditional"
+msgstr ""
+
+#: ../../stages/filters.rst:439
+msgid ":ref:`filters.dem`"
+msgstr ""
+
+#: ../../stages/filters.rst:438
+msgid ""
+"Remove points that are in a raster cell but have a value far from the "
+"value of the raster."
+msgstr ""
+
+#: ../../stages/filters.rst:443
+msgid ":ref:`filters.iqr`"
+msgstr ""
+
+#: ../../stages/filters.rst:442
+msgid ""
+"Cull points falling outside the computed Interquartile Range for a given "
+"dimension."
+msgstr ""
+
+#: ../../stages/filters.rst:448
+msgid ":ref:`filters.mad`"
+msgstr ""
+
+#: ../../stages/filters.rst:446
+msgid ""
+"Cull points falling outside the computed Median Absolute Deviation for a "
+"given dimension."
+msgstr ""
+
+#: ../../stages/filters.rst:451
+msgid "Voxel"
+msgstr ""
+
+#: ../../stages/filters.rst:463
+msgid ":ref:`filters.voxelcenternearestneighbor`"
+msgstr ""
+
+#: ../../stages/filters.rst:463
+msgid "Return the point within each voxel that is nearest the voxel center."
+msgstr ""
+
+#: ../../stages/filters.rst:466
+msgid ":ref:`filters.voxelcentroidnearestneighbor`"
+msgstr ""
+
+#: ../../stages/filters.rst:466
+msgid "Return the point within each voxel that is nearest the voxel centroid."
+msgstr ""
+
+#: ../../stages/filters.rst:471
+msgid ":ref:`filters.voxeldownsize`"
+msgstr ""
+
+#: ../../stages/filters.rst:469
+msgid ""
+"Retain either first point detected in each voxel or center of a populated"
+" voxel, depending on mode argument."
+msgstr ""
+
+#: ../../stages/filters.rst:474
+msgid "Position"
+msgstr ""
+
+#: ../../stages/filters.rst:489
+msgid ":ref:`filters.expression`"
+msgstr ""
+
+#: ../../stages/filters.rst:489
+msgid "Pass only points given an :ref:`expression <PDAL expression>`"
+msgstr ""
+
+#: ../../stages/filters.rst:492
+msgid ":ref:`filters.head`"
+msgstr ""
+
+#: ../../stages/filters.rst:492
+msgid "Return N points from beginning of the point cloud."
+msgstr ""
+
+#: ../../stages/filters.rst:495
+msgid ":ref:`filters.locate`"
+msgstr ""
+
+#: ../../stages/filters.rst:495
+msgid "Return a single point with min/max value in the named dimension."
+msgstr ""
+
+#: ../../stages/filters.rst:498
+msgid ":ref:`filters.mongo`"
+msgstr ""
+
+#: ../../stages/filters.rst:498
+msgid "Cull points using MongoDB-style expression syntax."
+msgstr ""
+
+#: ../../stages/filters.rst:501
+msgid ":ref:`filters.range`"
+msgstr ""
+
+#: ../../stages/filters.rst:501
+msgid "Pass only points given a dimension/range."
+msgstr ""
+
+#: ../../stages/filters.rst:505
+msgid ":ref:`filters.tail`"
+msgstr ""
+
+#: ../../stages/filters.rst:504
+msgid "Return N points from end of the point cloud."
+msgstr ""
+
+#: ../../stages/filters.rst:508
+msgid "New"
+msgstr ""
+
+#: ../../stages/filters.rst:510
+msgid ""
+"PDAL filters can be used to split the incoming point cloud into subsets. "
+"These filters will invalidate an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:528
+msgid ":ref:`filters.chipper`"
+msgstr ""
+
+#: ../../stages/filters.rst:527
+msgid ""
+"Organize points into spatially contiguous, squarish, and non-overlapping "
+"chips."
+msgstr ""
+
+#: ../../stages/filters.rst:532
+msgid ":ref:`filters.divider`"
+msgstr ""
+
+#: ../../stages/filters.rst:531
+msgid ""
+"Divide points into approximately equal sized groups based on a simple "
+"scheme."
+msgstr ""
+
+#: ../../stages/filters.rst:536
+msgid ":ref:`filters.splitter`"
+msgstr ""
+
+#: ../../stages/filters.rst:535
+msgid "Split data based on a X/Y box length."
+msgstr ""
+
+#: ../../stages/filters.rst:539
+msgid "Dimension"
+msgstr ""
+
+#: ../../stages/filters.rst:552
+msgid ":ref:`filters.gpstimeconvert`"
+msgstr ""
+
+#: ../../stages/filters.rst:552
+msgid "Convert between three LAS format GPS time standards"
+msgstr ""
+
+#: ../../stages/filters.rst:555
+msgid ":ref:`filters.groupby`"
+msgstr ""
+
+#: ../../stages/filters.rst:555
+msgid "Split data categorically by dimension."
+msgstr ""
+
+#: ../../stages/filters.rst:558
+msgid ":ref:`filters.returns`"
+msgstr ""
+
+#: ../../stages/filters.rst:558
+msgid ""
+"Split data by return order (e.g., 'first', 'last', 'intermediate', "
+"'only')."
+msgstr ""
+
+#: ../../stages/filters.rst:562
+msgid ":ref:`filters.separatescanline`"
+msgstr ""
+
+#: ../../stages/filters.rst:561
+msgid "Split data based on scan lines."
+msgstr ""
+
+#: ../../stages/filters.rst:565
+msgid "Join"
+msgstr ""
+
+#: ../../stages/filters.rst:567
+msgid ""
+"Multiple point clouds can be joined to form a single point cloud. These "
+"filters will invalidate an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:579
+msgid ":ref:`filters.merge`"
+msgstr ""
+
+#: ../../stages/filters.rst:578
+msgid "Merge data from two different readers into a single stream."
+msgstr ""
+
+#: ../../stages/filters.rst:582
+msgid "Metadata"
+msgstr ""
+
+#: ../../stages/filters.rst:584
+msgid ""
+"PDAL filters can be used to create new metadata. These filters will not "
+"invalidate an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:589
+msgid ""
+":ref:`filters.cpd` and :ref:`filters.icp` can optionally create metadata "
+"as well, inserting the computed transformation matrix."
+msgstr ""
+
+#: ../../stages/filters.rst:602
+msgid ":ref:`filters.hexbin`"
+msgstr ""
+
+#: ../../stages/filters.rst:602
+msgid "Tessellate XY domain and determine point density and/or point boundary."
+msgstr ""
+
+#: ../../stages/filters.rst:606
+msgid ":ref:`filters.info`"
+msgstr ""
+
+#: ../../stages/filters.rst:605
+msgid ""
+"Generate metadata about the point set, including a point count and "
+"spatial reference information."
+msgstr ""
+
+#: ../../stages/filters.rst:610
+msgid ":ref:`filters.stats`"
+msgstr ""
+
+#: ../../stages/filters.rst:609
+msgid "Compute statistics about each dimension (mean, min, max, etc.)."
+msgstr ""
+
+#: ../../stages/filters.rst:613
+msgid "Mesh"
+msgstr ""
+
+#: ../../stages/filters.rst:615
+msgid ""
+"Meshes can be computed from point clouds. These filters will invalidate "
+"an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:629
+msgid ":ref:`filters.delaunay`"
+msgstr ""
+
+#: ../../stages/filters.rst:629
+msgid "Create mesh using Delaunay triangulation."
+msgstr ""
+
+#: ../../stages/filters.rst:632
+msgid ":ref:`filters.greedyprojection`"
+msgstr ""
+
+#: ../../stages/filters.rst:632
+msgid "Create mesh using the Greedy Projection Triangulation approach."
+msgstr ""
+
+#: ../../stages/filters.rst:636
+msgid ":ref:`filters.poisson`"
+msgstr ""
+
+#: ../../stages/filters.rst:635
+msgid ""
+"Create mesh using the Poisson surface reconstruction algorithm "
+"[Kazhdan2006]_."
+msgstr ""
+
+#: ../../stages/filters.rst:639
+msgid ":ref:`filters.faceraster`"
+msgstr ""
+
+#: ../../stages/filters.rst:639
+msgid "Create a raster from an existing triangulation."
+msgstr ""
+
+#: ../../stages/filters.rst:642
+msgid "Languages"
+msgstr ""
+
+#: ../../stages/filters.rst:644
+msgid ""
+"PDAL has three filters than can be used to pass point clouds to other "
+"languages. These filters will invalidate an existing KD-tree."
+msgstr ""
+
+#: ../../stages/filters.rst:657
+msgid ":ref:`filters.matlab`"
+msgstr ""
+
+#: ../../stages/filters.rst:657
+msgid "Embed MATLAB software in a pipeline."
+msgstr ""
+
+#: ../../stages/filters.rst:660
+msgid ":ref:`filters.python`"
+msgstr ""
+
+#: ../../stages/filters.rst:660
+msgid "Embed Python software in a pipeline."
+msgstr ""
+
+#: ../../stages/filters.rst:664
+msgid ":ref:`filters.julia`"
+msgstr ""
+
+#: ../../stages/filters.rst:663
+msgid "Embed Julia software in a pipeline."
+msgstr ""
+
+#: ../../stages/filters.rst:667
+msgid "Other"
+msgstr ""
+
+#: ../../stages/filters.rst:676
+msgid ":ref:`filters.streamcallback`"
+msgstr ""
+
+#: ../../stages/filters.rst:677
+msgid "Provide a hook for a simple point-by-point callback."
+msgstr ""
+

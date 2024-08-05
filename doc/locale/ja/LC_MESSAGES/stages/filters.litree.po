@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.litree.rst:5
+msgid "filters.litree"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:7
+msgid ""
+"The purpose of the Li tree filter is to segment individual trees from an "
+"input ``PointView``. In the output ``PointView`` points that are deemed "
+"to be part of a tree are labeled with a ``ClusterID``. Tree IDs start at "
+"1, with non-tree points given a ``ClusterID`` of 0."
+msgstr ""
+
+#: ../../stages/filters.litree.rst:14
+msgid ""
+"The filter differs only slightly from the paper in the addition of a few "
+"conditions on size of tree, minimum height above ground for tree seeding,"
+" and flexible radius for non-tree seed insertion."
+msgstr ""
+
+#: ../../stages/filters.litree.rst:20
+msgid ""
+"In earlier PDAL releases (up to v2.2.0), ``ClusterID`` was stored in the "
+"``TreeID`` Dimemsion."
+msgstr ""
+
+#: ../../stages/filters.litree.rst:26
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:28
+msgid ""
+"The Li tree algorithm expects to visit points in descending order of "
+"``HeightAboveGround``, which is also used in determining the minimum tree"
+" height to consider. As such, the following pipeline precomputes "
+"``HeightAboveGround`` using :ref:`filters.hag_delaunay` and subsequently "
+"sorts the ``PointView`` using this dimension."
+msgstr ""
+
+#: ../../stages/filters.litree.rst:61
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:64
+msgid "min_points"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:64
+msgid "Minimum number of points in a tree cluster. [Default: 10]"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:67
+msgid "min_height"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:67
+msgid "Minimum height above ground to start a tree cluster. [Default: 3.0]"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:71
+msgid "radius"
+msgstr ""
+
+#: ../../stages/filters.litree.rst:70
+msgid ""
+"The seed point for the non-tree cluster is the farthest point in a 2D "
+"Euclidean sense from the seed point for the current tree. [Default: "
+"100.0]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

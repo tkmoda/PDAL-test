@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../tutorial/reading.rst:5
+msgid "Reading with PDAL"
+msgstr ""
+
+#: ../../tutorial/reading.rst
+msgid "Author"
+msgstr ""
+
+#: ../../tutorial/reading.rst:7
+msgid "Bradley Chambers"
+msgstr ""
+
+#: ../../tutorial/reading.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../tutorial/reading.rst:8
+msgid "brad.chambers@gmail.com"
+msgstr ""
+
+#: ../../tutorial/reading.rst
+msgid "Date"
+msgstr ""
+
+#: ../../tutorial/reading.rst:9
+msgid "01/21/2015"
+msgstr ""
+
+#: ../../tutorial/reading.rst:15
+msgid "Contents"
+msgstr ""
+
+#: ../../tutorial/reading.rst:17
+msgid ""
+"This tutorial is an introduction to using PDAL to read data using pdal "
+"from the command line."
+msgstr ""
+
+#: ../../tutorial/reading.rst:21
+msgid "A basic inquiry example"
+msgstr ""
+
+#: ../../tutorial/reading.rst:23
+msgid ""
+"Our first example to demonstrate PDAL's utility will be to simply query "
+"an `LAS`_ file to determine the data that are in it in the very first "
+"point."
+msgstr ""
+
+#: ../../tutorial/reading.rst:28
+msgid "The `interesting.las`_ file in these examples can be found on github."
+msgstr ""
+
+#: ../../tutorial/reading.rst:30
+msgid "`pdal info` outputs JavaScript `JSON`_."
+msgstr ""
+
+#: ../../tutorial/reading.rst:69
+msgid "A conversion example"
+msgstr ""
+
+#: ../../tutorial/reading.rst:71
+msgid ""
+"Conversion of data from one format to another may be lossy, in that some "
+"data in the source format may not be representable in the same format or "
+"at all in the destination format.  For example, some formats don't "
+"support spatial references for point data, some have no metadata support "
+"and others have limited :ref:`dimension <dimensions>` support.  Even when"
+" data types are supported in both source and destination formats, there "
+"may be limitations with regard to data type, precision or, scaling.  PDAL"
+" attempts to convert data as accurately as possible, but you should make "
+"sure that you're aware of the capabilities of the data formats you're "
+"using."
+msgstr ""
+
+#: ../../tutorial/reading.rst:96
+msgid ""
+"The text format supports all point attributes, but provides no support "
+"for metadata such as the input spatial reference system or the `LAS`_ "
+"header fields, such as `UUID`_. You may need to preserve some more "
+"information as part of your conversion to make it useful down the road."
+msgstr ""
+
+#: ../../tutorial/reading.rst:103
+msgid "Metadata"
+msgstr ""
+
+#: ../../tutorial/reading.rst:105
+msgid ""
+"PDAL carries :ref:`metadata <metadata>` for each stage through the PDAL "
+":ref:`processing pipeline <pipeline>`.  The metadata can be written in "
+"JSON form using the pdal :ref:`info <info_command>` command ::"
+msgstr ""
+
+#: ../../tutorial/reading.rst:111
+msgid ""
+"This produces metadata that looks like `this <../_images/info-"
+"interesting-metadata.png>`_. You can use your `JSON`_ manipulation tools "
+"to extract this information. For formats that do not have the ability to "
+"preserve this metadata internally, you can keep a ``.json`` file "
+"alongside the ``.txt`` file as auxiliary information."
+msgstr ""
+
+#: ../../tutorial/reading.rst:119
+msgid "A Pipeline Example"
+msgstr ""
+
+#: ../../tutorial/reading.rst:121
+msgid ""
+"The full power of PDAL comes in the form of :ref:`pipeline_command` "
+"invocations. Pipelines allow you to take advantage of PDAL's ability to "
+"manipulate data as they are converted. This section will provide a basic "
+"example and demonstration of pipeline usage.  See the :ref:`pipeline "
+"specification <pipeline>`, for more detailed exposition of the topic."
+msgstr ""
+
+#: ../../tutorial/reading.rst:128
+msgid ""
+"The :ref:`pipeline_command` describes a series of processing stages to be"
+" performed in JSON format.  Each stage can be provided a set of options "
+"that control the details of processing. PDAL is single-threaded and "
+"stages are executed in a linear order.  Some stages support what is known"
+" as \"stream mode\".  If all stages in a pipeline support stream mode the"
+" command is run using using stream mode to reduce the memory processing "
+"footprint. Even when run in stream mode, execution is single-threaded and"
+" can be thought of as linear."
+msgstr ""
+
+#: ../../tutorial/reading.rst:138
+msgid "Simple conversion"
+msgstr ""
+
+#: ../../tutorial/reading.rst:140
+msgid ""
+"The following `JSON`_ document defines a pipeline that takes the "
+"``file.las`` `LAS`_ file and converts it to a new file called "
+"``output.las``."
+msgstr ""
+
+#: ../../tutorial/reading.rst:151
+msgid "Loop a directory and filter it through a pipeline"
+msgstr ""
+
+#: ../../tutorial/reading.rst:153
+msgid ""
+"This bash script loops through a directory and pushes the las files "
+"through a pipeline, substituting the input and output as it goes."
+msgstr ""
+
+#: ../../tutorial/reading.rst:160
+msgid "Here is an example doing something similar with Windows PowerShell"
+msgstr ""
+

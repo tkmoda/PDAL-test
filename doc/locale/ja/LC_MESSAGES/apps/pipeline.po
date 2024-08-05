@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/pipeline.rst:5
+msgid "pipeline"
+msgstr ""
+
+#: ../../apps/pipeline.rst:7
+msgid ""
+"The ``pipeline`` command is used to execute :ref:`pipeline` JSON. By "
+"default the pipeline is run in stream mode if possible, otherwise in "
+"standard mode. See :ref:`reading` or :ref:`pipeline` for more "
+"information."
+msgstr ""
+
+#: ../../apps/pipeline.rst:33
+msgid "Substitutions"
+msgstr ""
+
+#: ../../apps/pipeline.rst:35
+msgid ""
+"The ``pipeline`` command can accept command-line option substitutions and"
+" they replace existing options that are specified in the input JSON "
+"pipeline. For example, to set the output and input LAS files for a "
+"pipeline that does a translation, the ``filename`` for the reader and the"
+" writer can be overridden:"
+msgstr ""
+
+#: ../../apps/pipeline.rst:47
+msgid ""
+"If multiple stages of the same name exist in the pipeline, `all` stages "
+"would be overridden. In the following example, both colorization filters "
+"would have their `dimensions` option overridden to the value \"Red:1:1.0,"
+" Blue, Green::256.0\" by the command shown below:"
+msgstr ""
+
+#: ../../apps/pipeline.rst:74
+msgid ""
+"Option substitution can also refer to the tag of an individual stage. "
+"This can be done by using the syntax --stage.<tagname>.<option>.  This "
+"allows options to be set on individual stages, even if there are multiple"
+" stages of the same type.  For example, if a pipeline contained two LAS "
+"readers with tags ``las1`` and ``las2`` respectively, the following "
+"command would allow assignment of different filenames to each stage:"
+msgstr ""
+
+#: ../../apps/pipeline.rst:100
+msgid "Options specified by tag names override options specified by stage types."
+msgstr ""
+

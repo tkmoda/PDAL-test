@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/generation/meshing/meshing.rst:4
+msgid "Creating surface meshes"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:10
+msgid ""
+"This exercise uses PDAL to create surface meshes. PDAL is able to use a "
+"number of meshing filters: https://pdal.io/en/latest/stages/filters.html."
+" Three of these are 'in the box', without needing plugins compiled. These"
+" are 2D Delaunay triangulation, Greedy projection meshing and Poisson "
+"surface meshing."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:15
+msgid ""
+"In this exercise we'll create a Poisson surface mesh - a watertight "
+"isosurface - from our input point cloud."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:19
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:21
+msgid ""
+"We will create mesh models of a building and its surrounds using an "
+"entwine data input source."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:24
+msgid ""
+"After running each command, the output `.ply` file can be viewed in "
+"Meshlab or `CloudCompare`_."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:31
+msgid ""
+"Since QGIS doesn't support `.ply` files we can't use it for this "
+"exercise. In order to use QGIS you can covert the files to OBJ or `.copc`"
+" using PDAL."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:36
+msgid ""
+"PDAL implements Mischa Kazhdan's Poisson surface reconstruction "
+"algorithm. For details see `[Kazhdan2006]_`."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:41
+msgid ""
+"This example will be using the output of using :ref:`workshop-clipping` "
+"exercise, specifically using ``stadium.copc.laz`` file.  Please produce "
+"that file by following that exercise before starting this one."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:47
+msgid ""
+"`writers.ply` will write out mesh vertices by default. In this exercise "
+"we set the attribute `faces=\"true\"`. Try using the ply writer without "
+"it. Also, if you're using a machine with a lot of processing power, try "
+"increasing the `depth` parameter for a more detailed mesh."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:53
+msgid "Mesh Command"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:55
+#: ../../workshop/generation/meshing/meshing.rst:102
+msgid ""
+"Invoke the following command, substituting accordingly, in your `Conda "
+"Shell`:"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:77
+msgid ""
+"You can view the mesh in Cloud Compare, you should see something similar "
+"to:"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:82
+msgid ""
+"To colorize the points, select ``first-mesh`` in the left window. Under "
+"``Properties`` set ``Colors`` to ``RGB``. You should see the following:"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:89
+msgid "Filtering"
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:91
+msgid ""
+"If we want to just mesh a building, or just terrain, or both we can apply"
+" a `range` filter based on point classification. These data have ground "
+"labeled as class 2, and buildings as 6."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:95
+msgid ""
+"In this exercise we will create a poisson mesh surface of a building and "
+"the ground surrounding it, using the same data subset as above and adding"
+" a :ref:`filters.expression` stage to limit the set of points used in "
+"mesh creation."
+msgstr ""
+
+#: ../../workshop/generation/meshing/meshing.rst:100
+msgid "Command"
+msgstr ""
+

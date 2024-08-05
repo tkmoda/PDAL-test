@@ -1,0 +1,523 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.tiledb.rst:4
+msgid "writers.tiledb"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:6
+msgid "Implements `TileDB`_ 2.3.0+ reads from an array."
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:13
+msgid "Example"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:33
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:36
+msgid "array_name"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:36
+msgid "`TileDB`_ array to write to. Synonymous with `filename`. [Required]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:39
+msgid "config_file"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:39
+msgid "`TileDB`_ configuration file. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:42
+msgid "data_tile_capacity"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:42
+msgid "Number of points per tile. Not used when `append=true`. [Default: 100,000]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:45
+msgid "cell_order"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:45
+msgid ""
+"The layout to use for TileDB cells. May be `auto`, `row-major`, `col-"
+"major`, or `hilbert`. Not used when `append=true`. [Default: auto]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:48
+msgid "tile_order"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:48
+msgid ""
+"The layout to use for TileDB tiles. May be `row-major` or `col-major`. "
+"Not used when `append=true`. [Default: row-major]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:51
+msgid "x_tile_size"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:51
+msgid ""
+"Tile size (x). Floating point value used for determining on-disk data "
+"order. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:54
+msgid "y_tile_size"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:54
+msgid ""
+"Tile size (y). Floating point value used for determining on-disk data "
+"order. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:57
+msgid "z_tile_size"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:57
+msgid ""
+"Tile size (z). Floating point value used for determining on-disk data "
+"order. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:60
+msgid "time_tile_size"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:60
+msgid "Tile size (time). Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:63
+msgid "x_domain_st"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:63
+msgid "Domain minimum for x. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:66
+msgid "x_domain_end"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:66
+msgid "Domain maximum for x. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:69
+msgid "y_domain_st"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:69
+msgid "Domain minimum for y. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:72
+msgid "y_domain_end"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:72
+msgid "Domain maximum for y. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:75
+msgid "z_domain_st"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:75
+msgid "Domain minimum for z. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:78
+msgid "z_domain_end"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:78
+msgid "Domain maximum for z. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:81
+msgid "time_domain_st"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:81
+msgid "Domain minimum for GpsTime. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:84
+msgid "time_domain_end"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:84
+msgid "Domain maximum for GpsTime. Not used when `append=true`. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:87
+msgid "use_time_dim"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:87
+msgid ""
+"Use GpsTime coordinate data as an array dimension instead of an array "
+"attribute. Not used when `append=true`. [Default: false]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:90
+msgid "time_first"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:90
+msgid ""
+"Put the GpsTime dimension first instead of last. Only used when "
+"`use_time_dim=true`. Not used when `append=true`. [Default: false]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:93
+msgid "combine_bit_fields"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:93
+msgid ""
+"Store all sub-byte fields together in an attribute named `BitFields`. Not"
+" used when `append=true`. [Default: true]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:96
+msgid "chunk_size"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:96
+msgid "Point cache size for chunked writes. [Default: 1,000,000]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:99
+msgid "append"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:99
+msgid ""
+"Instead of creating a new array, append to an existing array that has the"
+" dimensions stored as a TileDB dimension or TileDB attribute. [Default: "
+"false]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:102
+msgid "stats"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:102
+msgid "Dump query stats to stdout. [Default: false]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:105
+msgid "filters"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:105
+msgid ""
+"JSON array or object of compression filters for either dimenions or "
+"attributes of the form {dimension/attribute name : {\"compression\": "
+"name, compression_options: value, ...}}.  Not used when `append=true`. "
+"[Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:108
+msgid "filter_profile"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:108
+msgid ""
+"Profile of compression filters to use for dimensions and attributes not "
+"provided in `filters`. Options include `balanced`, `aggressive`, and "
+"`none`. Not used when `append=true`. [Default: balanced]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:113
+msgid "scale_x, scale_y, scale_z"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:111
+msgid ""
+"Scale factor used for the float-scale filter for the X, Y, and Z "
+"dimensions, respectively, when using the `balanced` or `aggressive` "
+"filter profile. Not used when `append=true`. [Default: 0.01]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:113 ../../stages/writers.tiledb.rst:118
+msgid "Note: written value = (nominal value - offset) / scale."
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:118
+msgid "offset_x, offset_y, offset_z"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:116
+msgid ""
+"Offset used for the float-scale filter for the  X, Y and Z dimenisons, "
+"respectively, when using the `balanced` or `aggressive` filter profile. "
+"Not used when `append=true`. [Default: 0.0]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:121
+msgid "compression"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:121
+msgid ""
+"The default TileDB compression filter to use. Only used if the dimension "
+"or attribute name is not included in `filters`. Not used when "
+"`append=true`. [Default: none]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:124
+msgid "compression_level"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:124
+msgid ""
+"The TileDB compression level to use for the default compression. Option "
+"is ignored if set to `-1`. Not used when `append=true`. [Default: -1]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:127
+msgid "timestamp"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:127
+msgid "Sets the TileDB timestamp for this write. [Optional]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:130
+msgid "allow_dups"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:130
+msgid "Allow duplicate points. [Default: true]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:135
+msgid ""
+"TileDB provides default filter profiles. The filters can be over-written "
+"by the `filters` option. If a TileDB attribute is not set by the filter "
+"profile or the `filter` option, the compression filter set by the "
+"compression option is used."
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:137
+msgid ""
+"Filters set by the `balanced` (default) filter profile (the delta filter "
+"is skipped if using TileDB version less than 2.16.0):"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:139 ../../stages/writers.tiledb.rst:223
+msgid "X"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:141 ../../stages/writers.tiledb.rst:225
+msgid ""
+"Float-scale filter (factor=`scale_x`, offset=`offset_x`, "
+"scale_float_bytewidth=4)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:142 ../../stages/writers.tiledb.rst:149
+#: ../../stages/writers.tiledb.rst:156 ../../stages/writers.tiledb.rst:226
+#: ../../stages/writers.tiledb.rst:233 ../../stages/writers.tiledb.rst:240
+msgid "Delta filter (reinterpret_datatype=`INT32`)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:143 ../../stages/writers.tiledb.rst:150
+#: ../../stages/writers.tiledb.rst:157
+msgid "Bit shuffle filter"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:144 ../../stages/writers.tiledb.rst:151
+#: ../../stages/writers.tiledb.rst:158 ../../stages/writers.tiledb.rst:164
+#: ../../stages/writers.tiledb.rst:207 ../../stages/writers.tiledb.rst:213
+#: ../../stages/writers.tiledb.rst:219
+msgid "Zstd filter (level=7)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:146 ../../stages/writers.tiledb.rst:230
+msgid "Y"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:148 ../../stages/writers.tiledb.rst:232
+msgid ""
+"Float-scale filter (factor=`scale_y`, offset=`offset_y`, "
+"scale_float_bytewidth=4)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:153 ../../stages/writers.tiledb.rst:237
+msgid "Z"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:155 ../../stages/writers.tiledb.rst:239
+msgid ""
+"Float-scale filter (factor=`scale_z`, offset=`offset_z`, "
+"scale_float_bytewidth=4)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:160 ../../stages/writers.tiledb.rst:244
+msgid "GPSTime"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:162 ../../stages/writers.tiledb.rst:246
+msgid "Delta filter (reinterpret_datatype=\"INT64\")"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:163 ../../stages/writers.tiledb.rst:206
+#: ../../stages/writers.tiledb.rst:212 ../../stages/writers.tiledb.rst:218
+#: ../../stages/writers.tiledb.rst:227 ../../stages/writers.tiledb.rst:234
+#: ../../stages/writers.tiledb.rst:241 ../../stages/writers.tiledb.rst:247
+#: ../../stages/writers.tiledb.rst:291 ../../stages/writers.tiledb.rst:297
+#: ../../stages/writers.tiledb.rst:303
+msgid "Bit width reduction filter"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:166 ../../stages/writers.tiledb.rst:250
+msgid "Intensity"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:168 ../../stages/writers.tiledb.rst:205
+#: ../../stages/writers.tiledb.rst:211 ../../stages/writers.tiledb.rst:217
+#: ../../stages/writers.tiledb.rst:252 ../../stages/writers.tiledb.rst:290
+#: ../../stages/writers.tiledb.rst:296 ../../stages/writers.tiledb.rst:302
+msgid "Delta filter"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:169 ../../stages/writers.tiledb.rst:173
+#: ../../stages/writers.tiledb.rst:177 ../../stages/writers.tiledb.rst:181
+#: ../../stages/writers.tiledb.rst:185 ../../stages/writers.tiledb.rst:189
+#: ../../stages/writers.tiledb.rst:193 ../../stages/writers.tiledb.rst:197
+#: ../../stages/writers.tiledb.rst:201
+msgid "Zstd filter (level=5)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:171 ../../stages/writers.tiledb.rst:256
+msgid "BitFields"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:175 ../../stages/writers.tiledb.rst:260
+msgid "ReturnNumber"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:179 ../../stages/writers.tiledb.rst:264
+msgid "NumberOfReturns"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:183 ../../stages/writers.tiledb.rst:268
+msgid "ScanDirectionFlag"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:187 ../../stages/writers.tiledb.rst:272
+msgid "EdgeOfFlightLine"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:191 ../../stages/writers.tiledb.rst:276
+msgid "Classification"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:195 ../../stages/writers.tiledb.rst:280
+msgid "UserData"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:199 ../../stages/writers.tiledb.rst:284
+msgid "PointSourceId"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:203 ../../stages/writers.tiledb.rst:288
+msgid "Red"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:209 ../../stages/writers.tiledb.rst:294
+msgid "Green"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:215 ../../stages/writers.tiledb.rst:300
+msgid "Blue"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:221
+msgid ""
+"Filters set by the `aggressive` filter profile (the delta filter is "
+"skipped if using TileDB version less than 2.16.0):"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:228 ../../stages/writers.tiledb.rst:235
+#: ../../stages/writers.tiledb.rst:242 ../../stages/writers.tiledb.rst:248
+#: ../../stages/writers.tiledb.rst:258 ../../stages/writers.tiledb.rst:262
+#: ../../stages/writers.tiledb.rst:266 ../../stages/writers.tiledb.rst:270
+#: ../../stages/writers.tiledb.rst:274 ../../stages/writers.tiledb.rst:278
+#: ../../stages/writers.tiledb.rst:282 ../../stages/writers.tiledb.rst:286
+#: ../../stages/writers.tiledb.rst:292 ../../stages/writers.tiledb.rst:298
+#: ../../stages/writers.tiledb.rst:304
+msgid "BZIP2 filter (level=9)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:253
+msgid "Bit width reduction"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:254
+msgid "BZIP2 filter (level=5)"
+msgstr ""
+
+#: ../../stages/writers.tiledb.rst:307
+msgid "The filter profile `none` does not set any default filters."
+msgstr ""
+

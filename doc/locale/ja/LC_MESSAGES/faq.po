@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../faq.rst:5
+msgid "FAQ"
+msgstr ""
+
+#: ../../faq.rst:12
+msgid "Why do I get the error ``Couldn't create ... stage of type ...``?"
+msgstr ""
+
+#: ../../faq.rst:14
+msgid ""
+"In almost all cases this error occurs because you're trying to run a "
+"stage that is built as a plugin and the plugin (a shared library file or "
+"DLL) can't be found by pdal.  You can verify whether the plugin can be "
+"found by running ``pdal --drivers``"
+msgstr ""
+
+#: ../../faq.rst:19
+msgid ""
+"If you've built pdal yourself, make sure you've requested to build the "
+"plugin in question (set BUILD_PLUGIN_TILEDB=ON, for example, in "
+"CMakeCache.txt)."
+msgstr ""
+
+#: ../../faq.rst:23
+msgid "If you've successfully built the plugin, a shared object called"
+msgstr ""
+
+#: ../../faq.rst:30
+msgid ""
+"should have been created that's installed in a location where pdal can "
+"find it.  pdal will search the following paths for plugins: ``.``, "
+"``./lib``, ``../lib``, ``./bin``, ``../bin``."
+msgstr ""
+
+#: ../../faq.rst:35
+msgid ""
+"You can also override the default search path by setting the environment "
+"variable ``PDAL_DRIVER_PATH`` to a list of directories that pdal should "
+"search for plugins."
+msgstr ""
+
+#: ../../faq.rst:39 ../../faq.rst:68 ../../faq.rst:83 ../../faq.rst:92
+#: ../../faq.rst:99 ../../faq.rst:112 ../../faq.rst:124 ../../faq.rst:138
+#: ../../faq.rst:147
+msgid "|nbsp|"
+msgstr ""
+
+#: ../../faq.rst:41
+msgid "I'm missing the python filter/numpy reader. Where is it?"
+msgstr ""
+
+#: ../../faq.rst:43
+msgid ""
+"If you're building PDAL from source, you'll find the python filter and "
+"numpy reader in a separate repository, https://github.com/PDAL/python-"
+"plugins. If you're using a package, Python support may be in a separate "
+"package, often called \"python-pdal\"."
+msgstr ""
+
+#: ../../faq.rst:47
+msgid "Why do I get the error ``Unable to convert scaled value ...``"
+msgstr ""
+
+#: ../../faq.rst:49
+msgid ""
+"This error usually occurs when writing LAS files, but can occur with "
+"other formats."
+msgstr ""
+
+#: ../../faq.rst:52
+msgid ""
+"Simply, the output format you've chosen doesn't support values as large "
+"(or small) as those that you're trying to write.  For example. if the "
+"output format specifies 32-bit signed integers, attempting to write a "
+"value larger than 2,147,483,647 will cause this error, as 2,147,483,647 "
+"is the largest 32-bit signed integer."
+msgstr ""
+
+#: ../../faq.rst:58
+msgid ""
+"The LAS format always stores X, Y and Z values as 32-bit integers. You "
+"can specify a scale factor to be applied to those values in order to "
+"change their magnitude, but their precision is limited to 32 bits. If the"
+" value you're attempting to write, when divided by the scale factor "
+"you've specified, is larger than 2,147,483,647, you will get this error. "
+"For example, if you attempt to write the value 6 with a scale factor of "
+".000000001, you'll get this error, as 6 / .000000001 is 6,000,000,000, "
+"which is larger than the maximum integer value."
+msgstr ""
+
+#: ../../faq.rst:70
+msgid "Why am I using 100GB of memory when trying to process a 10GB LAZ file?"
+msgstr ""
+
+#: ../../faq.rst:72
+msgid ""
+"If you're performing an operation that is using :ref:`standard mode "
+"<processing_modes>`, PDAL will read all points into memory at once.  "
+"Compressed files, like LAZ, can decompress to much larger sizes before "
+"PDAL can process the data. Furthermore, some operations (notably "
+":ref:`DEM creation<writers.gdal>`) can use large amounts of additional "
+"memory during processing before the output can be written. Depending on "
+"the operation, PDAL will attempt operate in :ref:`stream mode "
+"<processing_modes>` to limit memory consumption when possible. If you "
+"want to limit the dimensions loaded, you may be able to use the ``dims`` "
+"option that is available with some PDAL commands."
+msgstr ""
+
+#: ../../faq.rst:85
+msgid "How do you pronounce PDAL?"
+msgstr ""
+
+#: ../../faq.rst:87
+msgid ""
+"The proper spelling of the project name is PDAL, in uppercase. It is "
+"pronounced to rhyme with \"GDAL\"."
+msgstr ""
+
+#: ../../faq.rst:94
+msgid "What is PDAL?"
+msgstr ""
+
+#: ../../faq.rst:96
+msgid ""
+"PDAL is not a workflow engine for processing point cloud data. PDAL is a "
+"library *for making* point cloud processing workflow engines."
+msgstr ""
+
+#: ../../faq.rst:101
+msgid "What is PDAL's relationship to PCL?"
+msgstr ""
+
+#: ../../faq.rst:103
+msgid ""
+"PDAL is PCL's data translation cousin. PDAL is focused on providing a "
+"declarative pipeline syntax for orchestrating translation operations. "
+"PDAL also supports reading and writing PCL PCD files using "
+":ref:`readers.pcd` and :ref:`writers.pcd`."
+msgstr ""
+
+#: ../../faq.rst:110
+msgid ":ref:`about_pcl` describes PDAL and PCL's relationship."
+msgstr ""
+
+#: ../../faq.rst:114
+msgid "What is PDAL's relationship to libLAS?"
+msgstr ""
+
+#: ../../faq.rst:116
+msgid ""
+"The idea behind libLAS was limited to LIDAR data and basic manipulation. "
+"libLAS was also trying to be partially compatible with LASlib and "
+"LAStools. PDAL, on the other hand, aims to be a ultimate library and a "
+"set of tools for manipulating and processing point clouds and is easily "
+"extensible by its users. Howard Butler talked more about this history in "
+"a `GeoHipster interview`_ in 2018."
+msgstr ""
+
+#: ../../faq.rst:126
+msgid "Are there any command line tools in PDAL similar to LAStools?"
+msgstr ""
+
+#: ../../faq.rst:128
+msgid ""
+"Yes. The :ref:`pdal <apps>` command provides a wide range of features "
+"which go far beyond basic LIDAR data processing. Additionally, PDAL is "
+"licensed under an open source license (this applies to the whole library "
+"and all command line tools)."
+msgstr ""
+
+#: ../../faq.rst:135
+msgid ":ref:`apps` describes application operations you can achieve with PDAL."
+msgstr ""
+
+#: ../../faq.rst:140
+msgid ""
+"Is there any compatibility with libLAS's LAS Utility Applications or "
+"LAStools?"
+msgstr ""
+
+#: ../../faq.rst:142
+msgid ""
+"No. The the command line interface was developed from scratch with focus "
+"on usability and readability. You will find that the ``pdal`` command has"
+" several well-organized subcommands such as ``info`` or ``translate`` "
+"(see :ref:`apps`)."
+msgstr ""
+
+#: ../../faq.rst:149
+msgid "I get GeoTIFF errors. What can I do about them?"
+msgstr ""
+
+#: ../../faq.rst:156
+msgid ""
+"If :ref:`readers.las` is emitting error messages about GeoTIFF, this "
+"means the keys that were written into your file were incorrect or at "
+"least not readable by `libgeotiff`_. Rewrite the file using PDAL to fix "
+"the issue:"
+msgstr ""
+

@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.approximatecoplanar.rst:4
+msgid "filters.approximatecoplanar"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:6
+msgid ""
+"The **approximate coplanar filter** implements a portion of the algorithm"
+" presented in [Limberger2015]_. Prior to clustering points, the authors "
+"first apply an approximate coplanarity test, where points that meet the "
+"following criteria are labeled as approximately coplanar."
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:12
+msgid ""
+"\\lambda_2 > (s_{\\alpha}\\lambda_1) \\&\\& (s_{\\beta}\\lambda_2) > "
+"\\lambda_3"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:16
+msgid ""
+":math:`\\lambda_1`, :math:`\\lambda_2`, :math:`\\lambda_3` are the "
+"eigenvalues of a neighborhood of points (defined by ``knn`` nearest "
+"neighbors) in ascending order. The threshold values :math:`s_{\\alpha}` "
+"and :math:`s_{\\beta}` are user-defined and default to 25 and 6 "
+"respectively."
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:21
+msgid ""
+"The filter returns a point cloud with a new dimension ``Coplanar`` that "
+"indicates those points that are part of a neighborhood that is "
+"approximately coplanar (1) or not (0)."
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:28
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:30
+msgid ""
+"The sample pipeline presented below estimates the planarity of a point "
+"based on its eight nearest neighbors using the approximate coplanar "
+"filter. A :ref:`filters.range` stage then filters out any points that "
+"were not deemed to be coplanar before writing the result in compressed "
+"LAZ."
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:53
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:56
+msgid "knn"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:56
+msgid "The number of k-nearest neighbors. [Default: 8]"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:59
+msgid "thresh1"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:59
+msgid "The threshold to be applied to the smallest eigenvalue. [Default: 25]"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:62
+msgid "thresh2"
+msgstr ""
+
+#: ../../stages/filters.approximatecoplanar.rst:62
+msgid ""
+"The threshold to be applied to the second smallest eigenvalue. [Default: "
+"6]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.fbx.rst:4
+msgid "writers.fbx"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:6
+msgid ""
+"Output to the Autodesk FBX format. You must use a filter that creates a "
+"mesh, such as :ref:`filters.poisson` or `filters.greedyprojection`, in "
+"order to use this writer."
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:13
+msgid "Compilation"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:15
+msgid ""
+"You must download and install the Autodesk SDK and then compile the PDAL "
+"FBX plugin against it. Visit https://www.autodesk.com/developer-network"
+"/platform-technologies/fbx-sdk-2019-0 to obtain a current copy of the "
+"SDK."
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:20
+msgid "Example Windows CMake configuration"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:25
+msgid "::"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:23
+msgid "-DFBX_ROOT_DIR:FILEPATH=\"C:\\fbx\\2019.0\" ^ -DBUILD_PLUGIN_FBX=ON ^"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:28
+msgid "Example"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:46
+msgid "..code-block:: shell"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:48
+msgid "pdal translate autzen.las autzen.fbx -f poisson"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:51
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:54
+msgid "filename"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:54
+msgid "FBX filename to write.  [Required]"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:57
+msgid "ascii"
+msgstr ""
+
+#: ../../stages/writers.fbx.rst:57
+msgid "Write ASCII FBX format.  [Default: false]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+

@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../references.rst:5
+msgid "References"
+msgstr ""
+
+#: ../../references.rst:10
+msgid "Citation"
+msgstr ""
+
+#: ../../references.rst:12
+msgid "To cite PDAL in publications use:"
+msgstr ""
+
+#: ../../references.rst:14
+msgid ""
+"PDAL Contributors, 2022. PDAL Point Data Abstraction Library.  "
+"https://doi.org/10.5281/zenodo.2616780"
+msgstr ""
+
+#: ../../references.rst:16
+msgid "A BibTeX entry for LaTeX users is"
+msgstr ""
+
+#: ../../references.rst
+msgid "@misc{pdal_contributors_2022_2616780,"
+msgstr ""
+
+#: ../../references.rst
+msgid "author       = {PDAL Contributors},"
+msgstr ""
+
+#: ../../references.rst
+msgid "title        = {PDAL Point Data Abstraction Library},"
+msgstr ""
+
+#: ../../references.rst
+msgid "month        = aug,"
+msgstr ""
+
+#: ../../references.rst
+msgid "year         = 2022,"
+msgstr ""
+
+#: ../../references.rst
+msgid "doi          = {10.5281/zenodo.2616780},"
+msgstr ""
+
+#: ../../references.rst
+msgid "url          = {https://doi.org/10.5281/zenodo.2616780}"
+msgstr ""
+
+#: ../../references.rst
+msgid "}"
+msgstr ""
+
+#: ../../references.rst:28
+msgid ""
+"A paper about PDAL by the team, \"PDAL: An open source library for the "
+"processing and analysis of point clouds\", is available at [Butler2021]_."
+msgstr ""
+
+#: ../../references.rst:33
+msgid "Reference"
+msgstr ""
+
+#: ../../references.rst:38
+msgid ""
+"Bartels, Marc, and Hong Wei. \"Threshold-free object and ground point "
+"separation in LIDAR data.\" Pattern recognition letters 31.10 (2010): "
+"1089-1099."
+msgstr ""
+
+#: ../../references.rst:40
+msgid ""
+"Breunig, M.M., Kriegel, H.-P., Ng, R.T., Sander, J., 2000. LOF: "
+"Identifying Density-Based Local Outliers. Proc. 2000 Acm Sigmod Int. "
+"Conf. Manag. Data 1–12."
+msgstr ""
+
+#: ../../references.rst:42
+msgid ""
+"Butler, H. Chambers, B. Hartzell, P. Glennie, C. PDAL: An open source "
+"library for the processing and analysis of point clouds. Computers & "
+"Geosciences, Volume 148, 2021, 104680, ISSN 0098-3004, "
+"https://doi.org/10.1016/j.cageo.2020.104680."
+msgstr ""
+
+#: ../../references.rst:44
+msgid ""
+"Chen, Ziyue et al. “Upward-Fusion Urban DTM Generating Method Using "
+"Airborne Lidar Data.” ISPRS Journal of Photogrammetry and Remote Sensing "
+"72 (2012): 121–130."
+msgstr ""
+
+#: ../../references.rst:46
+msgid ""
+"Cook, Robert L. \"Stochastic sampling in computer graphics.\" *ACM "
+"Transactions on Graphics (TOG)* 5.1 (1986): 51-72."
+msgstr ""
+
+#: ../../references.rst:48
+msgid ""
+"Demantké J., Mallet C., David N., Vallet, B. \"Dimensionality Based Scale"
+" Selection in 3d LIDAR Point Clouds.\"  Int. Arch. Photogramm. Remote "
+"Sens. Spatial Inf. Sci, XXXVIII-5/W12, 97-102, 2011"
+msgstr ""
+
+#: ../../references.rst:50
+msgid ""
+"Dippé, Mark AZ, and Erling Henry Wold. \"Antialiasing through stochastic "
+"sampling.\" *ACM Siggraph Computer Graphics* 19.3 (1985): 69-78."
+msgstr ""
+
+#: ../../references.rst:52
+msgid ""
+"Ester, Martin, et al. \"A density-based algorithm for discovering "
+"clusters in large spatial databases with noise.\" Kdd. Vol. 96. No. 34. "
+"1996."
+msgstr ""
+
+#: ../../references.rst:54
+msgid ""
+"Fischer, Kaspar, Bernd Gärtner, and Martin Kutz. “Fast Smallest-"
+"Enclosing-Ball Computation in High Dimensions.” 26473 (2010): 630–641. "
+"Web."
+msgstr ""
+
+#: ../../references.rst:56
+msgid ""
+"Guinard S., Landrieu L. \"Weakly Supervised Segmented-Aided "
+"Classification of Urban Scenes From 3D LIDAR Point Clouds.\" Int. Arch. "
+"Photogramm. Remote Sens. Spatial Inf. Sci., XLII-1/W1, 151-157, 2017"
+msgstr ""
+
+#: ../../references.rst:58
+msgid ""
+"Kazhdan, Michael, Matthew Bolitho, and Hugues Hoppe. \"Poisson surface "
+"reconstruction.\" Proceedings of the fourth Eurographics symposium on "
+"Geometry processing. Vol. 7. 2006."
+msgstr ""
+
+#: ../../references.rst:60
+msgid ""
+"Li, Wenkai, et al. \"A new method for segmenting individual trees from "
+"the lidar point cloud.\" Photogrammetric Engineering & Remote Sensing "
+"78.1 (2012): 75-84."
+msgstr ""
+
+#: ../../references.rst:62
+msgid ""
+"Limberger, Frederico A., and Manuel M. Oliveira. “Real-Time Detection of "
+"Planar Regions in Unorganized Point Clouds.” Pattern Recognition 48.6 "
+"(2015): 2043–2053. Web."
+msgstr ""
+
+#: ../../references.rst:64
+msgid ""
+"Lloyd, Stuart. \"Least squares quantization in PCM.\" IEEE transactions "
+"on information theory 28.2 (1982): 129-137."
+msgstr ""
+
+#: ../../references.rst:66
+msgid ""
+"McCool, Michael, and Eugene Fiume. \"Hierarchical Poisson disk sampling "
+"distributions.\" Proceedings of the conference on Graphics interface. "
+"Vol. 92. 1992."
+msgstr ""
+
+#: ../../references.rst:68
+msgid ""
+"ALoopingIcon. \"Meshing Point Clouds.\" *MESHLAB STUFF*. n.p., 7 Sept. "
+"2009. Web. 13 Nov. 2015."
+msgstr ""
+
+#: ../../references.rst:70
+msgid ""
+"Pingel, Thomas J., Keith C. Clarke, and William A. McBride. “An Improved "
+"Simple Morphological Filter for the Terrain Classification of Airborne "
+"LIDAR Data.” ISPRS Journal of Photogrammetry and Remote Sensing 77 "
+"(2013): 21–30."
+msgstr ""
+
+#: ../../references.rst:72
+msgid ""
+"Rusu, Radu Bogdan, et al. \"Towards 3D point cloud based object maps for "
+"household environments.\" Robotics and Autonomous Systems 56.11 (2008): "
+"927-941."
+msgstr ""
+
+#: ../../references.rst:74
+msgid ""
+"Weyrich, T et al. “Post-Processing of Scanned 3D Surface Data.” "
+"Proceedings of Eurographics Symposium on Point-Based Graphics 2004 "
+"(2004): 85–94. Print."
+msgstr ""
+
+#: ../../references.rst:76
+msgid ""
+"Yang, Heng, Jingnan Shi, and Luca Carlone, \"TEASER: Fast and Certifiable"
+" Point Cloud Registraton,\" arXiv preprint, arXiv:2001.07715, 2020."
+msgstr ""
+
+#: ../../references.rst:78
+msgid ""
+"Zhang, Keqi, et al. \"A progressive morphological filter for removing "
+"nonground measurements from airborne LIDAR data.\" Geoscience and Remote "
+"Sensing, IEEE Transactions on 41.4 (2003): 872-882."
+msgstr ""
+
+#: ../../references.rst:80
+msgid ""
+"Zhang, Wuming, et al. \"An easy-to-use airborne LiDAR data filtering "
+"method based on cloth simulation.\" Remote Sensing 8.6 (2016): 501."
+msgstr ""
+

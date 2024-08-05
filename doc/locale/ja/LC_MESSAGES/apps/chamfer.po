@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/chamfer.rst:5
+msgid "chamfer"
+msgstr ""
+
+#: ../../apps/chamfer.rst:9
+msgid ""
+"As of PDAL v2.6.0, the ``chamfer`` command is marked as DEPRECATED. It "
+"will be removed from the default install in PDAL v2.7 and removed "
+"completely in PDAL v2.8."
+msgstr ""
+
+#: ../../apps/chamfer.rst:13
+msgid ""
+"The following Python code can be used with the PDAL Python bindings to "
+"compute the chamfer distance."
+msgstr ""
+
+#: ../../apps/chamfer.rst:54
+msgid ""
+"Popular Python packages such as scipy and sklearn have functions to "
+"compute the pairwise distance between points and can be used to simplify "
+"the above somewhat."
+msgstr ""
+
+#: ../../apps/chamfer.rst:58
+msgid ""
+"Note that the provided code does not match exactly the output of PDAL's "
+"original implementation, which summed the square of the distance to the "
+"nearest neighbor. We have elected not to update the PDAL implementation "
+"at this time."
+msgstr ""
+
+#: ../../apps/chamfer.rst:63
+msgid ""
+"The ``chamfer`` command is used to compute the Chamfer distance between "
+"two point clouds. The Chamfer distance is computed by summing the squared"
+" distances between nearest neighbor correspondences of two point clouds."
+msgstr ""
+
+#: ../../apps/chamfer.rst:67
+msgid ""
+"More formally, for two non-empty subsets :math:`X` and :math:`Y`, the "
+"Chamfer distance :math:`d_{CD}(X,Y)` is"
+msgstr ""
+
+#: ../../apps/chamfer.rst:70
+msgid ""
+"d_{CD}(X,Y) = \\sum_{x \\in X} \\operatorname*{min}_{y \\in Y} "
+"||x-y||^2_2 + \\sum_{y \\in Y} \\operatorname*{min}_{x \\in X} "
+"||x-y||^2_2"
+msgstr ""
+
+#: ../../apps/chamfer.rst:83
+msgid ""
+"The algorithm makes no distinction between source and candidate files "
+"(i.e., they can be transposed with no affect on the computed distance)."
+msgstr ""
+
+#: ../../apps/chamfer.rst:86
+msgid ""
+"The command returns 0 along with a JSON-formatted message summarizing the"
+" PDAL version, source and candidate filenames, and the Chamfer distance. "
+"Identical point clouds will return a Chamfer distance of 0."
+msgstr ""
+
+#: ../../apps/chamfer.rst:105
+msgid ""
+"The Chamfer distance is computed for XYZ coordinates only and as such "
+"says nothing about differences in other dimensions or metadata."
+msgstr ""
+

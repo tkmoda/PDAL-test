@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.julia.rst:4
+msgid "filters.julia"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:6
+msgid ""
+"The **Julia Filter** allows `Julia`_ software to be embedded in a "
+":ref:`pipeline` that allows modification of PDAL points through a "
+"`TypedTables`_ datatype."
+msgstr ""
+
+#: ../../stages/filters.julia.rst:10
+msgid ""
+"The supplied julia function must take a `TypedTables`_ FlexTable as an "
+"argument and return the same object (with modifications)."
+msgstr ""
+
+#: ../../stages/filters.julia.rst:15
+msgid ""
+"The returned Table contains all the :ref:`dimensions` of the incoming "
+"``ins`` Table"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:54
+msgid "Filter Example"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:75
+msgid ""
+"The JSON pipeline file referenced the external `filter_z.jl` `Julia`_ "
+"script, which removes points with the ``Z`` coordinate by less than 420."
+msgstr ""
+
+#: ../../stages/filters.julia.rst:89
+msgid "Modification Example"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:110
+msgid ""
+"The JSON pipeline file referenced the external `multiply_z.jl` `Julia`_ "
+"script, which scales the ``Z`` coordinate by a factor of 10."
+msgstr ""
+
+#: ../../stages/filters.julia.rst:127
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:131
+msgid "script"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:130
+msgid ""
+"When reading a function from a separate `Julia`_ file, the file name to "
+"read from."
+msgstr ""
+
+#: ../../stages/filters.julia.rst:135
+msgid "source"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:134
+msgid ""
+"The literal `Julia`_ code to execute, when the script option is not being"
+" used."
+msgstr ""
+
+#: ../../stages/filters.julia.rst:138
+msgid "module"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:138
+msgid "The Julia module that is holding the function to run. [Required]"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:141
+msgid "function"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:141
+msgid "The function to call. [Required]"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:144
+msgid "_`add_dimension`"
+msgstr ""
+
+#: ../../stages/filters.julia.rst:144
+msgid ""
+"A dimension name or an array of dimension names to add to the pipeline "
+"that do not already exist."
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

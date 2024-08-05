@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/introduction/reprojection.rst:4
+msgid "Reprojection"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:11
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:13
+msgid "This exercise uses PDAL to reproject |ASPRSLAS| data"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:18
+msgid "Issue the following command in your |Terminal|:"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:32
+msgid ""
+"Unfortunately this doesn't produce the intended results for us. Issue the"
+" following ``pdal info`` command to see why:"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:61
+msgid ""
+"``--all`` dumps all :ref:`info_command` information about the file, and "
+"we can then use the |jq| command to extract out the \"native\" (same "
+"coordinate system as the file itself) bounding box."
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:65
+msgid ""
+"We can see, the problem is we only have two decimal places of precision "
+"on the bounding box. For geographic coordinate systems, this isn't enough"
+" precision."
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:68
+msgid "Printing the first point confirms this problem:"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:105
+msgid ""
+"Some formats, like :ref:`writers.las` do not automatically set scaling "
+"information. PDAL cannot really do this for you because there are a "
+"number of ways to trip up. For latitude/longitude data, you will need to "
+"set the scale to smaller values like ``0.0000001``. Additionally, LAS "
+"uses an offset value to move the origin of the value. Use PDAL to set "
+"that to ``auto`` so you don't have to compute it."
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:138
+msgid ""
+"Run the ``pdal info`` command again to verify the ``X``, ``Y``, and ``Z``"
+" dimensions:"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:168
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:170
+msgid ""
+":ref:`filters.reprojection` will use whatever coordinate system is "
+"defined by the point cloud file, but you can override it using the "
+"``in_srs`` option. This is useful in situations where the coordinate "
+"system is not correct, not completely specified, or your system doesn't "
+"have all of the required supporting coordinate system dictionaries."
+msgstr ""
+
+#: ../../workshop/introduction/reprojection.rst:176
+msgid ""
+"PDAL uses |Proj.4| library for reprojection. This library includes the "
+"capability to do both vertical and horizontal datum transformations."
+msgstr ""
+

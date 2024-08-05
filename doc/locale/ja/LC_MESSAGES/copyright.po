@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../copyright.rst:5
+msgid "License"
+msgstr ""
+
+#: ../../../LICENSE.txt:1
+msgid "Unless otherwise indicated, all files in the PDAL distribution are"
+msgstr ""
+
+#: ../../../LICENSE.txt:3 ../../../LICENSE.txt:13
+msgid "Copyright (c) 2022, Hobu, Inc. (howard@hobu.co)"
+msgstr ""
+
+#: ../../../LICENSE.txt:5
+msgid "and are released under the terms of the BSD open source license."
+msgstr ""
+
+#: ../../../LICENSE.txt:7
+msgid "This file contains the license terms of all files within PDAL."
+msgstr ""
+
+#: ../../../LICENSE.txt:11
+msgid "Overall PDAL license (BSD)"
+msgstr ""
+
+#: ../../../LICENSE.txt:15
+msgid "All rights reserved."
+msgstr ""
+
+#: ../../../LICENSE.txt:17
+msgid ""
+"Redistribution and use in source and binary forms, with or without "
+"modification, are permitted provided that the following conditions are "
+"met:"
+msgstr ""
+
+#: ../../../LICENSE.txt:21
+msgid ""
+"Redistributions of source code must retain the above copyright notice, "
+"this list of conditions and the following disclaimer."
+msgstr ""
+
+#: ../../../LICENSE.txt:23
+msgid ""
+"Redistributions in binary form must reproduce the above copyright notice,"
+" this list of conditions and the following disclaimer in the "
+"documentation and/or other materials provided with the distribution."
+msgstr ""
+
+#: ../../../LICENSE.txt:27
+msgid ""
+"Neither the name of Hobu, Inc. or Flaxen Consulting LLC nor the names of "
+"its contributors may be used to endorse or promote products derived from "
+"this software without specific prior written permission."
+msgstr ""
+
+#: ../../../LICENSE.txt:32
+msgid ""
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS "
+"IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED "
+"TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A "
+"PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER "
+"OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, "
+"EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, "
+"PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR "
+"PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF "
+"LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING "
+"NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS "
+"SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+

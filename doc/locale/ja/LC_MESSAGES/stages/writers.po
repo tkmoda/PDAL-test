@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.rst:4
+msgid "Writers"
+msgstr ""
+
+#: ../../stages/writers.rst:6
+msgid ""
+"Writers consume data provided by :ref:`readers`. Some writers can consume"
+" any dimension type, while others only understand fixed dimension names."
+msgstr ""
+
+#: ../../stages/writers.rst:11
+msgid ""
+"PDAL predefined dimension names can be found in the dimension registry: "
+":ref:`dimensions`"
+msgstr ""
+
+#: ../../stages/writers.rst:43
+msgid ":ref:`writers.arrow`"
+msgstr ""
+
+#: ../../stages/writers.rst:43
+msgid "write Apache Arrow Feather- or Parquet-formatted files"
+msgstr ""
+
+#: ../../stages/writers.rst:46
+msgid ":ref:`writers.bpf`"
+msgstr ""
+
+#: ../../stages/writers.rst:46
+msgid ""
+"write BPF version 3 files. BPF is an NGA specification for point cloud "
+"data."
+msgstr ""
+
+#: ../../stages/writers.rst:50
+msgid ":ref:`writers.copc`"
+msgstr ""
+
+#: ../../stages/writers.rst:49
+msgid ""
+"COPC, or Cloud Optimized Point Cloud, is an LAZ 1.4 file stored as a "
+"clustered octree."
+msgstr ""
+
+#: ../../stages/writers.rst:53
+msgid ":ref:`writers.draco`"
+msgstr ""
+
+#: ../../stages/writers.rst:53
+msgid "Write a buffer in Google Draco format"
+msgstr ""
+
+#: ../../stages/writers.rst:56
+msgid ":ref:`writers.ept_addon`"
+msgstr ""
+
+#: ../../stages/writers.rst:56
+msgid "Append additional dimensions to Entwine resources."
+msgstr ""
+
+#: ../../stages/writers.rst:59
+msgid ":ref:`writers.e57`"
+msgstr ""
+
+#: ../../stages/writers.rst:59
+msgid "Write data in the E57 format."
+msgstr ""
+
+#: ../../stages/writers.rst:62
+msgid ":ref:`writers.fbi`"
+msgstr ""
+
+#: ../../stages/writers.rst:62
+msgid "Write TerraSolid FBI format"
+msgstr ""
+
+#: ../../stages/writers.rst:65
+msgid ":ref:`writers.fbx`"
+msgstr ""
+
+#: ../../stages/writers.rst:65
+msgid "Write mesh output in the Adobe FBX format."
+msgstr ""
+
+#: ../../stages/writers.rst:68
+msgid ":ref:`writers.gdal`"
+msgstr ""
+
+#: ../../stages/writers.rst:68
+msgid "Create a raster from a point cloud using an interpolation algorithm."
+msgstr ""
+
+#: ../../stages/writers.rst:72
+msgid ":ref:`writers.gltf`"
+msgstr ""
+
+#: ../../stages/writers.rst:71
+msgid ""
+"Write mesh data in GLTF format.  Point clouds without meshes cannot be "
+"written."
+msgstr ""
+
+#: ../../stages/writers.rst:75
+msgid ":ref:`writers.las`"
+msgstr ""
+
+#: ../../stages/writers.rst:75
+msgid "Write ASPRS LAS and LAZ versions 1.0 - 1.4 formatted data."
+msgstr ""
+
+#: ../../stages/writers.rst:78
+msgid ":ref:`writers.matlab`"
+msgstr ""
+
+#: ../../stages/writers.rst:78
+msgid "Write MATLAB .mat files. The output has a single array struct."
+msgstr ""
+
+#: ../../stages/writers.rst:81
+msgid ":ref:`writers.nitf`"
+msgstr ""
+
+#: ../../stages/writers.rst:81
+msgid "Write LAS and LAZ point cloud data, wrapped in a NITF 2.1 file."
+msgstr ""
+
+#: ../../stages/writers.rst:85
+msgid ":ref:`writers.null`"
+msgstr ""
+
+#: ../../stages/writers.rst:84
+msgid ""
+"Provides a sink for points in a pipeline. It's the same as sending "
+"pipeline output to /dev/null."
+msgstr ""
+
+#: ../../stages/writers.rst:88
+msgid ":ref:`writers.ogr`"
+msgstr ""
+
+#: ../../stages/writers.rst:88
+msgid "Write a point cloud as a set of OGR points/multipoints"
+msgstr ""
+
+#: ../../stages/writers.rst:91
+msgid ":ref:`writers.pcd`"
+msgstr ""
+
+#: ../../stages/writers.rst:91
+msgid "Write PCD-formatted files in the ASCII, binary, or compressed format."
+msgstr ""
+
+#: ../../stages/writers.rst:95
+msgid ":ref:`writers.pgpointcloud`"
+msgstr ""
+
+#: ../../stages/writers.rst:94
+msgid ""
+"Write to a PostgreSQL database that has the PostgreSQL Pointcloud "
+"extension enabled."
+msgstr ""
+
+#: ../../stages/writers.rst:98
+msgid ":ref:`writers.ply`"
+msgstr ""
+
+#: ../../stages/writers.rst:98
+msgid "Write points as PLY vertices. Can also emit a mesh as a set of faces."
+msgstr ""
+
+#: ../../stages/writers.rst:101
+msgid ":ref:`writers.raster`"
+msgstr ""
+
+#: ../../stages/writers.rst:101
+msgid "Writes rasters using GDAL. Rasters must be created using a PDAL filter."
+msgstr ""
+
+#: ../../stages/writers.rst:104
+msgid ":ref:`writers.sbet`"
+msgstr ""
+
+#: ../../stages/writers.rst:104
+msgid "Write data in the SBET format."
+msgstr ""
+
+#: ../../stages/writers.rst:107
+msgid ":ref:`writers.text`"
+msgstr ""
+
+#: ../../stages/writers.rst:107
+msgid "Write points in a text file. GeoJSON and CSV formats are supported."
+msgstr ""
+
+#: ../../stages/writers.rst:109
+msgid ":ref:`writers.tiledb`"
+msgstr ""
+
+#: ../../stages/writers.rst:110
+msgid "Write points into a TileDB database."
+msgstr ""
+

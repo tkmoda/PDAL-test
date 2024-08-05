@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.h3.rst:4
+msgid "filters.h3"
+msgstr ""
+
+#: ../../stages/filters.h3.rst:6
+msgid ""
+"The **H3 filter** adds a `H3 <https://h3geo.org/docs/api/indexing/>`__ ID"
+" at a given ``resolution``. The `uint64_t` integer corresponds to the `H3"
+" index <https://h3geo.org/docs/core-library/latLngToCellDesc>`__ of the "
+"point."
+msgstr ""
+
+#: ../../stages/filters.h3.rst:14
+msgid ""
+":ref:`filters.h3` internally depends on being able to reproject the "
+"coordinate system to ``EPSG:4326``. If the data does not have coordinate "
+"system information, the filter will throw an error."
+msgstr ""
+
+#: ../../stages/filters.h3.rst:18
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.h3.rst:21
+msgid "resolution"
+msgstr ""
+
+#: ../../stages/filters.h3.rst:21
+msgid "The H3 resolution [Default: 0]"
+msgstr ""
+

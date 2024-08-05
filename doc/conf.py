@@ -331,3 +331,7 @@ breathe_diagram = {
 }
 
 #todo_include_todos=True
+
+## internalisation setting
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.

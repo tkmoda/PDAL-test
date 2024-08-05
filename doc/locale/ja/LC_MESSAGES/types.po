@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../types.rst:5
+msgid "Types"
+msgstr ""
+
+#: ../../types.rst:7
+msgid ""
+"PDAL supports the standard integral and floating point types for "
+":ref:`dimensions <dimensions>`.  This table lists the types and "
+"associated strings that can be used to describe the types in options."
+msgstr ""
+
+#: ../../types.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../types.rst:1
+msgid "Size in Bits"
+msgstr ""
+
+#: ../../types.rst:1
+msgid "Text Representations"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "Signed Integer"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "8"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``int8``, ``int8_t``, ``char``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "16"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``int16``, ``int16_t``, ``short``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "32"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``int32``, ``int32_t``, ``int``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "64"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``int64``, ``int64_t``, ``long``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "Unsigned Integer"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``uint8``, ``uint8_t``, ``uchar``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``uint16``, ``uint16_t``, ``ushort``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``uint32``, ``uint32_t``, ``uint``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``uint64``, ``uint64_t``, ``ulong``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "Floating Point"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``float``, ``float32``"
+msgstr ""
+
+#: ../../type-table.csv:1
+msgid "``double``, ``float64``"
+msgstr ""
+

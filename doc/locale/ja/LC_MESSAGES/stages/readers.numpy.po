@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.numpy.rst:4
+msgid "readers.numpy"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:6
+msgid ""
+"PDAL has support for processing data using :ref:`filters.python`, but it "
+"is also convenient to read data from `Numpy`_ for processing in PDAL."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:9
+msgid ""
+"`Numpy`_ supports saving files with the ``save`` method, usually with the"
+" extension ``.npy``. As of PDAL 1.7.0, ``.npz`` files were not yet "
+"supported."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:14
+msgid ""
+"It is untested whether problems may occur if the versions of Python used "
+"in writing the file and for reading the file don't match."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:18
+msgid "Array Types"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:20
+msgid "readers.numpy supports reading data in two forms:"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:22
+msgid ""
+"As a `structured array`_ with specified field names (from `laspy`_ for "
+"example)"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:24
+msgid "As a standard array that contains data of a single type."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:29
+msgid "Structured Arrays"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:31
+msgid ""
+"Numpy arrays can be created as structured data, where each entry is a set"
+" of fields.  Each field has a name.  As an example, `laspy`_ provides its"
+" ``.points`` as an array of named fields:"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:46
+msgid ""
+"The numpy reader supports reading these Numpy arrays and mapping field "
+"names to standard PDAL :ref:`dimension <dimensions>` names. If that "
+"fails, the reader retries by removing ``_``, ``-``, or ``space`` in turn."
+"  If that also fails, the array field names are used to create custom "
+"PDAL dimensions."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:54
+msgid "Standard (non-structured) Arrays"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:56
+msgid ""
+"Arrays without field information contain a single datatype.  This "
+"datatype is mapped to a dimension specified by the ``dimension`` option."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:119
+msgid "X, Y and Z Mapping"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:120
+msgid ""
+"Unless the X, Y or Z dimension is specified as a field in a structured "
+"array, the reader will create dimensions X, Y and Z as necessary and "
+"populate them based on the position of each item of the array.  Although "
+"Numpy arrays always contain contiguous, linear data, that data can be "
+"seen to be arranged in more than one dimension.  A two-dimensional array "
+"will cause dimensions X and Y to be populated.  A three dimensional array"
+" will cause X, Y and Z to be populated.  An array of more than three "
+"dimensions will reuse the X, Y and Z indices for each dimension over "
+"three."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:129
+msgid ""
+"When reading data, X Y and Z can be assigned using row-major (C) order or"
+" column-major (Fortran) order by using the ``order`` option."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:142
+msgid "Loading Options"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:144
+msgid ""
+":ref:`readers.numpy` supports two modes of operation - the first is to "
+"pass a reference to a ``.npy`` file to the ``filename`` argument. It will"
+" simply load it and read."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:148
+msgid ""
+"The second is to provide a reference to a ``.py`` script to the "
+"``filename`` argument. It will then invoke the Python function specified "
+"in ``module`` and ``function`` with the ``fargs`` that you provide."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:154
+msgid "Loading from a Python script"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:156
+msgid ""
+"A reference to a Python function that returns a Numpy array can also be "
+"used to tell :ref:`readers.numpy` what to load. The following example "
+"itself loads a Numpy array from a Python script"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:161
+msgid "Python Script"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:172
+msgid "Command Line Invocation"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:174
+msgid ""
+"Using the above Python file with its ``load`` function, the following "
+":ref:`pdal info<info_command>` invocation passes in the reference to the "
+"filename to load."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:185
+msgid "Pipeline"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:187
+msgid "An example :ref:`pipeline` definition would follow:"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:202
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:207
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:205
+msgid ""
+"npy file to read or optionally, a .py file that defines a function that "
+"returns a Numpy array using the ``module``, ``function``, and ``fargs`` "
+"options. [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:212
+msgid "dimension"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:212
+msgid ":ref:`Dimension <dimensions>` name to map raster values"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:220
+msgid "order"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:215
+msgid ""
+"Either 'row' or 'column' to specify assigning the X,Y and Z values in a "
+"row-major or column-major order. [Default: matches the natural order of "
+"the array.]"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:223
+msgid "module"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:223
+msgid "The Python module name that is holding the function to run."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:226
+msgid "function"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:226
+msgid "The function name in the module to call."
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:229
+msgid "fargs"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:229
+msgid "The function args to pass to the function"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:232
+msgid ""
+"The functionality of the 'assign_z' option in previous versions is "
+"provided with :ref:`filters.assign`"
+msgstr ""
+
+#: ../../stages/readers.numpy.rst:235
+msgid ""
+"The functionality of the 'x', 'y', and 'z' options in previous versions "
+"are generally handled with the current 'order' option."
+msgstr ""
+

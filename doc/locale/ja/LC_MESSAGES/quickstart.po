@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../quickstart.rst:5
+msgid "Quickstart"
+msgstr ""
+
+#: ../../quickstart.rst:10
+msgid "Introduction"
+msgstr ""
+
+#: ../../quickstart.rst:12
+msgid ""
+"The quickest way to start using PDAL is to leverage builds that were "
+"constructed by the PDAL development team using `Conda`_."
+msgstr ""
+
+#: ../../quickstart.rst:15
+msgid "Directly from the Conda front page,"
+msgstr ""
+
+#: ../../quickstart.rst:17
+msgid ""
+"*Conda is an open source package management system and environment "
+"management system that runs on Windows, macOS and Linux. Conda quickly "
+"installs, runs and updates packages and their dependencies. Conda easily "
+"creates, saves, loads and switches between environments on your local "
+"computer.*"
+msgstr ""
+
+#: ../../quickstart.rst:23
+msgid ""
+"This exercise will print the first point of an :ref:`ASPRS LAS "
+"<readers.las>` file. It will utilize the PDAL :ref:`command line "
+"application <apps>` to inspect the file."
+msgstr ""
+
+#: ../../quickstart.rst:29
+msgid ""
+"If you need to compile your own copy of PDAL, see :ref:`building` for "
+"more details."
+msgstr ""
+
+#: ../../quickstart.rst:36
+msgid "Install Conda"
+msgstr ""
+
+#: ../../quickstart.rst:38
+msgid ""
+"Conda installation instructions can be found at the following links. Read"
+" through them a bit for your platform so you have an idea what to expect."
+msgstr ""
+
+#: ../../quickstart.rst:41
+msgid ""
+"`Windows <https://conda.io/projects/conda/en/latest/user-"
+"guide/install/windows.html>`__"
+msgstr ""
+
+#: ../../quickstart.rst:42
+msgid ""
+"`macOS <https://conda.io/projects/conda/en/latest/user-"
+"guide/install/macos.html>`__"
+msgstr ""
+
+#: ../../quickstart.rst:43
+msgid ""
+"`Linux <https://conda.io/projects/conda/en/latest/user-"
+"guide/install/linux.html>`__"
+msgstr ""
+
+#: ../../quickstart.rst:47
+msgid ""
+"We will assume you are running on Windows, but the same commands should "
+"work in macOS or Linux too -- though definition of file paths might "
+"provide a significant difference."
+msgstr ""
+
+#: ../../quickstart.rst:53
+msgid "Run Conda"
+msgstr ""
+
+#: ../../quickstart.rst:55
+msgid ""
+"On macOS and Linux, all Conda commands are typed into a terminal window. "
+"On Windows, commands are typed into the Anaconda Prompt window. "
+"Instructions can be found in the Conda `Getting Started`_ guide."
+msgstr ""
+
+#: ../../quickstart.rst:63
+msgid "Test Installation"
+msgstr ""
+
+#: ../../quickstart.rst:65
+msgid ""
+"To test your installation, simply run the command ``conda list`` from "
+"your terminal window or the Anaconda Prompt. A list of installed packages"
+" should appear."
+msgstr ""
+
+#: ../../quickstart.rst:71
+msgid "Install the PDAL Package"
+msgstr ""
+
+#: ../../quickstart.rst:73
+msgid ""
+"A PDAL package based on the latest release, including all recent patches,"
+" is pushed to the `conda-forge`_ channel on anaconda.org with every code "
+"change on the PDAL maintenance branch."
+msgstr ""
+
+#: ../../quickstart.rst:79
+msgid ""
+"It is a good idea to install PDAL in it's own environment (or add it to "
+"an existing one). You will **NOT** want to add it to your default "
+"environment named ``base``. Managing environments is beyond the scope of "
+"the quickstart, but you can read more about it `here "
+"<https://conda.io/projects/conda/en/latest/user-guide/getting-"
+"started.html#managing-envs>`_."
+msgstr ""
+
+#: ../../quickstart.rst:84
+msgid ""
+"To install the PDAL package so that we can use it to run PDAL commands, "
+"we run the following command to create an environment named ``myenv``, "
+"installing PDAL from the ``conda-forge`` channel. ::"
+msgstr ""
+
+#: ../../quickstart.rst:90
+msgid ""
+"Depending on what packages you may or may not have already installed, the"
+" output should look something like: ::"
+msgstr ""
+
+#: ../../quickstart.rst:190
+msgid ""
+"PDAL's Python extension is managed separately from the PDAL package. To "
+"install it, replace ``pdal`` with ``python-pdal`` in any of the commands "
+"in this section. Seeing as how PDAL is a dependency of the Python "
+"extension, you will actually get two for the price of one!"
+msgstr ""
+
+#: ../../quickstart.rst:195
+msgid ""
+"To install PDAL to an existing environment names ``myenv``, we would run "
+"the following command. ::"
+msgstr ""
+
+#: ../../quickstart.rst:200
+msgid "Finally, to update PDAL to the latest version, run the following. ::"
+msgstr ""
+
+#: ../../quickstart.rst:208
+msgid "Fetch Sample Data"
+msgstr ""
+
+#: ../../quickstart.rst:210
+msgid ""
+"We need some sample data to play with, so we're going to download the "
+"``autzen.laz`` file. Inside your terminal (assuming Windows), issue the "
+"following command: ::"
+msgstr ""
+
+#: ../../quickstart.rst:216
+msgid ""
+"In the download dialog, save the file to your ``Downloads`` folder, e.g.,"
+" ``C:\\Users\\hobu\\Downloads``."
+msgstr ""
+
+#: ../../quickstart.rst:221
+msgid "Print the first point"
+msgstr ""
+
+#: ../../quickstart.rst:223
+msgid ""
+"To print the first point only, issue the following command (replacing of "
+"course ``hobu`` with your user name, or another path altogether, "
+"depending on where you saved the file)."
+msgstr ""
+
+#: ../../quickstart.rst:231
+msgid "Here's a summary of what's going on with that command invocation"
+msgstr ""
+
+#: ../../quickstart.rst:233
+msgid "``pdal``: We're going to run the ``pdal`` command."
+msgstr ""
+
+#: ../../quickstart.rst:235
+msgid "``info``: We want to run :ref:`info_command` on the data."
+msgstr ""
+
+#: ../../quickstart.rst:237
+msgid "``autzen.laz``: The ``autzen.laz`` file that we want information from."
+msgstr ""
+
+#: ../../quickstart.rst:273
+msgid "What's next?"
+msgstr ""
+
+#: ../../quickstart.rst:275
+msgid ""
+"Visit :ref:`apps` to find out how to utilize PDAL applications to process"
+" data on the command line yourself."
+msgstr ""
+
+#: ../../quickstart.rst:277
+msgid ""
+"Visit :ref:`development_index` to learn how to embed and use PDAL in your"
+" own applications."
+msgstr ""
+
+#: ../../quickstart.rst:279
+msgid ""
+":ref:`readers` lists the formats that PDAL can read, :ref:`filters` lists"
+" the kinds of operations you can do with PDAL, and :ref:`writers` lists "
+"the formats PDAL can write."
+msgstr ""
+
+#: ../../quickstart.rst:282
+msgid ""
+":ref:`tutorial` contains a number of walk-through tutorials for achieving"
+" many tasks with PDAL."
+msgstr ""
+
+#: ../../quickstart.rst:284
+msgid ""
+":ref:`The PDAL workshop <workshop>` contains numerous hands-on examples "
+"with screenshots and example data of how to use PDAL :ref:`apps` to "
+"tackle point cloud data processing tasks."
+msgstr ""
+
+#: ../../quickstart.rst:287
+msgid ""
+":ref:`python` describes how PDAL embeds and extends Python and how you "
+"can leverage these capabilities in your own programs."
+msgstr ""
+
+#: ../../quickstart.rst:292
+msgid ":ref:`community` is a good source to reach out to when you're stuck."
+msgstr ""
+

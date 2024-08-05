@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:4
+msgid "Batch Processing"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:7
+msgid ""
+"PDAL doesn't handle matching multiple file inputs except for glob "
+"handling for merge operations, but does allow for command line "
+"substitution parameters to make batch processing simpler, substitutions. "
+"Substitutions work with both :ref:`pipeline` operations as well as with "
+"other applications such as :ref:`translate_command`."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:14
+msgid "Operating system variations"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:16
+msgid ""
+"How substitutions are passed generally depends on the operating system "
+"and tools available. In the unix/linux environments, this is primarily "
+"using the `find` and `ls` programs to get lists of files (either with "
+"directories or just filenames) and the `xargs` or `parallel` program to "
+"pass those files to the ``pdal`` application (although `-exec` with "
+"`find` can also be used). These tools are available in the `docker` "
+"environment if you are running `PDAL` under docker. They are also "
+"available under Windows one installs `Cygwin` or `MinGW`. They are also "
+"available if Git for Windows is installed. They are also available as "
+"win32 command line programs installed from the GNU Findutils "
+"(https://www.gnu.org/software/findutils/findutils.html). They are "
+"available for MacOS and Linux."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:28
+msgid "Windows native tools"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:30
+msgid "Subtitions can be handled directly in windows using `PowerShell` syntax."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:32
+msgid ""
+"While there are a number of ways to generate lists of files, the `Get-"
+"ChildItem` is used here, along with the `foreach` option to pass each "
+"separate filepath to the pdal application."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:37
+msgid "Example - Batch compression of LAS files to LAZ - PowerShell:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:38
+msgid ""
+"To compress a series of LAS files in one directory into compressed LAZ "
+"files in another directory, the `PowerShell` syntax would be:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:47
+msgid ""
+"Note the use of the `$($_.BaseName)` syntax for the files passed. This "
+"option on the `$($_)` shortcut for the full filename, removes the "
+"directory and the extension on the file and allows the user to set the "
+"path and extension manually."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:53
+msgid "Example - Parallel Batch compression of LAS files to LAZ - PowerShell:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:54
+msgid ""
+"This use of the `PowerShell` syntax doesn't allow a user to execute more "
+"than one process at a time. There is a free download of the `xargs` "
+"program that provides parallel execution available at "
+"http://www.pirosa.co.uk/demo/wxargs/ppx2.exe. A clone of this program can"
+" be found at https://github.com/ghuls/ppx2. For this tool, the file names"
+" are passed with using the `{}` syntax:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:66
+msgid "Unix/Linux native tools"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:69
+msgid "Example - Batch compression of LAS files to LAZ - Bash:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:70
+msgid ""
+"To compress a series of LAS files in one directory into compressed LAZ "
+"files in another directory, the `Bash` syntax would be:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:78
+msgid ""
+"In `Parallel`, then  `{/.}` syntax means strip the directory and the "
+"extension and just use the basename of the file. This allows you to "
+"easily change the output format and the location."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:84
+msgid "Example - Parallel Batch compression of LAS files to LAZ - Bash:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:85
+msgid ""
+"Parallel, as its name implies, allows parallel operations. Adding the "
+"`-j` syntax indicates the number simultaneous jobs to run:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:95
+msgid "Exercise - Pipeline Substitions:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:97
+msgid ""
+"For the most flexibility, pipelines are used to apply a series of "
+"operations to a file (or group of files). In this exercise, we build on "
+"the :ref:`workshop-dtm` pipeline example, but run this pipeline over 4 "
+"files and reproject, calculate a bare earth using the :ref:`filters.smrf`"
+" filter, remove those points that aren't bare earth with "
+":ref:`filters.expression` and then write the output using the "
+":ref:`writers.gdal`."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:102
+msgid "The pipeline we are using is:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:108
+msgid ""
+"You might have spotted that this pipeline doesn't have any input or "
+"output file references, or a value for the output spatial reference. We "
+"will be adding those at the command line, not within the actual pipeline "
+"and using the substitutions syntax to do this:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:130
+msgid ""
+"Once you have your dtms created with pdal, combine them to a single file "
+"with:"
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:136
+msgid ""
+"You can then visualize the vrt with `qgis`. Add the vrt twice, and set "
+"the properties of the lower layer to hillshade. Set the upper layer to "
+"Singleband PseudoColor and choose a pleasing color ramp. Then set the "
+"transparency of the upper layer to 50% and you'll get a nice display of "
+"the terrain."
+msgstr ""
+
+#: ../../workshop/generation/batch_processing/batch-processing.rst:140
+msgid "Should look like this:"
+msgstr ""
+

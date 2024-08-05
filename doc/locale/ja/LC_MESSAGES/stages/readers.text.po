@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.text.rst:4
+msgid "readers.text"
+msgstr ""
+
+#: ../../stages/readers.text.rst:6
+msgid ""
+"The **text reader** reads data from ASCII text files.  Each point is "
+"represented in the file as a single line.  Each line is expected to be "
+"divided into a number of fields by a separator.  Each field represents a "
+"value for a point's dimension.  Each value needs to be `formatted`_ "
+"properly for C++ language double-precision values."
+msgstr ""
+
+#: ../../stages/readers.text.rst:12
+msgid ""
+"The text reader expects a header line to indicate the dimensions are in "
+"each subsequent line.  There are two types of header lines."
+msgstr ""
+
+#: ../../stages/readers.text.rst:16
+msgid "Quoted dimension names"
+msgstr ""
+
+#: ../../stages/readers.text.rst:17
+msgid ""
+"When the first character of the header is a double quote, each dimension "
+"name is assumed to be surrounded by double quotes.  A single separator "
+"character is expected between the dimension names (spaces are stripped)."
+"  If no separator character is found, a space is assumed.  You can set "
+"the `separator`_ character if it differs from that in the header.  Note "
+"that PDAL requires dimension names that consist only of alphabetic "
+"characters and underscores.  Edit the header line or use the `header`_ "
+"option to set the dimension names to ones that PDAL understands."
+msgstr ""
+
+#: ../../stages/readers.text.rst:27
+msgid "Unquoted dimension names"
+msgstr ""
+
+#: ../../stages/readers.text.rst:29
+msgid ""
+"The first non alpha-numeric character encountered is treated as a "
+"separator between dimension names.  The separator in the header line can "
+"be overridden by the `separator`_ option."
+msgstr ""
+
+#: ../../stages/readers.text.rst:33
+msgid ""
+"Each line in the file must contain the same number of fields as indicated"
+" by dimension names in the header.  Spaces are generally ignored in the "
+"input unless used as a separator.  When a space character is used as a "
+"separator, any number of consecutive spaces are treated as single space "
+"and leading/trailing spaces are ignored."
+msgstr ""
+
+#: ../../stages/readers.text.rst:40
+msgid "Blank lines are ignored after the header line is read."
+msgstr ""
+
+#: ../../stages/readers.text.rst:47
+msgid "Example Input File"
+msgstr ""
+
+#: ../../stages/readers.text.rst:49
+msgid "This input file contains X, Y and Z value for 10 points."
+msgstr ""
+
+#: ../../stages/readers.text.rst:66
+msgid "Example #1"
+msgstr ""
+
+#: ../../stages/readers.text.rst:82
+msgid "Example #2"
+msgstr ""
+
+#: ../../stages/readers.text.rst:84
+msgid ""
+"This reads the data in the input file as Red, Green and Blue instead of "
+"as X, Y and Z."
+msgstr ""
+
+#: ../../stages/readers.text.rst:104
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.text.rst:107
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.text.rst:107
+msgid "text file to read, or “STDIN” to read from standard in [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.text.rst:114
+msgid "_`header`"
+msgstr ""
+
+#: ../../stages/readers.text.rst:112
+msgid ""
+"String to use as the file header.  All lines in the file are assumed to "
+"be records containing point data unless skipped with the `skip`_ option. "
+"[Default: None]"
+msgstr ""
+
+#: ../../stages/readers.text.rst:117
+msgid "_`separator`"
+msgstr ""
+
+#: ../../stages/readers.text.rst:117
+msgid "Separator character to override that found in header line. [Default: None]"
+msgstr ""
+
+#: ../../stages/readers.text.rst:120
+msgid "_`skip`"
+msgstr ""
+
+#: ../../stages/readers.text.rst:120
+msgid "Number of lines to ignore at the beginning of the file. [Default: 0]"
+msgstr ""
+

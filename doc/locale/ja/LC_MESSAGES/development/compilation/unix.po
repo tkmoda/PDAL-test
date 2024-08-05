@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/compilation/unix.rst:5
+msgid "Unix Compilation"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:7
+msgid ""
+"PDAL comes with support for building with `CMake`_.  PDAL requires at "
+"least version 3.5 of CMake. CMake is a cross-platform meta-build system "
+"that provides a unified system for building applications on multiple "
+"platforms with various build tools. CMake has `generators`_ for many "
+"build tools, though PDAL has been tested only with `Ninja`_ and `GNU "
+"Makefiles`_ on Unix/OSX.  Ninja builds PDAL faster, so the following "
+"instructions use that build tool, though building with GNU Makefiles "
+"works similarly (simply replace \"ninja\" with \"make\" when running the "
+"build tool)."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:25
+msgid ""
+"The `PDAL continuous integration "
+"<https://github.com/PDAL/PDAL/tree/master/scripts/ci>`__ provides example"
+" configuration and build recipes for Linux, Windows, and OSX."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:29
+msgid "Dependencies"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:31
+msgid ""
+"Building PDAL successfully depends on having other libraries configured "
+"and installed.  These :ref:`dependencies <dependencies>` can be built "
+"from source or can be installed via a packaging system (`apt`_ works well"
+" on Ubuntu and Debian-based Linux systems. `Conda`_ works well on most "
+"systems.  Some have had success with `brew`_ on OSX systems.) Often, the "
+"only package that needs to be installed prior to building PDAL is GDAL.  "
+"Installing a GDAL package will normally install other PDAL dependencies "
+"automatically."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:58
+msgid "Using Ninja on Linux or OSX"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:61
+msgid "Get the source code"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:63
+msgid ""
+"PDAL can be cloned from :ref:`GitHub <source>` or you can download a "
+":ref:`release bundle <download>`"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:67
+msgid "Prepare a build directory"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:69
+msgid ""
+"CMake allows you to generate different builders for a project.  Here "
+"we're using Mac OSX, but the procedure and output are nearly identical on"
+" Linux distributions."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:80
+msgid "Run CMake"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:82
+msgid ""
+"Running CMake uses the specified generator to create an environment "
+"suitable for building PDAL with the requested tool. (Ninja in this case)."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:121
+msgid "Issue the `ninja` command"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:123
+msgid ""
+"If cmake runs to completion (reports that build files have been written),"
+" you can run Ninja to build PDAL."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:130
+msgid ""
+"If no errors are reported, Ninja will have created the ``pdal`` program "
+"in the ``bin`` directory.  A set of necessary support libraries will have"
+" been created in the ``lib`` directory."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:145
+msgid "Checking the build and running PDAL tests"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:147
+msgid ""
+"You can quickly check that PDAL has built properly by running the `pdal "
+"info` command."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:173
+msgid ""
+"CMake will normally build a set of tests that can be used to verify that "
+"PDAL executes most functions properly.  You can run these tests yourself "
+"if desired, though it's not typically necessary."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:202
+msgid ""
+"Failed tests may not indicate problems other than a lack of support for "
+"some feature on your system.  For example, tests for database drivers "
+"will fail if the database isn't installed or configured properly."
+msgstr ""
+
+#: ../../development/compilation/unix.rst:207
+msgid "Install PDAL"
+msgstr ""
+
+#: ../../development/compilation/unix.rst:209
+msgid ""
+"PDAL can be installed to the default location (usually subdirectories of "
+"/usr/local) using Ninja."
+msgstr ""
+

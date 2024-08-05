@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/index.rst:5
+msgid "Applications"
+msgstr ""
+
+#: ../../apps/index.rst:7
+msgid ""
+"PDAL contains consists of a single application, called ``pdal``.  "
+"Operations are run by invoking the ``pdal`` application along with a "
+"command name:"
+msgstr ""
+
+#: ../../apps/index.rst:16
+msgid ""
+"Help for each command can be retrieved via the ``--help`` switch. The "
+"``--drivers`` and ``--options`` switches can tell you more about "
+"particular drivers and their options:"
+msgstr ""
+
+#: ../../apps/index.rst:27
+msgid "All commands support the following options:"
+msgstr ""
+
+#: ../../apps/index.rst:35
+msgid ""
+"Additional driver-specific options may be specified by using a namespace-"
+"prefixed option name. For example, it is possible to set the LAS day of "
+"year at translation time with the following option:"
+msgstr ""
+
+#: ../../apps/index.rst:48
+msgid ""
+"Driver-specific options can be identified using the ``pdal <command> "
+"--help`` invocation."
+msgstr ""
+

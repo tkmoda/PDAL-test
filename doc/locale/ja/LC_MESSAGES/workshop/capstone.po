@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/capstone.rst:4
+msgid "Final Project"
+msgstr ""
+
+#: ../../workshop/capstone.rst:10
+msgid ""
+"The final project brings together a number of PDAL processing workflow "
+"operations into a single effort It builds upon the exercises to enable "
+"you to use the capabilities of PDAL in a coherent processing strategy, "
+"and it will give you ideas about how to orchestrate PDAL in the context "
+"of larger data processing scenarios."
+msgstr ""
+
+#: ../../workshop/capstone.rst:16
+msgid ""
+"Given the following pipeline for fetching the data, complete the rest of "
+"the tasks:"
+msgstr ""
+
+#: ../../workshop/capstone.rst:47
+msgid ""
+"Read data from an EPT resource using :ref:`readers.ept` (See :ref"
+":`workshop-entwine`)"
+msgstr ""
+
+#: ../../workshop/capstone.rst:50
+msgid ""
+"The particular data we are pulling has some high classification values "
+"due to how it was processed. These aren't useful to us, and we can use "
+":ref:`filters.expression` in the pipeline to only write points with a "
+"classification value under 20."
+msgstr ""
+
+#: ../../workshop/capstone.rst:54
+msgid ""
+"Thin it to 1.0 meter spacing using :ref:`filters.sample` (See :ref"
+":`workshop-thinning`)"
+msgstr ""
+
+#: ../../workshop/capstone.rst:55
+msgid ""
+"Filter out noise using :ref:`filters.outlier` (See :ref:`workshop-"
+"denoising`)"
+msgstr ""
+
+#: ../../workshop/capstone.rst:56
+msgid ""
+"Classify ground points using :ref:`filters.smrf` (See :ref:`workshop-"
+"ground`)"
+msgstr ""
+
+#: ../../workshop/capstone.rst:57
+msgid "Compute height above ground using :ref:`filters.hag_nn`"
+msgstr ""
+
+#: ../../workshop/capstone.rst:58
+msgid ""
+"Generate a digital terrain model (DTM) using :ref:`writers.gdal` (See "
+":ref:`workshop-dtm`)"
+msgstr ""
+
+#: ../../workshop/capstone.rst:59
+msgid "Find the average vegetative height model using :ref:`writers.gdal`"
+msgstr ""
+
+#: ../../workshop/capstone.rst:63
+msgid ""
+"You should review specific exercises for specifics on how to achieve each"
+" task."
+msgstr ""
+

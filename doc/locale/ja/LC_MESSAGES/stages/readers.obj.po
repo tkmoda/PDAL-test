@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.obj.rst:4
+msgid "readers.obj"
+msgstr ""
+
+#: ../../stages/readers.obj.rst:6
+msgid ""
+"The **OBJ reader** reads data from files in the OBJ format. This reader "
+"constructs a mesh from the faces specified in the OBJ file, ignoring "
+"vertices that are not associated with any face. Faces, vertices, vertex "
+"normals and vertex textures are read, while all other obj elements (such "
+"as lines and curves) are ignored."
+msgstr ""
+
+#: ../../stages/readers.obj.rst:14
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.obj.rst:15
+msgid ""
+"This pipeline reads from an example OBJ file outputs the vertices as a "
+"point to a LAS file."
+msgstr ""
+
+#: ../../stages/readers.obj.rst:39
+msgid "Options"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.obj.rst:43
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.obj.rst:44
+msgid "File to read. [Required]"
+msgstr ""
+

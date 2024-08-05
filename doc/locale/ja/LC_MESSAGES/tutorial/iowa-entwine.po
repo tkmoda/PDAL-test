@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../tutorial/iowa-entwine.rst:3
+msgid "Reading data from EPT"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:9
+msgid ""
+"This tutorial describes how to use `Conda`_, `Entwine`_, `PDAL`_, and "
+"`GDAL`_ to read data from the `USGS 3DEP AWS Public Dataset`_. We will be"
+" using PDAL's `readers.ept`_ to fetch data, we will filter it for noise "
+"using `filters.outlier`_, we will classify the data as ground/not-ground "
+"using `filters.smrf`_, and we will write out a digital terrain model with"
+" :ref:`writers.gdal`. Once our elevation model is constructed, we will "
+"use GDAL `gdaldem`_ operations to create hillshade, slope, and color "
+"relief."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:18
+msgid "Install Conda"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:20
+msgid ""
+"We first need to install PDAL, and the most convenient way to do that is "
+"by installing `Miniconda`_. Select the 64-bit installer for your platform"
+" and install it as directed."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:25 ../../tutorial/iowa-entwine.rst:44
+msgid "Install PDAL"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:27
+msgid ""
+"Once Miniconda is installed, we can install PDAL into a new `Conda "
+"Environment`_ that we created for this tutorial. Open your Anaconda Shell"
+" and start issuing the following commands:"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:32
+msgid "Create the environment"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:38
+msgid "Activate the environment"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:51
+msgid "Ensure PDAL works by listing the available drivers"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:65
+msgid ""
+"Once you confirmed you see output similar to that in your shell, your "
+"PDAL installation should be good to go."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:70
+msgid "Write the Pipeline"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:72
+msgid ""
+"PDAL uses the concept of `pipelines`_ to describe the reading, filtering,"
+" and writing of point cloud data. We will construct a pipeline that will "
+"do a number of things in succession."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:80
+msgid ""
+"Pipeline diagram. The data are read from the `Entwine Point Tile`_ "
+"resource at https://usgs.entwine.io for Iowa using :ref:`readers.ept` and"
+" filtered through a number of steps until processing is complete. The "
+"data are then written to an ``iowa.laz`` and ``iowa.tif`` file."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:87
+msgid "Pipeline"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:89
+msgid "Create a file called ``iowa.json`` with the following content:"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:93
+msgid ""
+"The file is also available from "
+"https://gist.github.com/hobu/ee22084e24ed7e3c0d10600798a94c31 for "
+"convenient copy/paste)"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:103
+msgid "Stages"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:106
+msgid "readers.ept"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:108
+msgid ""
+":ref:`readers.ept` reads the point cloud data from the EPT resource on "
+"AWS. We give it a URL to the root of the resource in the ``filename`` "
+"option, and we also give it a ``bounds`` object to define the window in "
+"which we should select data from."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:115
+msgid ""
+"The full URL to the EPT root file (``ept.json``)) must be given to the "
+"filename parameter for PDAL 2.2+. This was a change in behavior of the "
+":ref:`readers.ept` driver."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:119
+msgid "The ``bounds`` object is in the form ``([minx, maxx], [miny, maxy])``."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:123
+msgid ""
+"If you do not define a ``bounds`` option, PDAL will try to read the data "
+"for the entire state of Iowa, which is about 160 billion points. Maybe "
+"you have enough memory for this..."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:130
+msgid ""
+"The EPT reader reads data from an EPT resource with PDAL. Options "
+"available in PDAL 1.9+ allow users to select data at or above specified "
+"resolutions."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:134 ../../tutorial/iowa-entwine.rst:193
+msgid "filters.range"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:136
+msgid ""
+"The data we are selecting may have noise properly classified, and we can "
+"use :ref:`filters.range` to keep all data that does not have a "
+"``Classification`` :ref:`dimensions` value of ``7``."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:143
+msgid ""
+"The :ref:`filters.range` filter utilizes range selection to allow users "
+"to select data for processing or removal. The :ref:`filters.mongo` filter"
+" can be used for even more complex logic operations."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:149
+msgid "filters.assign"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:151
+msgid ""
+"After removing points that have noise classifications, we need to reset "
+"all of the classification values in the point data. :ref:`filters.assign`"
+" takes the expression ``Classification [:]=0`` and assigns the "
+"``Classification`` for each point to ``0``."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:159
+msgid ""
+":ref:`filters.assign` can also take in an option to apply assignments "
+"based on a conditional. If you want to assign values based on a bounding "
+"geometry, use :ref:`filters.overlay`."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:165
+msgid "filters.reprojection"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:167
+msgid ""
+"The data on the AWS 3DEP Public Dataset are stored in `Web Mercator`_ "
+"coordinate system, which is not suitable for many operations. We need to "
+"reproject them into an appropriate UTM coordinate system (`EPSG:26915 "
+"<https://epsg.io/32615>`__)."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:174
+msgid ""
+":ref:`filters.reprojection` can also take override the incoming "
+"coordinate system using the ``a_srs`` option."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:179
+msgid "filters.smrf"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:181
+msgid ""
+"The Simple Morphological Filter (:ref:`filters.smrf`) classifies points "
+"as ground or not-ground."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:187
+msgid ""
+":ref:`filters.smrf` provides a number of tuning options, but the defaults"
+" tend to work quite well for mixed urban environments on flat ground (ie,"
+" Iowa)."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:195
+msgid ""
+"After we have executed the SMRF filter, we only want to keep points that "
+"are actually classified as ground in our point stream. Selecting for "
+"points with ``Classification[2:2]`` does that for us."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:202
+msgid "Remove any point that is not ground classification for our DTM generation."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:206
+msgid "writers.gdal"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:208
+msgid ""
+"Having filtered our point data, we're now ready to write a raster digital"
+" terrain model with :ref:`writers.gdal`. Interesting options we choose "
+"here are to set the ``nodata`` value, specify only outputting the inverse"
+" distance weighted raster, and assigning a resolution of ``1`` (m). See "
+":ref:`writers.gdal` for more options."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:217
+msgid "Output a DTM at 1m resolution."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:220
+msgid "writers.las"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:222
+msgid ""
+"We can also write a LAZ file containing the same points that were used to"
+" make the elevation model in the section above. See :ref:`writers.las` "
+"for more options."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:228
+msgid "Also output the LAZ file as part of our processing pipeline."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:231
+msgid "Execute the Pipeline"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:233
+msgid "Save the PDAL pipeline in `Pipeline`_ to a file called ``iowa.json``"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:235
+msgid "Invoke the `PDAL pipeline`_ command"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:241
+msgid ""
+"Add the ``--debug`` option if you would like information about how PDAL "
+"is fetching and processing the data."
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:248
+msgid "Save a color scheme to ``dem-colors.txt``"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:267
+msgid "Invoke ``gdaldem`` to colorize a PNG file for your TIFF"
+msgstr ""
+
+#: ../../tutorial/iowa-entwine.rst:274
+msgid "View your raster"
+msgstr ""
+

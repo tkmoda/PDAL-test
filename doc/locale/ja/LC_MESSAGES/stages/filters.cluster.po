@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.cluster.rst:5
+msgid "filters.cluster"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:7
+msgid ""
+"The Cluster filter first performs Euclidean Cluster Extraction on the "
+"input ``PointView`` and then labels each point with its associated "
+"cluster ID. It creates a new dimension ``ClusterID`` that contains the "
+"cluster ID value. Cluster IDs start with the value 1.  Points that don't "
+"belong to any cluster will are given a cluster ID of 0."
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:16
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:33
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:36
+msgid "min_points"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:36
+msgid "Minimum number of points to be considered a cluster. [Default: 1]"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:39
+msgid "max_points"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:39
+msgid "Maximum number of points to be considered a cluster. [Default: 2^64 - 1]"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:43
+msgid "tolerance"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:42
+msgid ""
+"Cluster tolerance - maximum Euclidean distance for a point to be added to"
+" the cluster. [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:48
+msgid "is3d"
+msgstr ""
+
+#: ../../stages/filters.cluster.rst:46
+msgid ""
+"By default, clusters are formed by considering neighbors in a 3D sphere, "
+"but if ``is3d`` is set to false, it will instead consider neighbors in a "
+"2D cylinder (XY plane only). [Default: true]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

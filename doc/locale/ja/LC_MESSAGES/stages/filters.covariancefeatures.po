@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.covariancefeatures.rst:5
+msgid "filters.covariancefeatures"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:7
+msgid ""
+"This filter implements various local feature descriptors that are based "
+"on the covariance matrix of a point's neighborhood."
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:10
+msgid ""
+"The user can pick a set of feature descriptors by setting the "
+"``feature_set`` option. The dimensionality_ set of feature descriptors "
+"introduced below is the default. The user can also provide a comma-"
+"separated list of features to explicitly itemize those covariance "
+"features they wish to be computed. This can be combined with any "
+"suppported presets like \"Dimensionality\".  Specifying \"all\" will "
+"compute all available features."
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:17
+msgid "Supported features include:"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:19
+msgid "Anisotropy"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:20
+msgid "DemantkeVerticality"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:21
+msgid "Density"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:22
+msgid "Eigenentropy"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:23
+msgid "Linearity"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:24
+msgid "Omnivariance"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:25
+msgid "Planarity"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:26
+msgid "Scattering"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:27
+msgid "EigenvalueSum"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:28
+msgid "SurfaceVariation"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:29
+msgid "Verticality"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:33
+msgid ""
+"Density requires both ``OptimalKNN`` and ``OptimalRadius`` which can be "
+"computed by running :ref:`filters.optimalneighborhood` prior to "
+"``filters.covariancefeatures``."
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:38
+msgid "Example #1"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:58
+msgid "Example #2"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:84
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:88
+msgid "knn"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:87
+msgid ""
+"The number of k nearest neighbors used for calculating the covariance "
+"matrix. [Default: 10]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:91
+msgid "threads"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:91
+msgid ""
+"The number of threads to use. Only valid in :ref:`standard mode "
+"<processing_modes>`. [Default: 1]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:96
+msgid "feature_set"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:94
+msgid ""
+"A comma-separated list of individual features or feature presets (e.g., "
+"\"Dimensionality\") to be computed. To compute all available features, "
+"specify \"all\". [Default: \"Dimensionality\"]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:101
+msgid "stride"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:99
+msgid ""
+"When finding k nearest neighbors, stride determines the sampling rate. A "
+"stride of 1 retains each neighbor in order. A stride of two selects every"
+" other neighbor and so on. [Default: 1]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:104
+msgid "min_k"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:104
+msgid "Minimum number of neighbors in radius (radius search only). [Default: 3]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:109
+msgid "radius"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:107
+msgid ""
+"If radius is specified, neighbors will be obtained by radius search "
+"rather than k nearest neighbors, subject to meeting the minimum number of"
+" neighbors (``min_k``)."
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:116
+msgid "mode"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:112
+msgid ""
+"By default, features are computed using the standard deviation along each"
+" eigenvector, i.e., using the square root of the computed eigenvalues "
+"(``mode=\"SQRT\"``). ``mode`` also accepts \"Normalized\" which "
+"normalizes eigenvalue such that they sum to one, or \"Raw\" such that the"
+" eigenvalues are used directly. [Default: \"SQRT\"]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:122
+msgid "optimized"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:119
+msgid ""
+"``optimized`` can be set to ``true`` to enable computation of features "
+"using precomputed optimal neighborhoods (found in the ``OptimalKNN`` "
+"dimension). Requires :ref:`filters.optimalneighborhood` be run prior to "
+"this stage. [Default: false]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:129
+msgid "Dimensionality feature set"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:131
+msgid ""
+"The features introduced in [Demantke2011]_ describe the shape of the "
+"neighborhood, indicating whether the local geometry is more linear (1D), "
+"planar (2D) or volumetric (3D) while the one introduced in [Guinard2017]_"
+" adds the idea of a structure being vertical."
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:136
+msgid ""
+"The dimensionality filter introduces the following four descriptors that "
+"are computed from the covariance matrix of a point's neighbors (as "
+"defined by ``knn`` or ``radius``):"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:140
+msgid "linearity - higher for long thin strips"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:141
+msgid "planarity - higher for planar surfaces"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:142
+msgid "scattering - higher for complex 3d neighbourhoods"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:143
+msgid ""
+"verticality - higher for vertical structures, highest for thin vertical "
+"strips"
+msgstr ""
+
+#: ../../stages/filters.covariancefeatures.rst:145
+msgid ""
+"It introduces four new dimensions that hold each one of these values: "
+"``Linearity``, ``Planarity``, ``Scattering`` and ``Verticality``."
+msgstr ""
+

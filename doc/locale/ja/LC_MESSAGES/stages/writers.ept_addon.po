@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.ept_addon.rst:4
+msgid "writers.ept_addon"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:6
+msgid ""
+"The **EPT Addon Writer** supports writing additional dimensions to "
+"`Entwine Point Tile`_ datasets.  The EPT addon writer may only be used in"
+" a pipeline with an :ref:`EPT reader <readers.ept>`, and it creates "
+"additional attributes for an existing dataset rather than creating a "
+"brand new one."
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:12
+msgid ""
+"The addon dimensions created by this writer are stored independently from"
+" the corresponding EPT dataset, therefore write-access to the EPT "
+"resource itself is not required to create and use addon dimensions."
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:17
+msgid "Example"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:19
+msgid ""
+"This example downloads the Autzen dataset (10M points) and runs the "
+":ref:`SMRF filter <filters.smrf>`, which populates the ``Classification``"
+" dimension with ground values, and writes the resulting attribute to an "
+"EPT addon dataset on the local filesystem."
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:44
+msgid ""
+"And here is a follow-up example of reading this dataset with the "
+":ref:`EPT reader <readers.ept>` with the created addon overwriting the "
+"``Classification`` value.  The output is then written to a single file "
+"with the :ref:`LAS writer <writers.las>`."
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:63
+msgid ""
+"This is an example of using multiple mappings in the ``addons`` option to"
+" apply a new color scheme with :ref:`filters.colorinterp` mapping the "
+"Red, Green, and Blue dimensions to new values."
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:87
+msgid "The following pipeline will read the data with the new colors:"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:108
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:113
+msgid "addons"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:111
+msgid ""
+"A JSON object whose keys represent output paths for each addon dimension,"
+" and whose corresponding values represent the attributes to be written to"
+" these addon dimensions. [Required]"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:117
+msgid ""
+"The `addons` option is reversed between the EPT reader and addon-writer: "
+"in each case, the right-hand side represents an assignment to the left-"
+"hand side.  In the writer, the dimension value is assigned to an addon "
+"path.  In the reader, the addon path is assigned to a dimension."
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:120
+msgid "threads"
+msgstr ""
+
+#: ../../stages/writers.ept_addon.rst:120
+msgid ""
+"Number of worker threads used to write EPT addon data.  A minimum of 4 "
+"will be used no matter what value is specified."
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+

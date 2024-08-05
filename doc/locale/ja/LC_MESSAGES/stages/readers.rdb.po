@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.rdb.rst:4
+msgid "readers.rdb"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:6
+msgid ""
+"The **RDB reader** reads from files in the RDB format, the in-house "
+"format used by `RIEGL Laser Measurement Systems GmbH`_."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:14
+msgid "Installation"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:16
+msgid ""
+"To build PDAL with rdb support, ``set rdb_DIR`` to the path of your local"
+" rdblib installation. rdblib can be obtained from the `RIEGL download "
+"pages`_ with a properly enabled user account. The rdblib files do not "
+"need to be in a system-level directory, though they could be (e.g. they "
+"could be in ``/usr/local``, or just in your home directory somewhere). "
+"For help building PDAL with optional libraries, see `the optional library"
+" documentation`_."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:24
+msgid ""
+"Minimum rdblib version required to build the driver and run the tests: "
+"2.1.6"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:26
+msgid "This driver was developed and tested on Ubuntu 17.10 using GCC 7.2.0."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:30
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:32
+msgid ""
+"This example pipeline reads points from a RDB file and stores them in LAS"
+" format. Only points classified as \"ground points\" are read since "
+"option ``filter`` is set to \"riegl.class == 2\" (see line 5)."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:54
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:58
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:57
+msgid "Name of file to read [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:65
+msgid "filter"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:63
+msgid ""
+"Point filter expression string (see RDB SDK documentation for details) "
+"[Optional] [Default: empty string (= no filter)]"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:71
+msgid "extras"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:68
+msgid ""
+"Read all available dimensions (`true`) or known PDAL dimensions only "
+"(`false`) [Optional] [Default: false]"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:74
+msgid "Dimensions"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:76
+msgid ""
+"The reader maps following default RDB point attributes to PDAL dimensions"
+" (if they exist in the RDB file):"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:80
+msgid "RDB attribute"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:80
+msgid "PDAL dimension(s)"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:82
+msgid "riegl.id"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:82
+msgid "Id::PointId"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:84
+msgid "riegl.source_cloud_id"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:84
+msgid "Id::OriginId"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:86
+msgid "riegl.timestamp"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:86
+msgid "Id::InternalTime"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:89
+msgid "riegl.xyz"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:88
+msgid "Id::X, Id::Y, Id::Z"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:92
+msgid "riegl.intensity"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:92
+msgid "Id::Intensity"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:94
+msgid "riegl.amplitude"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:94
+msgid "Id::Amplitude"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:96
+msgid "riegl.reflectance"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:96
+msgid "Id::Reflectance"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:98
+msgid "riegl.deviation"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:98
+msgid "Id::Deviation"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:100
+msgid "riegl.pulse_width"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:100
+msgid "Id::PulseWidth"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:102
+msgid "riegl.background_radiation"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:102
+msgid "Id::BackgroundRadiation"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:104
+msgid "riegl.target_index"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:104
+msgid "Id::ReturnNumber"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:106
+msgid "riegl.target_count"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:106
+msgid "Id::NumberOfReturns"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:108
+msgid "riegl.scan_direction"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:108
+msgid "Id::ScanDirectionFlag"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:110
+msgid "riegl.scan_angle"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:110
+msgid "Id::ScanAngleRank"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:112
+msgid "riegl.class"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:112
+msgid "Id::Classification"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:115
+msgid "riegl.rgba"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:114
+msgid "Id::Red, Id::Green, Id::Blue"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:119
+msgid "riegl.surface_normal"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:118
+msgid "Id::NormalX, Id::NormalY, Id::NormalZ"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:123
+msgid ""
+"All other point attributes that may exist in the RDB file are ignored "
+"unless the option ``extras`` is set to `true`. If so, a custom dimension "
+"is defined for each additional point attribute, whereas the dimension "
+"name is equal to the point attribute name."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:130
+msgid ""
+"Point attributes are read \"as-is\", no scaling or unit conversion is "
+"done by the reader. The only exceptions are point coordinates "
+"(``riegl.xyz``) and surface normals (``riegl.surface_normal``) which are "
+"transformed to the RDB file's SRS by applying the matrix defined in the "
+"(optional) RDB file metadata object ``riegl.geo_tag``."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:138
+msgid "Metadata"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:140
+msgid "The reader adds following objects to the stage's metadata node:"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:144
+msgid "Object \"database\""
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:146
+msgid ""
+"Contains basic information about the RDB file such as the bounding box, "
+"number of points and the file ID."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:149 ../../stages/readers.rdb.rst:176
+#: ../../stages/readers.rdb.rst:219 ../../stages/readers.rdb.rst:267
+msgid "Example:"
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:172
+msgid "List \"dimensions\""
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:174
+msgid "List of point attribute description objects."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:211
+msgid "Details about the point attribute properties see RDB SDK documentation."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:215
+msgid "Object \"metadata\""
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:217
+msgid "Contains one sub-object for each metadata object stored in the RDB file."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:251
+msgid ""
+"The ``riegl.geo_tag`` object defines the Spatial Reference System (SRS) "
+"of the file. The point coordinates are actually stored in a local "
+"coordinate system (usually horizontally leveled) which is based on the "
+"SRS. The transformation from the local system to the SRS is defined by "
+"the 4x4 matrix ``pose`` which is stored in row-wise order. Point "
+"coordinates (``riegl.xyz``) and surface normals "
+"(``riegl.surface_normal``) are automatically transformed to the SRS by "
+"the reader."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:259
+msgid "Details about the metadata objects see RDB SDK documentation."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:263
+msgid "List \"transactions\""
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:265
+msgid "List of transaction objects describing the history of the file."
+msgstr ""
+
+#: ../../stages/readers.rdb.rst:322
+msgid "Details about the transaction objects see RDB SDK documentation."
+msgstr ""
+

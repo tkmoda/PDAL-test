@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/manipulation/denoising/denoising.rst:4
+msgid "Removing noise"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:10
+msgid ""
+"This exercise uses PDAL to remove unwanted noise in an airborne LiDAR "
+"collection."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:15
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:17
+msgid ""
+"PDAL provides the :ref:`outlier filter<filters.outlier>` to apply a "
+"statistical filter to data."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:20
+msgid ""
+"Because this operation is somewhat complex, we are going to use a "
+"pipeline to define it:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:28
+msgid ""
+"This pipeline is available in your workshop materials in the "
+"``./exercises/analysis/denoising/denoise.json`` file."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:32
+msgid "Pipeline breakdown"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:35
+msgid "1. Reader"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:37
+msgid ""
+"After our pipeline errata, the first item we define in the pipeline is "
+"the point cloud file we're going to read it:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:45
+msgid "2. :ref:`filters.outlier`"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:47
+msgid ""
+"The PDAL :ref:`outlier filter<filters.outlier>` does most of the work for"
+" this operation:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:62
+msgid "3. :ref:`filters.expression`"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:64
+msgid ""
+"At this point, the outliers have been classified per the LAS "
+"specification as low/noise points with a classification value of 7. The "
+":ref:`range filter<filters.expression>` can remove these noise points by "
+"constructing a :ref:`range <filters.expression>` with the value "
+"``Classification != 7``, which passes every point with a "
+"``Classification`` value **not** equal to 7."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:70
+msgid ""
+"Even with the :ref:`filters.outlier` operation, there is still a cluster "
+"of points with extremely negative ``Z`` values. These are some artifact "
+"or mis-computation of processing, and we don't want these points. We can "
+"construct another :ref:`range <filters.expression>` to keep only points "
+"that are within the range :math:`-100 <= Z <= 3000`."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:76
+msgid "Below is this implementation:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:78
+msgid ""
+"Both :ref:`ranges <filters.expression>` are passed as a AND-separated "
+"list to the :ref:`expression based range filter<filters.expression>` via "
+"the ``expression`` option."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:91
+msgid "4. :ref:`writers.las`"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:93
+msgid ""
+"We could just define the ``clean.laz`` filename, but we want to add a few"
+" options to have finer control over what is written. These include:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:107
+msgid "``compression``: |LASzip| data is ~6x smaller than ASPRS LAS."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:108
+msgid ""
+"``minor_version``: We want to make sure to output LAS 1.2, which will "
+"provide the widest compatibility with other softwares that can consume "
+"LAS."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:111
+msgid "``dataformat_id``: Format 0 supports neither time nor color information."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:114
+msgid "5. :ref:`writers.copc`"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:116
+msgid ""
+"We will then turn the ``clean.laz`` file into a COPC file for "
+"vizualization with QGIS using the stage below:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:127
+msgid ""
+"``forward``: List of header fields to be preserved from LAS input file. "
+"In this case, we want ``all`` fields to be preserved."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:132
+msgid ""
+":ref:`writers.las` and :ref:`writers.copc` provide a number of possible "
+"options to control how your LAS files are written."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:136
+msgid "Execution"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:138
+msgid "Invoke the following command, substituting accordingly, in your ` Shell`:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:145
+msgid "Visualization"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:147
+msgid ""
+"Use one of the point cloud visualization tools you installed to take a "
+"look at your ``clean.copc.laz`` output. In the example below, we simply "
+"opened the file using QGIS:"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:159
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:161
+msgid "Control the aggressiveness of the algorithm with the ``mean_k`` parameter."
+msgstr ""
+
+#: ../../workshop/manipulation/denoising/denoising.rst:163
+msgid ""
+":ref:`filters.outlier` requires the entire set in memory to process. If "
+"you have really large files, you are going to need to :ref:`split "
+"<filters.splitter>` them in some way."
+msgstr ""
+

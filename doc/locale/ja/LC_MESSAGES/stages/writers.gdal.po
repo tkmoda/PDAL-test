@@ -1,0 +1,396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.gdal.rst:4
+msgid "writers.gdal"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:6
+msgid ""
+"The **GDAL writer** creates a raster from a point cloud using an "
+"interpolation algorithm.  Output is produced using `GDAL`_ and can use "
+"any `driver that supports creation of rasters`_.  A data_type_ can be "
+"specified for the raster (double, float, int32, etc.).  If no data type "
+"is specified, the data type with the largest range supported by the "
+"driver is used."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:15
+msgid ""
+"The technique used to create the raster is a simple interpolation where "
+"each point that falls within a given radius_ of a raster cell center "
+"potentially contributes to the raster's value.  If no radius is provided,"
+" it is set to the product of the resolution_ and the square root of two. "
+"If a circle with the provided radius doesn't encompass the entire cell, "
+"it is possible that some points will not be considered at all, including "
+"those that may be within the bounds of the raster cell."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:24
+msgid ""
+"The GDAL writer creates rasters using the data specified in the "
+"dimension_ option (defaults to `Z`). The writer creates up to six rasters"
+" based on different statistics in the output dataset.  The order of the "
+"layers in the dataset is as follows:"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:30
+msgid "min"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:30
+msgid "Give the cell the minimum value of all points within the given radius."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:33
+msgid "max"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:33
+msgid "Give the cell the maximum value of all points within the given radius."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:36
+msgid "mean"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:36
+msgid "Give the cell the mean value of all points within the given radius."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:40
+msgid "idw"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:39
+msgid ""
+"Cells are assigned a value based on `Shepard's inverse distance "
+"weighting`_ algorithm, considering all points within the given radius."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:43
+msgid "count"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:43
+msgid "Give the cell the number of points that lie within the given radius."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:47
+msgid "stdev"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:46
+msgid ""
+"Give the cell the population standard deviation of the points that lie "
+"within the given radius."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:51
+msgid ""
+"If no points fall within the circle about a raster cell, a secondary "
+"algorithm can be used to attempt to provide a value after the standard "
+"interpolation is complete.  If the window_size_ option is non-zero, the "
+"values of a square of rasters surrounding an empty cell is applied using "
+"inverse distance weighting of any non-empty cells. The value provided for"
+" window_size is the maximum horizontal or vertical distance that a donor "
+"cell may be in order to contribute to the subject cell (A window_size of "
+"1 essentially creates a 3x3 array around the subject cell.  A window_size"
+" of 2 creates a 5x5 array, and so on.)"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:62
+msgid ""
+"Cells that have no value after interpolation are given a value specified "
+"by the nodata_ option."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:71
+msgid "Basic Example"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:73
+msgid ""
+"This  pipeline reads the file autzen_trim.las and creates a Geotiff "
+"dataset called outputfile.tif.  Since output_type isn't specified, it "
+"creates six raster bands (\"min\", \"max\", \"mean\", \"idx\", \"count\" "
+"and \"stdev\") in the output dataset.  The raster cells are 10x10 and the"
+" radius used to locate points whose values contribute to the cell value "
+"is 14.14."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:92
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:103
+msgid "filename"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:95
+msgid ""
+"Name of output file. The writer will accept a filename containing a "
+"single placeholder character (`#`).  If input to the writer consists of "
+"multiple PointViews, each will be written to a separate file, where the "
+"placeholder will be replaced with an incrementing integer.  If no "
+"placeholder is found, all PointViews provided to the writer are "
+"aggregated into a single file for output.  Multiple PointViews are "
+"usually the result of using :ref:`filters.splitter`, "
+":ref:`filters.chipper` or :ref:`filters.divider`.[Required]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:108
+msgid "binmode:"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:106
+msgid ""
+"If 'true', only points **inside** the raster pixel will be considered for"
+" statistics, and no distance-based summary or interpolation will be "
+"applied [Default: false]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:113
+msgid "resolution"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:113
+msgid "Length of raster cell edges in X/Y units.  [Required]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:119
+msgid "radius"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:118
+msgid ""
+"Radius about cell center bounding points to use to calculate a cell "
+"value. [Default: resolution_ * sqrt(2)]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:123
+msgid "power"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:122
+msgid ""
+"Exponent of the distance when computing IDW. Close points have higher "
+"significance than far points. [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:127
+msgid "gdaldriver"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:126
+msgid ""
+"GDAL code of the `GDAL driver`_ to use to write the output. [Default: "
+"\"GTiff\"]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:138
+msgid "gdalopts"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:132
+msgid ""
+"A list of key/value options to pass directly to the GDAL driver.  The "
+"format is name=value,name=value,...  The option may be specified any "
+"number of times."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:137
+msgid ""
+"The INTERLEAVE GDAL driver option is not supported.  writers.gdal always "
+"uses BAND interleaving."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:146
+msgid "data_type"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:143
+msgid ""
+"The :ref:`data type <types>` to use for the output raster. Many GDAL "
+"drivers only support a limited set of output data types. [Default: "
+"depends on the driver]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:154
+msgid "nodata"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:151
+msgid ""
+"The value to use for a raster cell if no data exists in the input data "
+"with which to compute an output cell value. [Default: depends on the "
+"data_type_.  -9999 for double, float, int and short, 9999 for unsigned "
+"int and unsigned short, 255 for unsigned char and -128 for char]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:161
+msgid "output_type"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:159
+msgid ""
+"A comma separated list of statistics for which to produce raster layers. "
+"The supported values are \"min\", \"max\", \"mean\", \"idw\", \"count\", "
+"\"stdev\" and \"all\".  The option may be specified more than once. "
+"[Default: \"all\"]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:168
+msgid "window_size"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:166
+msgid ""
+"The maximum distance from a donor cell to a target cell when applying the"
+" fallback interpolation method.  See the stage description for more "
+"information. [Default: 0]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:173
+msgid "dimension"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:173
+msgid "A dimension name to use for the interpolation. [Default: \"Z\"]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:177
+msgid "bounds"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:176
+msgid ""
+"The bounds of the data to be written.  Points not in bounds are "
+"discarded. The format is ([minx, maxx],[miny,maxy]). [Optional]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:180
+msgid "origin_x"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:180
+msgid "X origin (lower left corner) of the grid. [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:183
+msgid "origin_y"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:183
+msgid "Y origin (lower left corner) of the grid. [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:186
+msgid "width"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:186
+msgid "Number of cells in the X direction. [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:189
+msgid "height"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:189
+msgid "Number of cells in the Y direction. [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:192
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:192
+msgid "Write the raster with the provided SRS. [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:195
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:195
+msgid "Write the raster with the provided SRS if none exists. [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:199
+msgid "metadata:"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:198
+msgid ""
+"Add or set GDAL metadata to set on the raster, in the form "
+"``NAME=VALUE,NAME2=VALUE2,NAME3=VALUE3`` [Default: None]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:203
+msgid "pdal_metadata:"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:202
+msgid ""
+"Write PDAL's pipeline and metadata as base64 to the GDAL PAM metadata "
+"[Default: False]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:208
+msgid ""
+"You may use the 'bounds' option, or 'origin_x', 'origin_y', 'width' and "
+"'height', but not both."
+msgstr ""
+
+#: ../../stages/writers.gdal.rst:212
+msgid ""
+"Unless the raster being written is empty, the spatial reference will "
+"automatically come from the data and does not need to be set with "
+"'override_srs' or 'default_srs'."
+msgstr ""
+

@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.nitf.rst:4
+msgid "writers.nitf"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:6
+msgid ""
+"The `NITF`_ format is a US Department of Defense format for the "
+"transmission of imagery.  It supports various formats inside a generic "
+"wrapper."
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:11
+msgid ""
+"LAS inside of NITF is widely supported by software that uses NITF for "
+"point cloud storage, and LAZ is supported by some softwares. No other "
+"content type beyond those two is widely supported as of January of 2016."
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:21
+msgid "Example"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:23
+msgid "**Example One**"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:43
+msgid "**Example Two**"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:64
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:74
+msgid "filename"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:67
+msgid ""
+"NITF file to write.  The writer will accept a filename containing a "
+"single placeholder character ('#').  If input to the writer consists of "
+"multiple PointViews, each will be written to a separate file, where the "
+"placeholder will be replaced with an incrementing integer.  If no "
+"placeholder is found, all PointViews provided to the writer are "
+"aggregated into a single file for output.  Multiple PointViews are "
+"usually the result of using :ref:`filters.splitter`, "
+":ref:`filters.chipper` or :ref:`filters.divider`."
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:77
+msgid "clevel"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:77
+msgid "File complexity level (2 characters) [Default: **03**]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:80
+msgid "stype"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:80
+msgid "Standard type (4 characters) [Default: **BF01**]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:83
+msgid "ostaid"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:83
+msgid "Originating station ID (10 characters) [Default: **PDAL**]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:86
+msgid "ftitle"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:86
+msgid "File title (80 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:89
+msgid "fsclas"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:89
+msgid "File security classification ('T', 'S', 'C', 'R' or 'U') [Default: **U**]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:92
+msgid "oname"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:92
+msgid "Originator name (24 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:95
+msgid "ophone"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:95
+msgid "Originator phone (18 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:98
+msgid "fsctlh"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:98
+msgid "File control and handling (2 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:101
+msgid "fsclsy"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:101
+msgid "File classification system (2 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:105
+msgid "idatim"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:104
+msgid ""
+"Image date and time (format: 'CCYYMMDDhhmmss'). Required. [Default: "
+"AIMIDB.ACQUISITION_DATE if set or <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:108
+msgid "iid2"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:108
+msgid "Image identifier 2 (80 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:111
+msgid "fscltx"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:111
+msgid "File classification text (43 characters) [Default: <spaces>]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:117
+msgid "aimidb"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:114
+msgid ""
+"Comma separated list of name/value pairs to complete the AIMIDB "
+"(Additional Image ID) TRE record (format name:value). Required: "
+"ACQUISITION_DATE, will default to IDATIM value. [Default: NITF defaults]"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:122
+msgid "acftb"
+msgstr ""
+
+#: ../../stages/writers.nitf.rst:120
+msgid ""
+"Comma separated list of name/value pairs to complete the ACFTB (Aircraft "
+"Information) TRE record (format name:value). Required: SENSOR_ID, "
+"SENSOR_ID_TYPE [Default: NITF defaults]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+

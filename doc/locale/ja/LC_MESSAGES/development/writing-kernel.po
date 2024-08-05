@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/writing-kernel.rst:5
+msgid "Writing a kernel"
+msgstr ""
+
+#: ../../development/writing-kernel.rst
+msgid "Author"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:7
+msgid "Bradley Chambers"
+msgstr ""
+
+#: ../../development/writing-kernel.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:8
+msgid "brad.chambers@gmail.com"
+msgstr ""
+
+#: ../../development/writing-kernel.rst
+msgid "Date"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:9
+msgid "11/02/2017"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:12
+msgid ""
+"PDAL's command-line application can be extended through the development "
+"of kernel functions. In this tutorial, we will give a brief example."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:16
+msgid "The header"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:18
+msgid "First, we provide a full listing of the kernel header."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:24
+msgid "As with other plugins, the MyKernel class needs to return a name."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:32
+msgid "The source"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:34
+msgid "Again, we start with a full listing of the kernel source."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:40
+msgid ""
+"In your kernel implementation, you will use a macro defined in "
+"pdal_macros. This macro registers the plugin with the PluginManager."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:47
+msgid ""
+"To build up a processing pipeline in this example, we need to create two "
+"objects: the :cpp:class:`pdal::PointTable`."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:54
+msgid ""
+"To implement the actual kernel logic we implement execute().  In this "
+"case, the kernel reads a las file, decimates the data (eliminates some "
+"points) and writes the result to a text file.  The base kernel class "
+"provides functions (makeReader, makeFilter, makeWriter) to create stages "
+"with options as desired. The pipeline that has been created can be run by"
+" preparing and executing the last stage in the pipeline."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:62
+msgid ""
+"When compiled, a dynamic library file will be created; in this case, "
+"``libpdal_plugin_kernel_mykernel.dylib``"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:65
+msgid ""
+"Put this file in whatever directory ``PDAL_DRIVER_PATH`` is pointing to."
+"  Then, if you run ``pdal --drivers``, you should see ``mykernel`` listed"
+" in the possible commands."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:69
+msgid ""
+"To run this kernel, you would use ``pdal mykernel -i <input las file> -o "
+"<output text file>``."
+msgstr ""
+
+#: ../../development/writing-kernel.rst:73
+msgid "Compilation"
+msgstr ""
+
+#: ../../development/writing-kernel.rst:75
+msgid "Set up a ``CMakeLists.txt`` file to compile your kernel against PDAL:"
+msgstr ""
+

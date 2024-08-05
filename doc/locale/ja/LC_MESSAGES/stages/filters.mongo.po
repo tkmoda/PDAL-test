@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.mongo.rst:4
+msgid "filters.mongo"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:6
+msgid ""
+"The **Mongo Filter** applies query logic to the input point cloud based "
+"on a MongoDB-style query expression using the point cloud attributes."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:15
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:17
+msgid ""
+"This example passes through only the points whose Classification is non-"
+"zero."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:32
+msgid ""
+"This example passes through only the points whose ``ReturnNumber`` is "
+"equal to the ``NumberOfReturns`` and the ``NumberOfReturns`` is greater "
+"than 1."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:51
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:55
+msgid "expression"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:54
+msgid ""
+"A JSON query :ref:`expression <Mongo expression>` containing a "
+"combination of query comparisons and logical operators."
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:62
+msgid "Expression"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:64
+msgid ""
+"A query expression is a combination of comparison and logical operators "
+"that define a query which can be used to select matching points by their "
+"attribute values."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:69
+msgid "Comparison operators"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:71
+msgid "There are 8 valid query comparison operators:"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:73
+msgid "``$eq``: Matches values equal to a specified value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:74
+msgid "``$gt``: Matches values greater than a specified value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:75
+msgid "``$gte``: Matches values greater than or equal to a specified value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:76
+msgid "``$lt``: Matches values less than a specified value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:77
+msgid "``$lte``: Matches values less than or equal to a specified value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:78
+msgid "``$ne``: Matches values not equal to a specified value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:79
+msgid "``$in``: Matches any of the values specified in the array."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:80
+msgid "``$nin``: Matches none of the values specified in the array."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:82
+msgid ""
+"Comparison operators compare a point cloud attribute with an operand or "
+"an array of operands.  An *operand* is either a numeric constant or a "
+"string representing a dimension name.  For all comparison operators "
+"except for ``$in`` and ``$nin``, the comparison value must be a single "
+"operand.  For ``$in`` and ``$nin``, the value must be an array of "
+"operands."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:88
+msgid ""
+"Comparison operator specifications must be contained within an object "
+"whose key is the dimension name to be compared."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:103
+msgid ""
+"The ``$eq`` comparison operator may be implicitly invoked by setting an "
+"attribute name directly to a value."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:111
+msgid "Logical operators"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:113
+msgid "There are 4 valid logical operators:"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:115
+msgid ""
+"``$and``: Applies a logical **and** on the expressions of the array and "
+"returns a match only if all expressions match."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:117
+msgid "``$not``: Inverts the value of the single sub-expression."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:118
+msgid ""
+"``$nor``: Applies a logical **nor** on the expressions of the array and "
+"returns a match only if all expressions fail to match."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:120
+msgid ""
+"``$nor``: Applies a logical **or** on the expressions of the array and "
+"returns a match if any of the expressions match."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:123
+msgid ""
+"Logical operators are used to logically combine sub-expressions.  All "
+"logical operators except for ``$not`` are applied to arrays of "
+"expressions. ``$not`` is applied to a single expression and negates its "
+"result."
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:127
+msgid ""
+"Logical operators may be applied directly to comparison expressions or "
+"may contain further nested logical operators.  For example:"
+msgstr ""
+
+#: ../../stages/filters.mongo.rst:159
+msgid ""
+"For any individual dimension, the logical **and** may be implicitly "
+"invoked via multiple comparisons within the comparison object.  For "
+"example:"
+msgstr ""
+

@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.poisson.rst:5
+msgid "filters.poisson"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:7
+msgid ""
+"The **Poisson Filter** passes data Mischa Kazhdan's poisson surface "
+"reconstruction algorithm. [Kazhdan2006]_  It creates a watertight surface"
+" from the original point set by creating an entirely new point set "
+"representing the imputed isosurface.  The algorithm requires normal "
+"vectors to each point in order to run.  If the x, y and z normal "
+"dimensions are present in the input point set, they will be used by the "
+"algorithm.  If they don't exist, the poisson filter will invoke the PDAL "
+"normal filter to create them before running."
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:16
+msgid ""
+"The poisson algorithm will usually create a larger output point set than "
+"the input point set.  Because the algorithm constructs new points, data "
+"associated with the original points set will be lost, as the algorithm "
+"has limited ability to impute associated data.  However, if color "
+"dimensions (red, green and blue) are present in the input, colors will be"
+" reconstructed in the output point set. This filter will also run the "
+":ref:`normal filter <filters.normal>` on the output point set."
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:24
+msgid ""
+"This integration of the algorithm with PDAL only supports a limited set "
+"of the options available to the implementation.  If you need support for "
+"further options, please let us know."
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:31
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:48
+msgid ""
+"The algorithm is slow.  On a reasonable desktop machine, the surface "
+"reconstruction shown below took about 15 minutes."
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:53
+msgid "Point cloud (800,000 points)"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:57
+msgid "Reconstruction (1.8 million vertices, 3.7 million faces)"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:61
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:65
+msgid "density"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:64
+msgid ""
+"Write an estimate of neighborhood density for each point in the output "
+"set."
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:70
+msgid "depth"
+msgstr ""
+
+#: ../../stages/filters.poisson.rst:68
+msgid ""
+"Maximum depth of the tree used for reconstruction. The output is "
+"sensitive to this parameter.  Increase if the results appear "
+"unsatisfactory. [Default: 8]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

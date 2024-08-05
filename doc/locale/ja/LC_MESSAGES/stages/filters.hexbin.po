@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.hexbin.rst:4
+msgid "filters.hexbin"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:6
+msgid ""
+"A common questions for users of point clouds is what the spatial extent "
+"of a point cloud collection is. Files generally provide only rectangular "
+"bounds, but often the points inside the files only fill up a small "
+"percentage of the area within the bounds."
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:15
+msgid "Hexbin derived from input point buffer"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:15
+msgid ""
+"Hexbin output shows boundary of actual points in point buffer, not just "
+"rectangular extents."
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:18
+msgid ""
+"The hexbin filter reads a point stream and writes out a metadata record "
+"that contains a boundary, expressed as a well-known text polygon. The "
+"filter counts the points in each hexagonal area to determine if that area"
+" should be included as part of the boundary.  In order to write out the "
+"metadata record, the *pdal* pipeline command must be invoked using the "
+"\"--pipeline-serialization\" option:"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:28
+msgid "Example 1"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:30
+msgid ""
+"The following pipeline file and command produces an JSON output file "
+"containing the pipeline's metadata, which includes the result of running "
+"the hexbin filter:"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:72
+msgid "Example 2"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:74
+msgid "As a convenience, the ``pdal info`` command will produce similar output:"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:102
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:107
+msgid "density"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:105
+msgid ""
+"Output a density tessellation as a GeoJSON FeatureCollection to the "
+"specified filename. If no file name is provided, nothing is written."
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:112
+msgid "_`edge_size`"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:110
+msgid ""
+"If not set, the hexbin filter will estimate a hex size based on a sample "
+"of the data. If set, hexbin will use the provided size in constructing "
+"the hexbins to test."
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:116
+msgid "sample_size"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:115
+msgid ""
+"How many points to sample when automatically calculating the edge size? "
+"Only applies if edge_size_ is not explicitly set. [Default: 5000]"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:120
+msgid "threshold"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:119
+msgid ""
+"Number of points that have to fall within a hexagon boundary before it is"
+" considered \"in\" the data set. [Default: 15]"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:124
+msgid "precision"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:123
+msgid ""
+"Minimum number of significant digits to use in writing out the well-known"
+" text of the boundary polygon. [Default: 8]"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:127
+msgid "preserve_topology"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:127
+msgid ""
+"Use GEOS SimplifyPreserveTopology instead of Simplify for polygon "
+"simplification with  `smooth` option. [Default: true]"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:130
+msgid "smooth"
+msgstr ""
+
+#: ../../stages/filters.hexbin.rst:130
+msgid ""
+"Use GEOS simplify operations to smooth boundary to a tolerance [Default: "
+"true]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

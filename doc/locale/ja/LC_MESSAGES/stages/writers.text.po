@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.text.rst:4
+msgid "writers.text"
+msgstr ""
+
+#: ../../stages/writers.text.rst:6
+msgid ""
+"The **text writer** writes out to a text file. This is useful for "
+"debugging or getting smaller files into an easily parseable format.  The "
+"text writer supports both `GeoJSON`_ and `CSV`_ output."
+msgstr ""
+
+#: ../../stages/writers.text.rst:16
+msgid "Example"
+msgstr ""
+
+#: ../../stages/writers.text.rst:35
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.text.rst:38
+msgid "filename"
+msgstr ""
+
+#: ../../stages/writers.text.rst:38
+msgid "File to write to, or \"STDOUT\" to write to standard out [Required]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:41
+msgid "format"
+msgstr ""
+
+#: ../../stages/writers.text.rst:41
+msgid "Output format to use. One of ``geojson`` or ``csv``. [Default: \"csv\"]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:45
+msgid "_`precision`"
+msgstr ""
+
+#: ../../stages/writers.text.rst:44
+msgid ""
+"Decimal Precision for output of values. This can be overridden for "
+"individual dimensions using the order option. [Default: 3]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:52
+msgid "_`order`"
+msgstr ""
+
+#: ../../stages/writers.text.rst:48
+msgid ""
+"Comma-separated list of dimension names in the desired output order. For "
+"example \"X,Y,Z,Red,Green,Blue\". Dimension names can optionally be "
+"followed with a colon (':') and an integer to indicate the precision to "
+"use for output. Ex: \"X:3, Y:5,Z:0\" If no precision is specified the "
+"value provided with the precision_ option is used. [Default: none]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:56
+msgid "keep_unspecified"
+msgstr ""
+
+#: ../../stages/writers.text.rst:55
+msgid ""
+"If true, writes all dimensions.  Dimensions specified with the order_ "
+"option precede those not specified. [Default: **true**]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:60
+msgid "jscallback"
+msgstr ""
+
+#: ../../stages/writers.text.rst:59
+msgid ""
+"When producing GeoJSON, the callback allows you to wrap the data in a "
+"function, so the output can be evaluated in a <script> tag."
+msgstr ""
+
+#: ../../stages/writers.text.rst:64
+msgid "quote_header"
+msgstr ""
+
+#: ../../stages/writers.text.rst:63
+msgid ""
+"When producing CSV, should the column header named by quoted? [Default: "
+"true]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:67
+msgid "write_header"
+msgstr ""
+
+#: ../../stages/writers.text.rst:67
+msgid "Whether a header should be written. [Default: true]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:71
+msgid "newline"
+msgstr ""
+
+#: ../../stages/writers.text.rst:70
+msgid ""
+"When producing CSV, what newline character should be used? (For Windows, "
+"``\\\\r\\\\n`` is common.) [Default: \"\\\\n\"]"
+msgstr ""
+
+#: ../../stages/writers.text.rst:74
+msgid "delimiter"
+msgstr ""
+
+#: ../../stages/writers.text.rst:74
+msgid "When producing CSV, what character to use as a delimiter? [Default: \",\"]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+

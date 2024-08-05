@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../development/cmake.rst:5
+msgid "CMake"
+msgstr ""
+
+#: ../../development/cmake.rst
+msgid "Author"
+msgstr ""
+
+#: ../../development/cmake.rst:7
+msgid "Bradley Chambers"
+msgstr ""
+
+#: ../../development/cmake.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../development/cmake.rst:8
+msgid "brad.chambers@gmail.com"
+msgstr ""
+
+#: ../../development/cmake.rst
+msgid "Date"
+msgstr ""
+
+#: ../../development/cmake.rst:9
+msgid "01/21/2015"
+msgstr ""
+
+#: ../../development/cmake.rst:11
+msgid ""
+"This tutorial will explain how to use PDAL in your own projects using "
+"CMake. A more complete, working example can be found :ref:`here "
+"<writing>`."
+msgstr ""
+
+#: ../../development/cmake.rst:16
+msgid "We assume you have either :ref:`built or installed<building>` PDAL."
+msgstr ""
+
+#: ../../development/cmake.rst:19
+msgid "Basic CMake configuration"
+msgstr ""
+
+#: ../../development/cmake.rst:21
+msgid "Begin by creating a file named CMakeLists.txt that contains:"
+msgstr ""
+
+#: ../../development/cmake.rst:36
+msgid "CMakeLists explained"
+msgstr ""
+
+#: ../../development/cmake.rst:42
+msgid ""
+"The `cmake_minimum_required` command specifies the minimum required "
+"version of CMake. We use some recent additions to CMake in PDAL that "
+"require version 2.8.12."
+msgstr ""
+
+#: ../../development/cmake.rst:50
+msgid ""
+"The CMake `project` command names your project and sets a number of "
+"useful CMake variables."
+msgstr ""
+
+#: ../../development/cmake.rst:57
+msgid ""
+"We next ask CMake to locate the PDAL package, requiring version 1.0.0 or "
+"higher."
+msgstr ""
+
+#: ../../development/cmake.rst:65
+msgid "If PDAL is found, the following variables will be set:"
+msgstr ""
+
+#: ../../development/cmake.rst:67
+msgid "*PDAL_FOUND*: set to 1 if PDAL is found, otherwise unset"
+msgstr ""
+
+#: ../../development/cmake.rst:68
+msgid ""
+"*PDAL_INCLUDE_DIRS*: set to the paths to PDAL installed headers and the "
+"dependency headers"
+msgstr ""
+
+#: ../../development/cmake.rst:69
+msgid ""
+"*PDAL_LIBRARIES*: set to the file names of the built and installed PDAL "
+"libraries"
+msgstr ""
+
+#: ../../development/cmake.rst:70
+msgid ""
+"*PDAL_LIBRARY_DIRS*: set to the paths where PDAL libraries and 3rd party "
+"dependencies reside"
+msgstr ""
+
+#: ../../development/cmake.rst:71
+msgid "*PDAL_VERSION*: the detected version of PDAL"
+msgstr ""
+
+#: ../../development/cmake.rst:72
+msgid ""
+"*PDAL_DEFINITIONS*: list the needed preprocessor definitions and compiler"
+" flags"
+msgstr ""
+
+#: ../../development/cmake.rst:78
+msgid ""
+"We haven't quite implemented the setting of *PDAL_DEFINITIONS* within the"
+" `PDALConfig.cmake` file, so for now you should specify the c++11 "
+"compiler flag, as we use it extensively throughout PDAL."
+msgstr ""
+
+#: ../../development/cmake.rst:86
+msgid ""
+"We use the `add_executable` command to tell CMake to create an executable"
+" named `tutorial` from the source file `tutorial.cpp`."
+msgstr ""
+
+#: ../../development/cmake.rst:93
+msgid ""
+"We assume that the tutorial executable makes calls to PDAL functions. To "
+"make the linker aware of the PDAL libraries, we use "
+"`target_link_libraries` to link `tutorial` against the *PDAL_LIBRARIES*."
+msgstr ""
+
+#: ../../development/cmake.rst:98
+msgid "Compiling the project"
+msgstr ""
+
+#: ../../development/cmake.rst:100
+msgid "Make a `build` directory, where compilation will occur:"
+msgstr ""
+
+#: ../../development/cmake.rst:107
+msgid "Run cmake from within the build directory:"
+msgstr ""
+
+#: ../../development/cmake.rst:114
+msgid "Now, build the project:"
+msgstr ""
+
+#: ../../development/cmake.rst:120
+msgid "The project is now built and ready to run:"
+msgstr ""
+

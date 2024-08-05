@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.mbio.rst:4
+msgid "readers.mbio"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:6
+msgid ""
+"The mbio reader allows sonar bathymetry data to be read into PDAL and "
+"treated as data collected using LIDAR sources.  PDAL uses the `MB-"
+"System`_ library to read the data and therefore supports `all formats`_ "
+"supported by that library.  Some common sonar systems are NOT supported "
+"by MB-System, notably Kongsberg, Reson and Norbit.  The mbio reader reads"
+" each \"beam\" of data after averaging and processing by the MB-System "
+"software and stores the values for the dimensions 'X', 'Y', 'Z' and "
+"'Amplitude'.  X and Y use longitude and latitude for units and the Z "
+"values are in meters (negative, being below the surface).  Units for "
+"'Amplitude' is not specified and may vary."
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:23
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:25
+msgid "This reads beams from a sonar data file and writes points to a LAS file."
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:43
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:46
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:46
+msgid "Filename to read from [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:52
+msgid "format"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:51
+msgid ""
+"Name of number of format of file being read.  See MB-System documentation"
+" for a list of `all formats`_. [Required]"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:56
+msgid "datatype"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:55
+msgid ""
+"Type of data to read.  Either 'multibeam' or 'sidescan'. [Default: "
+"'multibeam']"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:60
+msgid "timegap"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:59
+msgid ""
+"The maximum number of seconds that can elapse between pings before the "
+"end of the data stream is assumed. [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:64
+msgid "speedmin"
+msgstr ""
+
+#: ../../stages/readers.mbio.rst:63
+msgid ""
+"The minimum speed that the ship can be moving to before the end of the "
+"data stream is assumed. [Default: 0]"
+msgstr ""
+

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.matlab.rst:4
+msgid "filters.matlab"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:6
+msgid ""
+"The **Matlab Filter** allows `Matlab`_ software to be embedded in a "
+":ref:`pipeline` that interacts with a struct array of the data and allows"
+" you to modify those points. Additionally, some global :ref:`metadata` is"
+" also available that Matlab functions can interact with."
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:11
+msgid ""
+"The Matlab interpreter must exit and always set \"ans==true\" upon "
+"success. If \"ans==false\", an error would be thrown and the "
+":ref:`pipeline` exited."
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:15
+msgid ":ref:`writers.matlab` can be used to write ``.mat`` files."
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:19
+msgid ""
+":ref:`filters.matlab` embeds the entire Matlab interpreter, and it will "
+"require a fully licensed version of Matlab to execute your script."
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:25
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:47
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:51
+msgid "script"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:50
+msgid ""
+"When reading a function from a separate `Matlab`_ file, the file name to "
+"read from. [Example: \"functions.m\"]"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:55
+msgid "source"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:54
+msgid ""
+"The literal `Matlab`_ code to execute, when the script option is not "
+"being used."
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:58
+msgid "add_dimension"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:58
+msgid ""
+"The name of a dimension to add to the pipeline that does not already "
+"exist."
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:61
+msgid "struct"
+msgstr ""
+
+#: ../../stages/filters.matlab.rst:61
+msgid "Array structure name to read [Default: \"PDAL\"]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

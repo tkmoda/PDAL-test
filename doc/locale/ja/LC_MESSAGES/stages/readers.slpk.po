@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.slpk.rst:4
+msgid "readers.slpk"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:6
+msgid ""
+"`Scene Layer Packages (SLPK)`_ is a specification created by Esri as a "
+"format for their 3D Scene Layer and scene services. SLPK is a format that"
+" allows you to package all the necessary :ref:`I3S <readers.i3s>` files "
+"together and store them locally rather than find information through "
+"REST."
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:17
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:18
+msgid ""
+"This example will unarchive the slpk file, store it in a temp directory, "
+"and traverse it. The data will be output to a las file. This is done "
+"through PDAL's command line interface or through the pipeline."
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:55
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:58
+msgid "filename"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:57
+msgid ""
+"SLPK file must have a file extension of .slpk. Example: ``pdal translate "
+"/PDAL/test/data/i3s/SMALL_AUTZEN_LAS_ALL.slpk output.las``"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:64
+msgid "obb"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:63
+msgid ""
+"An oriented bounding box used to filter the data being retrieved.  The "
+"obb is specified as JSON exactly as described by the `I3S "
+"specification`_."
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:84
+msgid "dimensions"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:67
+msgid ""
+"Comma-separated list of dimensions that should be read.  Specify the Esri"
+" name, rather than the PDAL dimension name."
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:71
+msgid "Esri"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:71
+msgid "PDAL"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:73
+msgid "INTENSITY"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:73
+msgid "Intensity"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:74
+msgid "CLASS_CODE"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:74
+msgid "ClassFlags"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:75
+msgid "FLAGS"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:75
+msgid "Flag"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:76
+msgid "RETURNS"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:76
+msgid "NumberOfReturns"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:77
+msgid "USER_DATA"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:77
+msgid "UserData"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:78
+msgid "POINT_SRC_ID"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:78
+msgid "PointSourceId"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:79
+msgid "GPS_TIME"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:79
+msgid "GpsTime"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:80
+msgid "SCAN_ANGLE"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:80
+msgid "ScanAngleRank"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:81
+msgid "RGB"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:81
+msgid "Red"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:84
+msgid "Example: ``--readers.slpk.dimensions=\"rgb, intensity\"``"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:94
+msgid "min_density and max_density"
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:87
+msgid ""
+"This is the range of density of the points in the nodes that will be "
+"selected during the read. The density of a node is calculated by the "
+"vertex count divided by the effective area of the node. Nodes do not have"
+" a uniform density across depths in the tree, so some sections may be "
+"more or less dense than others. Default values for these parameters will "
+"select all leaf nodes (the highest resolution)."
+msgstr ""
+
+#: ../../stages/readers.slpk.rst:94
+msgid "Example: ``--readers.slpk.min_density=2 --readers.slpk.max_density=2.5``"
+msgstr ""
+

@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.relaxationdartthrowing.rst:4
+msgid "filters.relaxationdartthrowing"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:6
+msgid ""
+"The **Relaxation Dart Throwing Filter** is a variation on Poisson "
+"sampling. The approach was first introduced by [McCool1992]_. The filter "
+"operates nearly identically to :ref:`filters.sample`, except it will "
+"continue to shrink the radius with each pass through the point cloud "
+"until the desired number of output points is reached."
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:14
+msgid ""
+":ref:`filters.decimation`, :ref:`filters.fps` and :ref:`filters.sample` "
+"all perform some form of thinning or resampling."
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:19
+msgid ""
+"The ``shuffle`` option does not reorder points in the PointView, but "
+"shuffles the order in which the points are visited while processing, "
+"which can improve the quality of the result."
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:26
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:29
+msgid "decay"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:29
+msgid "Decay rate for the radius shrinkage. [Default: 0.9]"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:32
+msgid "radius"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:32
+msgid "Starting minimum distance between samples. [Default: 1.0]"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:35
+msgid "count"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:35
+msgid "Desired number of points in the output. [Default: 1000]"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:39
+msgid "shuffle"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:38
+msgid ""
+"Choose whether or not to shuffle order in which points are visited. "
+"[Default: true]"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:42
+msgid "seed"
+msgstr ""
+
+#: ../../stages/filters.relaxationdartthrowing.rst:42
+msgid "Seed for random number generator, used only with shuffle."
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

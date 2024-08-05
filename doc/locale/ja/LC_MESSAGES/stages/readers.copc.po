@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.copc.rst:4
+msgid "readers.copc"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:6
+msgid ""
+"The **COPC Reader** supports reading from `COPC format`_ files. A COPC "
+"file is a `LASzip`_ (compressed LAS) file that organizes its data "
+"spatially, allowing for incremental loading and spatial filtering."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:15
+msgid ""
+"LAS stores X, Y and Z dimensions as scaled integers.  Users converting an"
+" input LAS file to an output LAS file will frequently want to use the "
+"same scale factors and offsets in the output file as existed in the input"
+" file in order to maintain the precision of the data.  Use the `forward` "
+"option of :ref:`writers.las` to facilitate transfer of header information"
+" from source COPC files to destination LAS/LAZ files."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:25
+msgid ""
+"COPC files can contain datatypes that are actually arrays rather than "
+"individual dimensions.  Since PDAL doesn't support these datatypes, it "
+"must map them into datatypes it supports.  This is done by appending the "
+"array index to the name of the datatype.  For example, datatypes 11 - 20 "
+"are two dimensional array types and if a field had the name Foo for "
+"datatype 11, PDAL would create the dimensions Foo0 and Foo1 to hold the "
+"values associated with LAS field Foo.  Similarly, datatypes 21 - 30 are "
+"three dimensional arrays and a field of type 21 with the name Bar would "
+"cause PDAL to create dimensions Bar0, Bar1 and Bar2.  See the information"
+" on the extra bytes VLR in the `LAS Specification`_ for more information "
+"on the extra bytes VLR and array datatypes."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:41
+msgid ""
+"COPC files that use the extra bytes VLR and datatype 0 will be accepted, "
+"but the data associated with a dimension of datatype 0 will be ignored "
+"(no PDAL dimension will be created)."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:51
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:67
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:71
+msgid "_`filename`"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:70
+msgid ""
+"COPC file to read. Remote file specifications (http, AWS, Google, Azure, "
+"Dropbox) are supported. [Required]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:79
+msgid "bounds"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:76
+msgid ""
+"The extent of the data to select in 2 or 3 dimensions, expressed as a "
+"string, e.g.: ``([xmin, xmax], [ymin, ymax], [zmin, zmax])``.  If "
+"omitted, the entire dataset will be selected. The bounds specification "
+"can be followed by a slash ('/') and a spatial reference specification to"
+" apply to the bounds specification."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:86
+msgid "polygon"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:82
+msgid ""
+"A clipping polygon, expressed in a well-known text string, e.g.: "
+"``POLYGON((0 0, 5000 10000, 10000 0, 0 0))``.  This option can be "
+"specified more than once. Multiple polygons will will be treated as a "
+"single multipolygon. The polygon specification can be followed by a slash"
+" ('/') and a spatial reference specification to apply to the polygon."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:104
+msgid "ogr"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:89
+msgid ""
+"A JSON object representing an OGR query to fetch polygons to use for "
+"filtering. The polygons fetched from the query are treated exactly like "
+"those specified in the ``polygon`` option. The JSON object is specified "
+"as follows:"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:110
+msgid "requests"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:107
+msgid ""
+"The number of worker threads processing data. The optimal number depends "
+"on your system and your network connection, but more is not necessarily "
+"better.  A reasonably fast network connection can often fetch data faster"
+" than it can be processed, leading to memory consumption and slower "
+"performance. [Default: 15]"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:114
+msgid "resolution"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:113
+msgid ""
+"Limit the pyramid levels of data to fetch based on the expected "
+"resolution of the data. Units match that of the data. [Default: no "
+"resolution limit]"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:118
+msgid "header"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:117
+msgid ""
+"HTTP headers to forward for remote endpoints. Specify as a JSON object of"
+" key/value string pairs."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:122
+msgid "query"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:121
+msgid ""
+"HTTP query parameters to forward for remote endpoints. Specify as a JSON "
+"object of key/value string pairs."
+msgstr ""
+
+#: ../../stages/readers.copc.rst:125
+msgid "vlr"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:125
+msgid "Read LAS VLRs and import as metadata. [Default: false]"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:128
+msgid "keep_alive"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:128
+msgid "The number of chunks to keep active in memory while reading [Default: 10]"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:132
+msgid "fix_dims"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:131
+msgid ""
+"Make invalid dimension names valid by converting disallowed characters to"
+" '_'. Only applies to names specified in an extra-bytes VLR. [Default: "
+"true]"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:136
+msgid "srs_vlr_order"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:135
+msgid ""
+"Preference order to read SRS VLRs (list of 'wkt1', 'wkt2', or "
+"'projjson'). [Default: 'wkt1, wkt2, projjson']"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:140
+msgid "nosrs"
+msgstr ""
+
+#: ../../stages/readers.copc.rst:139
+msgid ""
+"Don't read the SRS VLRs. The data will not be assigned an SRS. This "
+"option is for use only in special cases where processing the SRS could "
+"cause performance issues. [Default: false]"
+msgstr ""
+

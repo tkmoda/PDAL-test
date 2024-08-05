@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../apps/eval.rst:5
+msgid "eval"
+msgstr ""
+
+#: ../../apps/eval.rst:9
+msgid ""
+"As of PDAL v2.6.0, the ``eval`` command is marked as DEPRECATED. It will "
+"be removed from the default install in PDAL v2.7 and removed completely "
+"in PDAL v2.8."
+msgstr ""
+
+#: ../../apps/eval.rst:13
+msgid ""
+"The ``eval`` command is used to compare the ``Classification`` dimensions"
+" of two point clouds. ::"
+msgstr ""
+
+#: ../../apps/eval.rst:25
+msgid ""
+"The command returns 0 along with a JSON-formatted classification report "
+"summarizing various classification metrics."
+msgstr ""
+
+#: ../../apps/eval.rst:28
+msgid ""
+"In the provided example below, the truth and predicted point clouds "
+"contain points classified as ground (class 2) and medium vegetation "
+"(class 4) in accordance with the LAS specification. Both point clouds "
+"also contain some number of classifications that are either unlabeled or "
+"do not fall into the specificied classes."
+msgstr ""
+
+#: ../../apps/eval.rst:69
+msgid ""
+"Most of the returned metrics will be self explanatory, with scores "
+"reported both for individual classes and at a summary level. The returned"
+" confusion matrix is presented in row-major order, where each row "
+"corresponds to a truth label (the last row is a catch-all for any "
+"unlabeled or ignored entries). Similarly, confusion matrix columns "
+"correspond to predicted labels where the last column is once again a "
+"catch-all for unlabeled entries. Although unlabeled/ignored truth labels "
+"are reported in the confusion matrix, they are excluded from all computed"
+" scores."
+msgstr ""
+

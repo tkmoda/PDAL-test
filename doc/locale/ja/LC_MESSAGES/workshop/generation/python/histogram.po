@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../workshop/generation/python/histogram.rst:4
+msgid "Plotting a histogram"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:9
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:11
+msgid ""
+"PDAL doesn't provide every possible analysis option, but it strives to "
+"make it convenient to link PDAL to other places with substantial "
+"functionality.  One of those is the Python/Numpy universe, which is "
+"accessed through PDAL's :ref:`python` bindings and the "
+":ref:`filters.python` filter. These tools allow you to manipulate point "
+"cloud data with convenient Python tools rather than constructing "
+"substantial C/C++ software to achieve simple tasks, compute simple "
+"statistics, or investigate data quality issues."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:19
+msgid ""
+"This exercise uses PDAL to create a histogram plot of all of the "
+"dimensions of a file. `matplotlib`_ is a Python package for plotting "
+"graphs and figures, and we can use it in combination with the "
+":ref:`python` bindings for PDAL to create a nice histogram. These "
+"histograms can be useful diagnostics in an analysis pipeline. We will "
+"combine a Python script to make a histogram plot with a "
+":ref:`pipeline_command`."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:29
+msgid ""
+"Python allows you to enhance and build functionality that you can use in "
+"the context of other :ref:`pipeline` operations."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:34
+msgid "PDAL Pipeline"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:36
+msgid ""
+"We're going to create a PDAL :ref:`pipeline` to tell PDAL to run our "
+"Python script in a :ref:`filters.python` stage:"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:45
+msgid ""
+"This pipeline is available in your workshop materials in the "
+"``./exercises/python/histogram.json`` file."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:50
+msgid "Python script"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:52
+msgid ""
+"The following Python script will do the actual work of creating the "
+"histogram plot with `matplotlib`_. Store it as ``histogram.py`` next to "
+"the ``histogram.json`` :ref:`pipeline` file above.  The script is mostly "
+"regular Python except for the ``ins`` and ``outs`` arguments to the "
+"function -- those are special arguments that PDAL expects to be a "
+"dictionary of Numpy dictionaries."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:61
+msgid ""
+"This Python file is available in your workshop materials in the "
+"``./exercises/python/histogram.py`` file."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:69
+msgid "Run ``pdal pipeline``"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:77
+msgid "Output"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:84
+msgid "Notes"
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:88
+msgid ""
+":ref:`writers.null` simply swallows the output of the pipeline. We don't "
+"need to write any data."
+msgstr ""
+
+#: ../../workshop/generation/python/histogram.rst:91
+msgid ""
+"The ``pdalargs`` JSON needs to be escaped because a valid Python "
+"dictionary entry isn't always valid JSON."
+msgstr ""
+

@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.icp.rst:4
+msgid "filters.icp"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:6
+msgid ""
+"The **ICP filter** uses the Iterative Closest Point (ICP) algorithm to "
+"calculate a **rigid** (rotation and translation) transformation that best"
+" aligns two datasets.  The first input to the ICP filter is considered "
+"the \"fixed\" points, and all subsequent points are \"moving\" points.  "
+"The output from the filter are the \"moving\" points after the calculated"
+" transformation has been applied, one point view per input.  The "
+"transformation matrix is inserted into the stage's metadata."
+msgstr ""
+
+#: ../../stages/filters.icp.rst:16
+msgid ""
+"ICP requires the initial pose of the two point sets to be adequately "
+"close, which is not always possible, especially when the transformation "
+"is non-rigid.  ICP can handle limited non-rigid transformations but be "
+"aware ICP may be unable to escape a local minimum. Consider using CPD "
+"instead."
+msgstr ""
+
+#: ../../stages/filters.icp.rst:21
+msgid "From :cite:`Xuechen2019`:"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:23
+msgid ""
+"ICP starts with an initial guess of the transformation between the two "
+"point sets and then iterates between finding the correspondence under the"
+" current transformation and updating the transformation with the newly "
+"found correspondence. ICP is widely used because it is rather "
+"straightforward and easy to implement in practice; however, its biggest "
+"problem is that it does not guarantee finding the globally optimal "
+"transformation. In fact, ICP converges within a very small basin in the "
+"parameter space, and it easily becomes trapped in local minima. "
+"Therefore, the results of ICP are very sensitive to the initialization, "
+"especially when high levels of noise and large proportions of outliers "
+"exist."
+msgstr ""
+
+#: ../../stages/filters.icp.rst:36
+msgid "Examples"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:49
+msgid ""
+"To get the ``transform`` matrix, you'll need to use the ``--metadata`` "
+"option from the pipeline command:"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:56
+msgid "The metadata output might start something like:"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:73
+msgid ""
+"To apply this transformation to other points, the ``centroid`` and "
+"``transform`` metadata items can by used with ``filters.transformation`` "
+"in another pipeline.  First, move the centroid of the points to (0,0,0), "
+"then apply the transform, then move the points back to the original "
+"location.  For the above metadata, the pipeline would be similar to:"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:106
+msgid ""
+"The ``composed`` metadata matrix is a composition of the three "
+"transformation steps outlined above, and can be used in a single call to "
+"``filters.transformation`` as opposed to the three separate calls."
+msgstr ""
+
+#: ../../stages/filters.icp.rst:110
+msgid ""
+":ref:`filters.transformation` to apply a transform to other points. "
+":ref:`filters.cpd` for the use of a probabilistic assignment of "
+"correspondences between pointsets."
+msgstr ""
+
+#: ../../stages/filters.icp.rst:115
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:118
+msgid "max_iter"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:118
+msgid "Maximum number of iterations. [Default: **100**]"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:121
+msgid "max_similar"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:121
+msgid "Max number of similar transforms to consider converged. [Default: **0**]"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:124
+msgid "mse_abs"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:124
+msgid "Absolute threshold for MSE. [Default: **1e-12**]"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:127
+msgid "rt"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:127
+msgid "Rotation threshold. [Default: **0.99999**]"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:130
+msgid "tt"
+msgstr ""
+
+#: ../../stages/filters.icp.rst:130
+msgid "Translation threshold. [Default: **9e-8**]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

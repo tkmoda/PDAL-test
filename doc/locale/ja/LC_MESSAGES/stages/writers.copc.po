@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/writers.copc.rst:4
+msgid "writers.copc"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:6
+msgid ""
+"The **COPC Writer** supports writing to `COPC format`_ files. COPC is "
+"*Cloud Optimized Point Clouds*, and it is a LAZ 1.4 file that is "
+"organized stored as a clustered octree."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:15
+msgid ""
+"Visit https://viewer.copc.io to view COPC files in your browser. Simply "
+"drag-n-drop the file from your desktop onto the page, or use"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:20
+msgid "VLRs"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:22
+msgid ""
+"VLRs can be created by providing a JSON node called `vlrs` with objects "
+"as shown:"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:58
+msgid ""
+"One of `data`, `filename` or `metadata` must be specified. Data must be "
+"specified as base64 encoded strings. The content of a file is inserted as"
+" binary. The metadata key specified must refer to a string or base64 "
+"encoded data."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:63
+msgid "Example"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:78
+msgid "Options"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:81
+msgid "filename"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:81
+msgid "Output filename.  [Required]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:107
+msgid "_`forward`"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:84
+msgid ""
+"List of header fields whose values should be preserved from a source LAS "
+"file.  The option can be specified multiple times, which has the same "
+"effect as listing values separated by a comma.  The following values are "
+"valid: ``filesource_id``, ``global_encoding``, ``project_id``, "
+"``system_id``, ``software_id``, ``creation_doy``, ``creation_year``, "
+"``scale_x``, ``scale_y``, ``scale_z``, ``offset_x``, ``offset_y``, "
+"``offset_z``.  In addition, the special value ``header`` can be "
+"specified, which is equivalent to specifying all the values EXCEPT the "
+"scale and offset values.  Scale and offset values can be forwarded as a "
+"group by using the special values ``scale`` and ``offset`` respectively."
+"  The special value ``all`` is equivalent to specifying ``header``, "
+"``scale``, ``offset`` and ``vlr`` (see below).  If a header option is "
+"specified explicitly, it will override any forwarded header value. If a "
+"LAS file is the result of multiple LAS input files, the header values to "
+"be forwarded must match or they will be ignored and a default will be "
+"used instead."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:100
+msgid ""
+"VLRs can be forwarded by using the special value ``vlr``.  VLRs "
+"containing the following User IDs are NOT forwarded: ``LASF_Projection``,"
+" ``liblas``, ``laszip encoded``.  VLRs with the User ID ``LASF_Spec`` and"
+" a record ID other than 0 or 3 are also not forwarded.  These VLRs are "
+"known to contain information regarding the formatting of the data and "
+"will be rebuilt properly in the output file as necessary.  Unlike header "
+"values, VLRs from multiple input files are accumulated and each is "
+"written to the output file.  Forwarded VLRs may contain duplicate User "
+"ID/Record ID pairs."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:111
+msgid "software_id"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:110
+msgid ""
+"String identifying the software that created this LAS file. [Default: "
+"PDAL version num (build num)]\""
+msgstr ""
+
+#: ../../stages/writers.copc.rst:114
+msgid "creation_doy"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:114
+msgid "Number of the day of the year (January 1 == 1) this file is being created."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:117
+msgid "creation_year"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:117
+msgid "Year (Gregorian) this file is being created."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:120
+msgid "system_id"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:120
+msgid ""
+"String identifying the system that created this LAS file. [Default: "
+"\"PDAL\"]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:125
+msgid "global_encoding"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:123
+msgid ""
+"Various indicators to describe the data.  See the LAS documentation.  "
+"Note that PDAL will always set bit four when creating LAS version 1.4 "
+"output. [Default: 0]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:128
+msgid "project_id"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:128
+msgid "UID reserved for the user [Default: Nil UID]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:136
+msgid "scale_x, scale_y, scale_z"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:131
+msgid ""
+"Scale to be divided from the X, Y and Z nominal values, respectively, "
+"after the offset has been applied.  The special value ``auto`` can be "
+"specified, which causes the writer to select a scale to set the stored "
+"values of the dimensions to range from [0, 2147483647].  [Default: .01]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:136 ../../stages/writers.copc.rst:144
+msgid "Note: written value = (nominal value - offset) / scale."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:144
+msgid "offset_x, offset_y, offset_z"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:139
+msgid ""
+"Offset to be subtracted from the X, Y and Z nominal values, respectively,"
+" before the value is scaled.  The special value ``auto`` can be "
+"specified, which causes the writer to set the offset to the minimum value"
+" of the dimension.  [Default: 0]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:148
+msgid "filesource_id"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:147
+msgid ""
+"The file source id number to use for this file (a value between 0 and "
+"65535 - 0 implies \"unassigned\") [Default: 0]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:151
+msgid "pipeline"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:151
+msgid "Write a JSON representation of the running pipeline as a VLR."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:154
+msgid "vlrs"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:154
+msgid "Add VLRS specified as json. See `VLRs`_ above for details."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:157
+msgid "a_srs"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:157
+msgid "Spatial reference to use to write output."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:160
+msgid "threads"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:160
+msgid "Number of threads to use when writing [Default: 10]"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:170
+msgid "extra_dims"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:163
+msgid ""
+"Extra dimensions to be written as part of each point beyond those "
+"specified by the LAS point format.  The format of the option is "
+"``<dimension_name>=<type> [, ...]``.  Any valid PDAL :ref:`type <types>` "
+"can be specified."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:168
+msgid ""
+"The special value ``all`` can be used in place of a dimension/type list "
+"to request that all dimensions that can't be stored in the predefined LAS"
+" point record get added as extra data at the end of each point record."
+msgstr ""
+
+#: ../../stages/writers.copc.rst:174
+msgid "enhanced_srs_vlrs"
+msgstr ""
+
+#: ../../stages/writers.copc.rst:173
+msgid "Write WKT2 and PROJJSON as VLR [Default: false]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"writer. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/writer_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the writer was "
+"run. [Default: ``auto``]"
+msgstr ""
+

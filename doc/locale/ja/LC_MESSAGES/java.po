@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../java.rst:5
+msgid "Java"
+msgstr ""
+
+#: ../../java.rst:10
+msgid ""
+"PDAL provides `Java bindings to use PDAL on JVM "
+"<https://github.com/PDAL/java>`_. It is released independently from PDAL "
+"itself as of PDAL 1.7. Native binaries are prebuilt for Linux and MacOS "
+"and delivered in a jar, so there is no need in building PDAL with a "
+"special flag or building JNI binaries manually."
+msgstr ""
+
+#: ../../java.rst:14
+msgid "The project consists of the following modules:"
+msgstr ""
+
+#: ../../java.rst:16
+msgid ""
+"``pdal-native`` - with packed OS specific libraries to link PDAL to JNI "
+"proxy classes. Dependency contains bindings for ``x86_64-darwin`` and "
+"``x86_64-linux``, other versions are not supported yet."
+msgstr ""
+
+#: ../../java.rst:17
+msgid "``pdal`` - with the core bindings functionality."
+msgstr ""
+
+#: ../../java.rst:18
+msgid ""
+"``pdal-scala`` - a Scala API package that simplifies PDAL Pipeline "
+"construction."
+msgstr ""
+
+#: ../../java.rst:21
+msgid "Versions"
+msgstr ""
+
+#: ../../java.rst:23
+msgid ""
+"PDAL JNI major version usually follows PDAL versioning i.e. ``pdal-java "
+"1.8.x`` was built and tested against ``PDAL 1.8.x`` and ``pdal-java "
+"2.1.x`` against ``PDAL 2.x.x``."
+msgstr ""
+
+#: ../../java.rst:27
+msgid "Using PDAL Java bindings"
+msgstr ""
+
+#: ../../java.rst:31
+msgid ""
+"PDAL provides `JNI bindings "
+"<https://docs.oracle.com/javase/8/docs/technotes/guides/jni/index.html>`_"
+" that gives users access to executing :ref:`pipeline <pipeline>` "
+"instantiations and capturing the results in ``Java`` interfaces. This "
+"mode of operation is useful if you are looking to have PDAL simply act as"
+" your data format and processing handler."
+msgstr ""
+
+#: ../../java.rst:38
+msgid ""
+"Users are expected to construct their own PDAL :ref:`pipeline "
+"<pipeline>`, execute it, and retrieve points into Java memory:"
+msgstr ""
+
+#: ../../java.rst:92
+msgid "Using PDAL Scala"
+msgstr ""
+
+#: ../../java.rst:94
+msgid ""
+"PDAL Scala project introduces a DSL to simplify PDAL Pipeline "
+"construction (this is the same pipeline from the section above):"
+msgstr ""
+
+#: ../../java.rst:133
+msgid ""
+"It covers PDAL 2.0.x, but to use any custom DSL that is not covered by "
+"the current Scala API you can use ``RawExpr`` type to build a ``Pipeline "
+"Expression``:"
+msgstr ""
+
+#: ../../java.rst:148
+msgid "Installation"
+msgstr ""
+
+#: ../../java.rst:152
+msgid ""
+"PDAL Java artifacts are cross published for ``Scala 2.13``, ``2.12`` and "
+"``2.11``. However, if it is not required, a separate artifact that has no"
+" Scala specific artifact postfix is published as well."
+msgstr ""
+
+#: ../../java.rst:170
+msgid "The latest version is: https://search.maven.org/search?q=g:io.pdal"
+msgstr ""
+
+#: ../../java.rst:172
+msgid ""
+"There is also an `example SBT PDAL Demo project "
+"<https://github.com/PDAL/java/tree/master/examples/pdal-jni>`_ in the "
+"bindings repository, that can be used for a quick start."
+msgstr ""
+
+#: ../../java.rst:176
+msgid "Compilation"
+msgstr ""
+
+#: ../../java.rst:183
+msgid "Development purposes (including binaries) compilation:"
+msgstr ""
+
+#: ../../java.rst:181
+msgid ""
+"Install PDAL (using brew / package managers (unix) / build from sources /"
+" etc)"
+msgstr ""
+
+#: ../../java.rst:182
+msgid ""
+"Build native libs ``./sbt native/nativeCompile`` (optionally, binaries "
+"would be built during tests run)"
+msgstr ""
+
+#: ../../java.rst:183
+msgid "Run ``./sbt core/test`` to run PDAL tests"
+msgstr ""
+
+#: ../../java.rst:192
+msgid "Only Java development purposes compilation:"
+msgstr ""
+
+#: ../../java.rst:186
+msgid "Provide ``$LD_LIBRARY_PATH`` or ``$DYLD_LIBRARY_PATH``"
+msgstr ""
+
+#: ../../java.rst:187
+msgid ""
+"If you don't want to provide global variable you can pass "
+"``-Djava.library.path=<path>`` into sbt:"
+msgstr ""
+
+#: ../../java.rst:189
+msgid "``./sbt -Djava.library.path=<path>``"
+msgstr ""
+
+#: ../../java.rst:191
+msgid "Set ``PDAL_DEPEND_ON_NATIVE=false`` (to disable ``native`` project build)"
+msgstr ""
+
+#: ../../java.rst:192
+msgid "Run ``PDAL_DEPEND_ON_NATIVE=false ./sbt``"
+msgstr ""
+
+#: ../../java.rst:194
+msgid ""
+"If you would like to use your own bindings binary, it is necessary to set"
+" ``java.library.path``:"
+msgstr ""
+
+#: ../../java.rst:204
+msgid ""
+"You can use ``pdal-native`` dep in case you don't have installed JNI "
+"bindings and to avoid steps described above. Dependency contains bindings"
+" for ``x86_64-darwin`` and ``x86_64-linux``, other versions are not "
+"supported yet."
+msgstr ""
+

@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/readers.tiledb.rst:4
+msgid "readers.tiledb"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:6
+msgid "Implements `TileDB`_ 2.3.0+ storage."
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:13
+msgid "Example"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:30
+msgid "Options"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:33
+msgid "array_name"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:33
+msgid "`TileDB`_ array to read from. Synonymous with `filename`. [Required]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:36
+msgid "config_file"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:36
+msgid "`TileDB`_ configuration file [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:39
+msgid "chunk_size"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:39
+msgid "Size of chunks to read from TileDB array [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:42
+msgid "stats"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:42
+msgid "Dump query stats to stdout [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:45
+msgid "bbox3d"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:45
+msgid ""
+"TileDB subarray to read in format ([minx, maxx], [miny, maxy], [minz, "
+"maxz]) [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:48
+msgid "start_timestamp"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:48
+msgid ""
+"Opens the array between a timestamp range of start_timestamp and "
+"end_timestamp. Default is 0. [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:51
+msgid "end_timestamp"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:51
+msgid ""
+"Opens the array between a timestamp range of start_timestamp and "
+"end_timestamp. Default is UINT64_MAX. [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:54
+msgid "timestamp"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:54
+msgid "Synonymous with start_timestamp. [Optional]"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:57
+msgid "strict"
+msgstr ""
+
+#: ../../stages/readers.tiledb.rst:57
+msgid ""
+"Raise an error if the array contains a TileDB attribute not supported by "
+"PDAL, the default is set to true to raise an error for unsupported "
+"attribute types [Optional]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "count"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:2
+msgid "Maximum number of points to read. [Default: unlimited]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:7
+msgid "override_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:5
+msgid ""
+"Spatial reference to apply to the data.  Overrides any SRS in the input "
+"itself.  Can be specified as a WKT, proj.4 or EPSG string. Can't use with"
+" 'default_srs'. [Default: none]"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:12
+msgid "default_srs"
+msgstr ""
+
+#: ../../stages/reader_opts.rst:10
+msgid ""
+"Spatial reference to apply to the data if the input does not specify one."
+"  Can be specified as a WKT, proj.4 or EPSG string. Can't use with "
+"'override_srs'. [Default: none]"
+msgstr ""
+

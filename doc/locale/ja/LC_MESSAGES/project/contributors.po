@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../project/contributors.rst:5
+msgid "Contributors"
+msgstr ""
+
+#: ../../project/contributors.rst:7
+msgid ""
+"Numerous organizations, companies, and individuals have contributed time,"
+" money, and code to build PDAL up into a highly capable software package."
+" Without these contributions, PDAL would not progress as quickly, and its"
+" quality wouldn't be as high. The development team is proud of the "
+"software, and it collectively represents years of experiences doing point"
+" cloud data management. We hope you'll find it useful too."
+msgstr ""
+
+#: ../../project/contributors.rst:14
+msgid ""
+"This page is to recognize these contributors and their contributions. "
+"Thanks."
+msgstr ""
+
+#: ../../project/contributors.rst:17
+msgid "Engineering Contributors"
+msgstr ""
+
+#: ../../project/contributors.rst:22
+msgid ""
+"`Hobu`_ is the primary company behind the design, testing, development, "
+"and distribution of PDAL. Two Hobu team members primarily interact with "
+"PDAL. `Howard Butler`_ founded the project, and he provides project "
+"leadership and software development.  `Andrew Bell`_ has contributed "
+"design, refactoring, and new feature development of PDAL over the past "
+"couple of years."
+msgstr ""
+
+#: ../../project/contributors.rst:33
+msgid ""
+"`Michael Gerlek`_ helped bootstrap PDAL by providing its first design, "
+"basic primitive objects, and first stage implementations."
+msgstr ""
+
+#: ../../project/contributors.rst:43
+msgid ""
+"`Bradley Chambers`_ from `Grover Consulting Services`_ has contributed "
+"numerous features and capabilities to the PDAL project, including "
+":ref:`Poisson sampling <filters.sample>` and classification filters such "
+"as :ref:`the SMRF filter<filters.smrf>`.  He is also a prolific "
+":ref:`tutorial` writer."
+msgstr ""
+
+#: ../../project/contributors.rst:53
+msgid "Funding Contributors"
+msgstr ""
+
+#: ../../project/contributors.rst:58
+msgid ""
+"The US Army Corps of Engineers Remote Sensing / GIS Center of Expertise "
+"at `CRREL`_ sponsors development of PDAL for its use in point cloud data "
+"management systems. `CRREL`_'s `GRiD`_ project manages LiDAR and point "
+"cloud data for a multitude of U.S. Army Corps missions. Find out more "
+"about GRiD in this `LiDAR Magazine article`_."
+msgstr ""
+
+#: ../../project/contributors.rst:70
+msgid ""
+"`NSF <http://www.nsf.gov>`_, in collaboration with `Dr. Craig Glennie "
+"<http://www.cive.uh.edu/faculty/glennie>`_ at the `University of Houston "
+"<http://www.uh.edu>`_ supports PDAL with funding support to develop and "
+"enhance statistical methods, transformation operations, tutorial and "
+"example development, and `PCL <http://pointclouds.org>`_ integration."
+msgstr ""
+

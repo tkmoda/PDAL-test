@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.georeference.rst:4
+msgid "filters.georeference"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:6
+msgid ""
+"The **georeference filter** georeferences point cloud expressed in "
+"scanner coordinates, using `GpsTime` Dimension as a synchronisation "
+"reference with a given trajectory."
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:13
+msgid "This filter expects trajectory to :"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:15
+msgid ""
+"contains `X`, `Y`, `Z`, `Roll`, `Pitch`, `Yaw`, `WanderAngle` and "
+"`GpsTime` ;"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:16
+msgid "have coordinates expressed in `WGS84` system (EPSG:4979) ;"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:17
+msgid "have all its angle values expressed in radians."
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:20
+msgid "Examples"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:48
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:51
+msgid "trajectory_file"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:51
+msgid "path to a sbet trajectory file. [Mandatory]"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:54
+msgid "trajectory_options"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:54
+msgid ""
+"JSON object with keys of reader options and the values to pass through. "
+"[Default: {}]"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:57
+msgid "scan2imu"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:57
+msgid ""
+"4x4 transformation matrix from scanner frame to body imu. By default "
+"expressed in NED coordinates. [Mandatory]"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:60
+msgid "reverse"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:60
+msgid "revert georeferencing (go back to scanner frame). [Default: false]"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:63
+msgid "time_offset"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:63
+msgid "timestamp offset between trajectory and scanner GpsTime. [Default: 0]"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:67
+msgid "coordinate_system"
+msgstr ""
+
+#: ../../stages/filters.georeference.rst:66
+msgid ""
+"Two right-handed variants exist for Local tangent plane coordinates: "
+"east, north, up (ENU) coordinates and north, east, down (NED). [Default :"
+" NED]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+

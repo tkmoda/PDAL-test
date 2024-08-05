@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024
+# This file is distributed under the same license as the PDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PDAL 2.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-04 23:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../stages/filters.zsmooth.rst:4
+msgid "filters.zsmooth"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:6
+msgid ""
+"The **Zsmooth Filter** computes a new Z value as another dimension that "
+"is based on the Z values of neighboring points."
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:9
+msgid ""
+"All points within some distance in the X-Y plane from a reference point "
+"are ordered by Z value. The reference point's new smoothed Z value is "
+"chosen to be that of the Nth median value of the neighboring points, "
+"where N is specified as the _`medianpercent` option."
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:13
+msgid ""
+"Use :ref:`filters.assign` to assign the smoothed Z value to the actual Z "
+"dimension if desired."
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:17
+msgid "Example"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:19
+msgid ""
+"Compute the smoothed Z value as the median Z value of the neighbors "
+"within 2 units and assign the value back to the Z dimension."
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:39
+msgid "Options"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:43
+msgid "radius"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:42
+msgid ""
+"All points within `radius` units from the reference point in the X-Y "
+"plane are considered to determine the smoothed Z value. [Default: 1]"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:48
+msgid "medianpercent"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:46
+msgid ""
+"A value between 0 and 100 that specifies the relative position of ordered"
+" Z values of neighbors to use as the new smoothed Z value. 0 specifies "
+"the minimum value. 100 specifies the maximum value. 50 specifies the "
+"mathematical median of the values. [Default: 50]"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:51
+msgid "dim"
+msgstr ""
+
+#: ../../stages/filters.zsmooth.rst:51
+msgid ""
+"The name of a dimension to use for the adjusted Z value. Cannot be 'Z'. "
+"[Required]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:5
+msgid "where"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:2
+msgid ""
+"An :ref:`expression <PDAL expression>` that limits points passed to a "
+"filter. Points that don't pass the expression skip the stage but are "
+"available to subsequent stages in a pipeline. [Default: no filtering]"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:13
+msgid "where_merge"
+msgstr ""
+
+#: ../../stages/filter_opts.rst:8
+msgid ""
+"A strategy for merging points skipped by a '`where'` option when running "
+"in standard mode. If ``true``, the skipped points are added to the first "
+"point view returned by the skipped filter. If ``false``, skipped points "
+"are placed in their own point view. If ``auto``, skipped points are "
+"merged into the returned point view provided that only one point view is "
+"returned and it has the same point count as it did when the filter was "
+"run. [Default: ``auto``]"
+msgstr ""
+
